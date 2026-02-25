@@ -25,6 +25,59 @@ Hey guys. We have a couple of open questions that need answering. Like formulas 
 
 ## Latest Gladiatus News
 
+## Events – March 2026
+
+### 0:00:00 01.03.2026 - 23:59:59 04.03.2026
+
+- 200% dungeon XP
+- 200% arena XP
+- 50% expedition XP
+- 50% more expedition points
+- 50% more dungeon points
+
+### 0:00:00 06.03.2026 - 23:59:59 07.03.2026
+
+- 100% Pantheon quest gold, experience, grace, honor
+- -50% cooldown for quests
+- 50% more expedition points
+
+### 0:00:00 08.03.2026 - 23:59:59 10.03.2026
+
+- 30% chance of finding an item
+- 25% forging success
+- -10% forge duration
+- 10% chance of a resource / scroll
+
+### 0:00:00 12.03.2026 - 23:59:59 14.03.2026
+
+- The chance to obtain additional loot on expeditions and in dungeons is increased by 20%
+- 25% faster regeneration of dungeon points
+- 25% more dungeon points
+
+### 0:00:00 16.03.2026 - 23:59:59 17.03.2026
+
+- -25% training costs
+
+### 0:00:00 19.03.2026 - 23:59:59 20.03.2026
+
+- 20% forge helper drop chance
+
+### 0:00:00 22.03.2026 - 23:59:59 24.03.2026
+
+- 20% gold loot on expeditions
+- No durability loss
+
+### 0:00:00 26.03.2026 - 23:59:59 28.03.2026
+
+- 10% chance of finding an item
+- -20% ruby costs for auction house
+- -15% training costs
+- 20% gold loot on expeditions
+
+### 0:00:00 30.03.2026 - 23:59:59 31.03.2026
+
+- -50% Forging time (and smelting)
+
 ### New Servers
 
 New servers arrive on Friday 06 February 2026. Reported list is:
