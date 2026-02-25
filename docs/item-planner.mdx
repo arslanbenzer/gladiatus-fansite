@@ -2,12 +2,14 @@
 sidebar_class_name: hidden
 ---
 
-import React, { useState, useEffect } from 'react';
+import React, { useState, useEffect, useMemo } from 'react';
 import Item, { calculateItemStats } from '@site/src/components/Item';
 import ForgingGood from '@site/src/components/ForgingGood';
 import basesData from '@site/static/data/items/bases.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
+import forgingGoodsData from '@site/static/data/items/forging-goods.json';
+import affixesRecipes from '@site/static/data/items/prefixes_suffixes_recipes.json';
 import ExecutionEnvironment from '@docusaurus/ExecutionEnvironment';
 
 # Item Planner
@@ -137,6 +139,9 @@ export const ItemPlanner = () => {
   const [selectedPrefix, setSelectedPrefix] = useState('');
   const [selectedSuffix, setSelectedSuffix] = useState('');
   const [copySuccess, setCopySuccess] = useState(false);
+  const [selectedBellows, setSelectedBellows] = useState('none');
+  const [hasCostume, setHasCostume] = useState(false);
+  const [hasMiniPumpkin, setHasMiniPumpkin] = useState(false);
   
   // Load base, prefix, and suffix from URL params on mount
   useEffect(() => {
@@ -216,23 +221,65 @@ export const ItemPlanner = () => {
   const prefix = prefixesData.find(p => p.name === selectedPrefix);
   const suffix = suffixesData.find(s => s.name === selectedSuffix);
   
-  // Calculate combined materials cost
-  const combinedMaterials = {};
-  if (baseItem && baseItem.materials) {
-    Object.entries(baseItem.materials).forEach(([material, quantity]) => {
-      combinedMaterials[material] = (combinedMaterials[material] || 0) + quantity;
+  // Create material ID to name mapping
+  const materialIdToName = useMemo(() => {
+    const mapping = {};
+    forgingGoodsData.forEach(good => {
+      mapping[good.id] = good.name;
     });
-  }
-  if (prefix && prefix.materials) {
-    Object.entries(prefix.materials).forEach(([material, quantity]) => {
-      combinedMaterials[material] = (combinedMaterials[material] || 0) + quantity;
+    return mapping;
+  }, []);
+  
+  // Calculate combined materials cost using the proper formula
+  const combinedMaterials = useMemo(() => {
+    const materials = {};
+    
+    // Add base materials
+    if (baseItem && baseItem.materials) {
+      Object.entries(baseItem.materials).forEach(([material, quantity]) => {
+        materials[material] = (materials[material] || 0) + quantity;
+      });
+    }
+    
+    // Add affix materials using the recipe lookup
+    const prefixId = prefix ? prefix.id : 0;
+    const suffixId = suffix ? (suffix.id >= 100 && suffix.id <= 109 ? 0 : suffix.id) : 0;
+    const recipeKey = `${prefixId}-${suffixId}`;
+    const affixRecipe = affixesRecipes[recipeKey] || {};
+    
+    // Convert material IDs to names and add to materials
+    Object.entries(affixRecipe).forEach(([materialId, quantity]) => {
+      const materialName = materialIdToName[materialId];
+      if (materialName) {
+        materials[materialName] = (materials[materialName] || 0) + quantity;
+      }
     });
-  }
-  if (suffix && suffix.materials) {
-    Object.entries(suffix.materials).forEach(([material, quantity]) => {
-      combinedMaterials[material] = (combinedMaterials[material] || 0) + quantity;
+    
+    return materials;
+  }, [baseItem, prefix, suffix, materialIdToName]);
+  
+  // Bellows options with their discount percentages
+  const bellowsOptions = [
+    { value: 'none', label: 'No Bellows', discount: 0, price: '' },
+    { value: 'bronze', label: 'Bronze Bellows of Austerity (-15%)', discount: 0.15, price: '30 Rubies' },
+    { value: 'silver', label: 'Silver Bellows of Austerity (-30%)', discount: 0.30, price: '50 Rubies' },
+    { value: 'gold', label: 'Gold Bellows of Austerity (-50%)', discount: 0.50, price: '100 Rubies' }
+  ];
+  
+  // Apply bellows discount to materials
+  const discountedMaterials = useMemo(() => {
+    const selectedBellowsOption = bellowsOptions.find(b => b.value === selectedBellows);
+    const bellowsDiscount = selectedBellowsOption ? selectedBellowsOption.discount : 0;
+    const costumeDiscount = hasCostume ? 0.20 : 0;
+    const pumpkinDiscount = hasMiniPumpkin ? 0.20 : 0;
+    const totalDiscount = bellowsDiscount + costumeDiscount + pumpkinDiscount;
+    
+    const discounted = {};
+    Object.entries(combinedMaterials).forEach(([material, quantity]) => {
+      discounted[material] = Math.max(1, Math.floor(quantity * (1 - totalDiscount)));
     });
-  }
+    return discounted;
+  }, [combinedMaterials, selectedBellows, hasCostume, hasMiniPumpkin]);
   
   const prefixOptions = [
     { value: '', label: 'None' },
@@ -390,14 +437,110 @@ export const ItemPlanner = () => {
           
           {Object.keys(combinedMaterials).length > 0 && (
             <div style={{ marginTop: '40px' }}>
-              <h3>Materials Cost (still formula how these are calculated is missing)</h3>
+              <h3>Materials Cost</h3>
+              
+              <div style={{ marginBottom: '20px' }}>
+                <label style={{ 
+                  display: 'block', 
+                  marginBottom: '8px', 
+                  fontWeight: 'bold',
+                  fontSize: '14px'
+                }}>
+                  Bellows (reduces resource costs):
+                </label>
+                <select
+                  value={selectedBellows}
+                  onChange={(e) => setSelectedBellows(e.target.value)}
+                  style={{
+                    padding: '8px 12px',
+                    fontSize: '14px',
+                    borderRadius: '4px',
+                    border: '1px solid var(--ifm-color-emphasis-300)',
+                    backgroundColor: 'var(--ifm-background-color)',
+                    color: 'var(--ifm-font-color-base)',
+                    cursor: 'pointer',
+                    minWidth: '300px'
+                  }}
+                >
+                  {bellowsOptions.map(option => (
+                    <option key={option.value} value={option.value}>
+                      {option.label} {option.price && `- ${option.price}`}
+                    </option>
+                  ))}
+                </select>
+                
+                <div style={{ marginTop: '15px' }}>
+                  <label style={{ 
+                    display: 'flex', 
+                    alignItems: 'center',
+                    cursor: 'pointer',
+                    fontSize: '14px'
+                  }}>
+                    <input
+                      type="checkbox"
+                      checked={hasCostume}
+                      onChange={(e) => setHasCostume(e.target.checked)}
+                      style={{
+                        marginRight: '8px',
+                        cursor: 'pointer',
+                        width: '18px',
+                        height: '18px'
+                      }}
+                    />
+                    <span style={{ fontWeight: 'bold' }}>
+                      Mercurius' Robber's Garments (-20% additional)
+                    </span>
+                  </label>
+                  <div style={{ 
+                    marginLeft: '26px', 
+                    fontSize: '13px', 
+                    color: 'var(--ifm-color-emphasis-700)',
+                    marginTop: '4px'
+                  }}>
+                    Event costume that provides extra resource reduction
+                  </div>
+                </div>
+                
+                <div style={{ marginTop: '15px' }}>
+                  <label style={{ 
+                    display: 'flex', 
+                    alignItems: 'center',
+                    cursor: 'pointer',
+                    fontSize: '14px'
+                  }}>
+                    <input
+                      type="checkbox"
+                      checked={hasMiniPumpkin}
+                      onChange={(e) => setHasMiniPumpkin(e.target.checked)}
+                      style={{
+                        marginRight: '8px',
+                        cursor: 'pointer',
+                        width: '18px',
+                        height: '18px'
+                      }}
+                    />
+                    <span style={{ fontWeight: 'bold' }}>
+                      Mini-Pumpkin (-20% additional)
+                    </span>
+                  </label>
+                  <div style={{ 
+                    marginLeft: '26px', 
+                    fontSize: '13px', 
+                    color: 'var(--ifm-color-emphasis-700)',
+                    marginTop: '4px'
+                  }}>
+                    Event food that provides extra resource reduction
+                  </div>
+                </div>
+              </div>
+              
               <div style={{ 
                 display: 'flex', 
                 gap: '15px', 
                 flexWrap: 'wrap',
                 alignItems: 'center'
               }}>
-                {Object.entries(combinedMaterials)
+                {Object.entries(discountedMaterials)
                   .sort(([, a], [, b]) => b - a)
                   .map(([material, quantity]) => (
                   <div key={material} style={{ 
