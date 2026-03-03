@@ -25,6 +25,17 @@ Hey guys. We have a couple of open questions that need answering. Like formulas 
 
 ## Latest Gladiatus News
 
+### Battle at Hadrian's Wall event
+
+- 08.03.2026 00:00:00 - 14.03.2026 23:59:59 - The Hadrian's wall event - [Battle at Hadrian's Wall](/events/battle-at-hadrian-s-wall "Battle at Hadrian's Wall")
+
+### New Servers
+
+New servers arrive on Friday 06 February 2026. Reported list is:
+
+- EN/UK: Server 78, speed x4.
+- US: Server 43, speed x2.
+
 ## Events – March 2026
 
 ### 01.03.2026 0:00:00  - 04.03.2026 23:59:59
@@ -47,6 +58,10 @@ Hey guys. We have a couple of open questions that need answering. Like formulas 
 - 25% forging success
 - -10% forge duration
 - 10% chance of a resource / scroll
+
+### 08.03.2026 00:00:00 - 14.03.2026 23:59:59 - Battle at Hadrian's Wall
+
+- The Hadrian's wall event - [Battle at Hadrian's Wall](/events/battle-at-hadrian-s-wall "Battle at Hadrian's Wall")
 
 ### 12.03.2026 0:00:00 - 14.03.2026 23:59:59
 
@@ -77,13 +92,6 @@ Hey guys. We have a couple of open questions that need answering. Like formulas 
 ### 30.03.2026 0:00:00 - 31.03.2026 23:59:59
 
 - -50% Forging time (and smelting)
-
-## New Servers
-
-New servers arrive on Friday 06 February 2026. Reported list is:
-
-- EN/UK: Server 78, speed x4.
-- US: Server 43, speed x2.
 
 ## Events – February 2026
 
@@ -152,6 +160,10 @@ Also there will be a Happy Day Event
 - Find what the formula is for gold, durability and conditiong is when prefix/suffix or both are applied to an item
 
 ## Latest website news
+
+### 03.03.2026
+
+- Battle at Hadrian's wall announcement + fixed and modernized event page
 
 ### 28.02.2026
 

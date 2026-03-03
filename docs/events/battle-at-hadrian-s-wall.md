@@ -5,31 +5,32 @@ redirects:
   - /battle-at-hadrian-s-wall
 ---
 
-# Battle at Hadrian's Wall
+![Battle at Hadrian's Wall](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/hadrians-wall-big-poster.png "Battle at Handrian's Wall")
 
-![Battle at Hadrian's Wall](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Battle_at_Hadrians_Wall_banner.jpg "Battle at Handrian's Wall")
+> „Ave Gladiator!
+>
+> A cry for help sounds from the northern border of the empire. Grab your weapons, the Roman empire is in trouble.
+> Will you face the new challenges and fight side by side with your friends and comrades for your empire's victory?
+>
+> Defeat opposing leaders and their armies with your allies across the whole province. Expect gripping combat and various rewards for victory and defeat.
+> But remember: the clock is ticking and there isn't much time to force back your opponents and stop them from tearing down Hadrian's Wall!"
 
-![Battle at Hadrian's Wall](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Battle_at_Hadrians_Wall_description.png "Battle at Hadrian's Wall")
-
-„Ave Gladiator!  
-  
-A cry for help sounds from the northern border of the empire. Grab your weapons, the Roman empire is in trouble.  
-Will you face the new challenges and fight side by side with your friends and comrades for your empire's victory?  
-  
-Defeat opposing leaders and their armies with your allies across the whole province. Expect gripping combat and various rewards for victory and defeat.  
-But remember: the clock is ticking and there isn't much time to force back your opponents and stop them from tearing down Hadrian's Wall!“  
+![Battle at Hadrian's Wall](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/hadrians-wall-medium-poster.png "Battle at Handrian's Wall")
   
 A mighty army of the Picts is invading the Roman Empire from the North,  
 only held back by the Hadrian’s Wall.  
 Your strength and will to win is needed to keep the Wall from breaking down!
-
-![Battle at Hadrian's Wall](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Tribal_Warrior.jpg "Battle at Hadrian's Wall")
 
 ## Dates
 
 - 27.11.2017-04.12.2017
 - 07.05.2018-13.05.2018
 - 03.09.2018-09.09.2018
+- 08.03.2026-14.03.2026
+
+![Battle at Hadrian's Wall](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Battle_at_Hadrians_Wall_banner.jpg "Battle at Handrian's Wall")
+
+![Battle at Hadrian's Wall](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Battle_at_Hadrians_Wall_description.png "Battle at Hadrian's Wall")
 
 ## Description
 
@@ -48,13 +49,17 @@ Your strength and will to win is needed to keep the Wall from breaking down!
 - As soon as all enemies of the first wave are beaten (= the counter reaches e.g. 1000/1000), the next wave is available to attack.
 - At the end there is the leader of the enemies to beat, one single boss, but with an enormous amount of health points which all gladiators have to beat down fight by fight!
 - From the start of the event you have 7 days to beat all enemies including the boss. If you don't succeed in that time frame, the battle / event was lost.
- 
-**Announcement**
 
-    ![](https://s76-en.gladiatus.gameforge.com/cdn/img/npc/imperator.jpg) **To the weapons!**   A huge attack is taking place on Hadrian`s wall and therefore also at Rome`s borders. The emperor has called upon all men fit enough for military service to defend the border. Hadrian`s wall must not fall under any circumstances.   **Who can participate?**
+## Announcement
+
+    ![](https://s76-en.gladiatus.gameforge.com/cdn/img/npc/imperator.jpg)
+    
+    **To the weapons!**   A huge attack is taking place on Hadrian\`s wall and therefore also at Rome\`s borders. The emperor has called upon all men fit enough for military service to defend the border. Hadrian\`s wall must not fall under any circumstances.
+    
+## Who can participate?
 
 - All players with level 7 and higher.
- 
+
 **Additional information:**
 
 - The event starts and players have **7 days** to finish the event
@@ -62,7 +67,7 @@ Your strength and will to win is needed to keep the Wall from breaking down!
 - There is a highscore for each enemy, with a reward for best player of each wave of enemies, and one overall highscore.
 - The highscore is sorted by points, if you win a fight you receive 1 point, if you lose you receive none.
 - **Attention: ALL rewards are only given if the event was finished successfully!**
- 
+
 ## Rewards
 
 Ranking is the usual that we've seen from other events. 1 kill = 1 point. There is small a price for 5,10,15,20,25,30,35,40,45 and 50 points reached
@@ -83,8 +88,6 @@ Here is an example of a Grindstone - [click](https://gladiatusfansite.blob.core.
 
 **Wave 3** - ![Most points against opponent 3](https://gladiatusfansite.blob.core.windows.net/images/Events/reward_3.png "Most points against opponent 3") Most points against opponent 3 - Buff for **6 days** after the event is over which grants: **100% more winner's bonus in all arenas** as well as a **10% attribute increase** (str,dex etc)
 
- 
-
 **Wave 4** ![Most points against opponent 4](https://gladiatusfansite.blob.core.windows.net/images/Events/reward_4.png "Most points against opponent 4") - Most points against opponent 4 - **113000**![111,111 Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "111,111 Gold") (increases with your character level)
 
  - ![Most points against opponent 4](https://gladiatusfansite.blob.core.windows.net/images/Events/reward_4.png "Most points against opponent 4") - Most points against opponent 4 - **113000**![111,111 Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "111,111 Gold") (increases with your character level)[4th opponent event prize](https://gladiatusfansite.blob.core.windows.net/images/Events/Event_4th_reward.png "4th opponent event prize")
@@ -101,8 +104,6 @@ Because the event is a wave-based expedition, at first you will only have Oppone
 
 ![Event needed kills](https://gladiatusfansite.blob.core.windows.net/images/Events/Event_numbers.png "Event needed kills")
 
- 
-
 The X amount of kills needed for each wave are determined by the server population and participants in the event. If you are on a lower populated server, the kill amount needed to progress to the next weave + the health of the boss will be reduced
 
 The math behind the number of required kills compared to other waves is the following:
@@ -112,29 +113,15 @@ The math behind the number of required kills compared to other waves is the foll
 - Wave 3 - 30% of the amount needed for Wave 1
 - Boss - HP is based on server population
 
-## Tribal Warrior
-
-![Tribal Warrior](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Tribal_Warrior.jpg)
-
-![Tribal Warrior stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Tribal_Warrior_stats.png)
-
-## Tribal Fighter
-
-![Tribal Fighter](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Tribal_Fighter.jpg)
-
-![Tribal Fighter stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Tribal_Fighter_stats.png)
-
-## Butcher
-
-![Butcher](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Butcher.jpg)
-
-![Butcher stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Butcher_stats.png)
-
-## Cruithne
-
-![Cruithne](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Cruithne.jpg)
-
-![Cruithne stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Cruithne_stats.png)
+| Attribute | Enemy 1 | Enemy 2 | Enemy 3 | Boss |
+|-----------|-----|------|------|-------------|
+| **Name** | <div className="player_name_bg"><div className="playername">Blood Wolf</div></div> | <div className="player_name_bg"><div className="playername">Tribal Fighter</div></div> | <div className="player_name_bg"><div className="playername">Butcher</div></div> | <div className="player_name_bg"><div className="playername">Cruithne</div></div> |
+| **Image** | ![Tribal Warrior](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Tribal_Warrior.jpg) | ![Tribal Fighter](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Tribal_Fighter.jpg) | ![Butcher](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Butcher.jpg) | <div style={{position: 'relative', display: 'inline-block'}}>![Cruithne](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Cruithne.jpg)<img src="https://gladiatusfansite.blob.core.windows.net/images/Expeditions/boss_picture.png" alt="Boss Frame" style={{position: 'absolute', top: 0, left: 0, width: '100%', height: '100%', pointerEvents: 'none'}} /></div> |
+| ![Level](https://gladiatusfansite.blob.core.windows.net/images/icon_level.gif "Level") **Level** | Same as Character | Same as Character | Same as Character | Same as Character |
+| ![Gold](https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif "Gold") **Gold** | Depending on level | Depending on level | Depending on level | Depending on level |
+| ![Experience](https://gladiatusfansite.blob.core.windows.net/images/icon_level_small.gif "Experience") **Experience** | Depending on level | Depending on level | Depending on level | Depending on level |
+| ![Honour](https://gladiatusfansite.blob.core.windows.net/images/icon_honor_small.gif "Honour") **Honour** | Depending on level | Depending on level | Depending on level | Depending on level |
+| Stats | ![Tribal Warrior stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Tribal_Warrior_stats.png) | ![Tribal Fighter stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Tribal_Fighter_stats.png) | ![Butcher stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Butcher_stats.png) | ![Cruithne stats](https://gladiatusfansite.blob.core.windows.net/images/Events/Battle_at_Hadrians_Wall/Cruithne_stats.png) |
 
 ## Tips & Tricks
 
@@ -174,6 +161,6 @@ The event is also followed by a server-wide buff which lasts 4 hours:
 
 ![Winner's buff](https://gladiatusfansite.blob.core.windows.net/images/Events/Winnders_buff.png "Winner's buff")
 
-![](https://gladiatusfansite.blob.core.windows.net/images/Events/reconstruction-end.png)
+![Reconstruction End](https://gladiatusfansite.blob.core.windows.net/images/Events/reconstruction-end.png "Reconstruction End")
 
 **Hadrian`s Wall is secure** - Hadrian's Wall was successfully defended. Rest on your laurels and enjoy the rewards that the Roman people have bestowed upon you.
