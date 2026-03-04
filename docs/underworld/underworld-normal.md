@@ -11,9 +11,9 @@ redirects:
   - /underworld-normal
 ---
 
-# Underworld Normal Difficulty
+## Underworld
 
-**Underworld** has 4 areas. Once you arrive, you are not there yet. The Hermit drops you off at the gates of the Underworld and from there you are on your own.
+Underworld has 4 areas. Once you arrive, you are not there yet. The Hermit drops you off at the gates of the Underworld and from there you are on your own.
 
 Remember that Normal difficulty enemies are **level 81** and they award Gold.
 
@@ -48,7 +48,7 @@ This has proven to be a real problem because what are the chances to beat an exa
 
 ![Mirror Image rewards](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Normal/Mirror_image_reward.png)
 
-\* with ![Bonus Gold](https://gladiatusfansite.blob.core.windows.net/images/bonus_gold.jpg) ![Bonus Honour](https://gladiatusfansite.blob.core.windows.net/images/bonus_honour.jpg)
+* with ![Bonus Gold](https://gladiatusfansite.blob.core.windows.net/images/bonus_gold.jpg) ![Bonus Honour](https://gladiatusfansite.blob.core.windows.net/images/bonus_honour.jpg)
 
 ![Yourself stats](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Mirrored_image_stats2.png)
 
@@ -88,7 +88,7 @@ Your next opponent are the Dead Souls themselves.
 
 ![Dead Souls rewards](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Normal/Dead_Souls_reward.png)
 
-\* with ![Bonus XP](https://gladiatusfansite.blob.core.windows.net/images/bonus_exp.jpg)
+* with ![Bonus XP](https://gladiatusfansite.blob.core.windows.net/images/bonus_exp.jpg)
 
 ![Dead Souls stats](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Normal/Dead_Souls_stats2.png)
 
@@ -134,7 +134,7 @@ Your first opponent is Cerberus. Often called the "hound of Hades", is a monstro
 
 ![Cerberus rewards](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Normal/Cerberus_reward.png)
 
-\* with ![Bonus XP](https://gladiatusfansite.blob.core.windows.net/images/bonus_exp.jpg)
+* with ![Bonus XP](https://gladiatusfansite.blob.core.windows.net/images/bonus_exp.jpg)
 
 ![Cerberus stats](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Normal/Cerberus_stats2.png)
 
@@ -172,7 +172,7 @@ Aeacus is out, time to face the next brother.
 
 ![Rhadamanthus rewards](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Normal/Rhadamanthus_reward.png)
 
-\* with ![Bonus XP](https://gladiatusfansite.blob.core.windows.net/images/bonus_exp.jpg)
+* with ![Bonus XP](https://gladiatusfansite.blob.core.windows.net/images/bonus_exp.jpg)
 
 ![Rhadamanthus stats](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Normal/Rhadamanthus_stats2.png)
 
@@ -216,7 +216,7 @@ Your first opponent in Tartarus.
 
 ![Hydra rewards](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Normal/Hydra_reward.png)
 
-\* with ![Bonus Honour](https://gladiatusfansite.blob.core.windows.net/images/bonus_honour.jpg)
+* with ![Bonus Honour](https://gladiatusfansite.blob.core.windows.net/images/bonus_honour.jpg)
 
 ![Hydra stats](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Normal/Hydra_stats2.png)
 
@@ -301,7 +301,7 @@ The first opponent you find in Erebus is Proserpina. Proserpina is an ancient Ro
 
 ![Proserpina Reward](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Normal/Proserpina_reward.png "Proserpina Reward")
 
-\* with ![Bonus Honour](https://gladiatusfansite.blob.core.windows.net/images/bonus_honour.jpg "Bonus Honour")
+* with ![Bonus Honour](https://gladiatusfansite.blob.core.windows.net/images/bonus_honour.jpg "Bonus Honour")
 
 ![Proserpina stats](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Normal/Proserpina_stats2.png)
 
@@ -321,7 +321,7 @@ Your next opponent is Alecto and Megaera. The sisters of Tisiphone (Vengeance). 
 
 ![Alecto and Megaera rewards](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Normal/Alecto_and_Megaera_reward.png)
 
-\* with ![Bonus Honour](https://gladiatusfansite.blob.core.windows.net/images/bonus_honour.jpg "Bonus Honour")
+* with ![Bonus Honour](https://gladiatusfansite.blob.core.windows.net/images/bonus_honour.jpg "Bonus Honour")
 
 ![Alecto and Megaera stats](https://gladiatusfansite.blob.core.windows.net/images/Underworld/Normal/Alecto_and_Megaera_stats2.png)
 
@@ -378,3 +378,4 @@ Defeating Dis Pater is no easy job but the reward is here. The moment you kill h
 Read more about the details of the costume in **[Dis Pater Normal Costume](/costumes/underworld-costumes#normal-costume "Dis Pater Normal Costume")**
 
 **Enjoy!**
+
