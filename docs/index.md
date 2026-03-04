@@ -25,6 +25,10 @@ Hey guys. We have a couple of open questions that need answering. Like formulas 
 
 ## Latest Gladiatus News
 
+### Big March 2026 Update - Britannia Dungeons
+
+- After 10 years of waiting, Britannia dungeons will come to Gladiatus on 18 March 2026 - [Britannia Dungeons](https://forum.gladiatus.gameforge.com/forum/thread/13133-new-update-battle-for-britannia/ "Britannia Dungeons")
+
 ### Battle at Hadrian's Wall event
 
 - 08.03.2026 00:00:00 - 14.03.2026 23:59:59 - The Hadrian's wall event - [Battle at Hadrian's Wall](/events/battle-at-hadrian-s-wall "Battle at Hadrian's Wall")
@@ -160,6 +164,10 @@ Also there will be a Happy Day Event
 - Find what the formula is for gold, durability and conditiong is when prefix/suffix or both are applied to an item
 
 ## Latest website news
+
+### 04.03.2026
+
+- Big news on Dungeons for Britannia from Gameforge. I added all the pages required with placeholder info
 
 ### 03.03.2026
 

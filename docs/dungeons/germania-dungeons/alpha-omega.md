@@ -31,7 +31,7 @@ Advanced Dungeon: **Yes, This is the Advanced Dungeon of** [Late Revenge](/dunge
 
 Previous Dungeon: [Late Revenge](/dungeons/germania-dungeons/late-revenge "Late Revenge") (Level 112)
 
-Next Dungeon: **None, this is the last and the highest level dungeon in the game**
+Next Dungeon: [Forest Fortress](/expeditions/britannia-expeditions/forest-fortress "Forest Fortress") (Level 120)
 
 ## Description  
   

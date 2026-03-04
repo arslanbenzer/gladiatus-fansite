@@ -17,7 +17,7 @@ Dungeons in Gladiatus are adventures against mighty enemies. You and your group 
 ## Dungeon Facts
 
 - Dungeons become available at level 10
-- There are 25 dungeons in the game. Waiting for Britannia dungeons
+- There are 34 dungeons in the game
 - Dungeon opponents are harder than expedition opponents because you fight them with a 5 member party of your dungeon version of your characters + 4 NPCs
 - Defeating the dungeon boss usually is really hard if you try it on the same level as the entry level, except for the first two dungeons
 - Dungeon boss drops a minimum of **Blue** quality item with 100% chance to drop an item
@@ -40,7 +40,7 @@ Dungeons in Gladiatus are adventures against mighty enemies. You and your group 
 
 **[Germania](/dungeons/germania-dungeons "Germania Dungeons") (Level 40/45/50/80/102/112/120)**
 
-**[Britannia](/dungeons/britannia-dungeons "Britannia dungeons") (Level 120+ No dungeons in Britannia yet)**
+**[Britannia](/dungeons/britannia-dungeons "Britannia dungeons") (Level 120/135/150/165/180/195/210/230/250)**
 
 ## Dungeon Table
 
@@ -71,6 +71,15 @@ Dungeons in Gladiatus are adventures against mighty enemies. You and your group 
 | [Externsteine](/dungeons/germania-dungeons/externsteine) | Germania | 102 | [The Green Forest (A)](/expeditions/germania-expeditions/the-green-forest) | 6 | 6 | 6 | 111 | 113 | 112 | 107 | 117 | 112 | Wrath of the Mountain | 109 | 123 | 116 | Hard |
 | [Late Revenge](/dungeons/germania-dungeons/late-revenge) | Germania | 112 | [Dragon Remains](/expeditions/germania-expeditions/dragon-remains) | 18 | 18 | 18 | 121 | 123 | 122 | 117 | 127 | 122 | Valerius Filius Gustavo | 120 | 133 | 126.5 | Medium |
 | [Alpha & Omega](/dungeons/germania-dungeons/alpha-omega) | Germania | 120 | [Dragon Remains (A)](/expeditions/germania-expeditions/dragon-remains) | 20 | 20 | 20 | 129 | 131 | 130 | 127 | 133 | 130 | Dracolich | 128 | 141 | 134.5 | Hard |
+| [Storming the Coast](/dungeons/britannia-dungeons/storming-the-coast) | Britannia | 120 | [Bank of the Thames](/expeditions/britannia-expeditions/bank-of-the-thames) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
+| [The Corrupted World Tree](/dungeons/britannia-dungeons/the-corrupted-world-tree) | Britannia | 135 | [Forest Fortress](/expeditions/britannia-expeditions/forest-fortress) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
+| [Marshes of Death](/dungeons/britannia-dungeons/marshes-of-death) | Britannia | 150 | [The Moor](/expeditions/britannia-expeditions/the-moor) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
+| [The Final Bastion](/dungeons/britannia-dungeons/the-final-bastion) | Britannia | 165 | [Camp Cassivellaunus](/expeditions/britannia-expeditions/camp-cassivellaunus) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
+| [Before the Dawn](/dungeons/britannia-dungeons/before-the-dawn) | Britannia | 180 | [Kent](/expeditions/britannia-expeditions/kent) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
+| [Madness in the Fog](/dungeons/britannia-dungeons/madness-in-the-fog) | Britannia | 195 | [The Ford](/expeditions/britannia-expeditions/the-ford) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
+| [Ashes of War](/dungeons/britannia-dungeons/ashes-of-war) | Britannia | 210 | [Camulodunum](/expeditions/britannia-expeditions/camulodunum) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
+| [Forest Ambush](/dungeons/britannia-dungeons/forest-ambush) | Britannia | 230 | [Cambria](/expeditions/britannia-expeditions/cambria) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
+| [The Great Ritual](/dungeons/britannia-dungeons/the-great-ritual) | Britannia | 250 | [Mona Isle](/expeditions/britannia-expeditions/mona-isle) | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | ??? | Unknown | ??? | ??? | ??? | ??? |
 
 ## Dungeon Arc
 
@@ -88,7 +97,7 @@ In short - **Italy -> Africa -> Germania -> Italy -> Africa -> Germania**. Here 
 8. Weirdly, at level 92 Fairground's advanced dungeon unlocks - [Sasama's last journey](/dungeons/africa-dungeons/sasama-s-last-journey "Sasama's last journey"). It just 2 levels after In the Heart of Decay so you might not be ready to face the mighty boss in Sasama's last journey. Just take your time, there isn't any reason to hurry. Sasama's last journey is the final dungeon in Africa and you next dungeon is in Germania and is in 10 levels on 102. Make sure that you start farming Sasama's last journey as soon as possible. Item level drop there is high and will prepare you for the high levels (100+)
 9. After a long fight in Sasama's last journey, (10 levels from 92 to 102) you will travel to Germania and face the first of the high level dungeons in Germania - [Externsteine](/dungeons/germania-dungeons/externsteine "Externsteine"). The dungeon is quick and offers high level drops and most of all - **Orange** drops will now be a lot more frequent than before. The bad news is that from Externsteine on level 102, your next dungeon is again 10 levels ahead - on 112. And another bad news is that the it will take you more than a year of regular playing to get from 102 to 112 so prepare yourself with patience and enjoy the game. It is very exciting at level 102+
 10. Once you reach the long-waited 112 level you can now enter the last dungeon in the game - [Late Revenge](/dungeons/germania-dungeons/late-revenge "Late Revenge"). Item level drops would seem significantly higher than Externsteine and will reward you well if you are lucky with some more **Orange** drops. However, it is known that Late Revenge seems to be a lot lower in terms of **Orange** drops chance than Externsteine. Not to worry, by level 112 Forging will be a huge part of the game and what drops from the dungeon will matter but will worry you a lot less
-11. Another 8 levels after (on level 120) awaits you the last (currently) dungeon in the game. The advanced dungeon of Late Revenge - **[Alpha & Omega](/dungeons/germania-dungeons/alpha-omega "Alpha & Omega")**. However, you will be at a crossroad. To stay and fight in Germania and try yourself in Alpha & Omega or travel to the new continent - Britannia where the expeditions are legendary but there are no dungeons yet.
+11. Another 8 levels after (on level 120) awaits you the last (currently) dungeon in the game. The advanced dungeon of Late Revenge - **[Alpha & Omega](/dungeons/germania-dungeons/alpha-omega "Alpha & Omega")**. However, you will be at a crossroad. To stay and fight in Germania and try yourself in Alpha & Omega or travel to the new continent - Britannia where the expeditions are legendary and now Britannia also hosts its own dungeons starting from [Storming the Coast](/dungeons/britannia-dungeons/storming-the-coast "Storming the Coast") at level 120.
 
 ## Dungeons and bosses sorted by Level
 
@@ -343,3 +352,75 @@ Hit chance, Double hit, Chance for critical hit, Chance to block a hit, Chance t
 **Location:** Germania – Dragon Remains – Advanced
 
 ![Dracolich](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Alpha_and_Omega/Dracolich.jpg)
+
+---
+
+**Name of the dungeon:** [Storming the Coast](/dungeons/britannia-dungeons/storming-the-coast "Storming the Coast")
+**Name of the Boss:** Unknown
+**Level:** ???-???
+**Required Level for the area:** 120
+**Location:** Britannia – Bank of the Thames – Normal
+
+---
+
+**Name of the dungeon:** [The Corrupted World Tree](/dungeons/britannia-dungeons/the-corrupted-world-tree "The Corrupted World Tree")
+**Name of the Boss:** Unknown
+**Level:** ???-???
+**Required Level for the area:** 135
+**Location:** Britannia – Forest Fortress – Normal
+
+---
+
+**Name of the dungeon:** [Marshes of Death](/dungeons/britannia-dungeons/marshes-of-death "Marshes of Death")
+**Name of the Boss:** Unknown
+**Level:** ???-???
+**Required Level for the area:** 150
+**Location:** Britannia – The Moor – Normal
+
+---
+
+**Name of the dungeon:** [The Final Bastion](/dungeons/britannia-dungeons/the-final-bastion "The Final Bastion")
+**Name of the Boss:** Unknown
+**Level:** ???-???
+**Required Level for the area:** 165
+**Location:** Britannia – Camp Cassivellaunus – Normal
+
+---
+
+**Name of the dungeon:** [Before the Dawn](/dungeons/britannia-dungeons/before-the-dawn "Before the Dawn")
+**Name of the Boss:** Unknown
+**Level:** ???-???
+**Required Level for the area:** 180
+**Location:** Britannia – Kent – Normal
+
+---
+
+**Name of the dungeon:** [Madness in the Fog](/dungeons/britannia-dungeons/madness-in-the-fog "Madness in the Fog")
+**Name of the Boss:** Unknown
+**Level:** ???-???
+**Required Level for the area:** 195
+**Location:** Britannia – The Ford – Normal
+
+---
+
+**Name of the dungeon:** [Ashes of War](/dungeons/britannia-dungeons/ashes-of-war "Ashes of War")
+**Name of the Boss:** Unknown
+**Level:** ???-???
+**Required Level for the area:** 210
+**Location:** Britannia – Camulodunum – Normal
+
+---
+
+**Name of the dungeon:** [Forest Ambush](/dungeons/britannia-dungeons/forest-ambush "Forest Ambush")
+**Name of the Boss:** Unknown
+**Level:** ???-???
+**Required Level for the area:** 230
+**Location:** Britannia – Cambria – Normal
+
+---
+
+**Name of the dungeon:** [The Great Ritual](/dungeons/britannia-dungeons/the-great-ritual "The Great Ritual")
+**Name of the Boss:** Unknown
+**Level:** ???-???
+**Required Level for the area:** 250
+**Location:** Britannia – Mona Isle – Normal
