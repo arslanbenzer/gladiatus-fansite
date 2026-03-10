@@ -94,6 +94,27 @@ a:hover {
   filter: brightness(1.9);
 }
 
+/* "New" badge on navbar items */
+.navbar-item--new {
+  position: relative;
+}
+
+.navbar-item--new::after {
+  content: 'NEW';
+  position: absolute;
+  top: 2px;
+  right: -4px;
+  background: #b71c1c;
+  color: #fff;
+  font-size: 8px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  padding: 1px 4px;
+  border-radius: 3px;
+  line-height: 1.4;
+  pointer-events: none;
+}
+
 /* Keep navbar links clean */
 .navbar a {
   text-decoration: none;

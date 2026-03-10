@@ -137,6 +137,12 @@ const config: Config = {
           label: 'Calculators',
         },
         {
+          to: '/loot-explorer',
+          position: 'left',
+          label: 'Loot Explorer',
+          className: 'navbar-item--new',
+        },
+        {
           to: '/item-planner',
           position: 'left',
           label: 'Item Planner',

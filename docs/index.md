@@ -165,6 +165,10 @@ Also there will be a Happy Day Event
 
 ## Latest website news
 
+### 10.03.2026
+
+- New tool - Loot Explorer. Let's you explore all the possible combination of items in Gladiatus, searching for loot that you need
+
 ### 04.03.2026
 
 - Big news on Dungeons for Britannia from Gameforge. I added all the pages required with placeholder info

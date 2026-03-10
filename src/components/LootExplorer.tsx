@@ -259,7 +259,7 @@ function buildPageItems(totalPages: number, currentPage: number): PageItem[] {
 
 // ─── Main component ────────────────────────────────────────────────────────
 
-export default function ItemLevelChecker() {
+export default function LootExplorer() {
   const [characterLevel, setCharacterLevel] = useState<number>(1);
   const [selectedSlot, setSelectedSlot]     = useState<ItemType>('weapons');
   const [selectedRarity, setSelectedRarity] = useState<ItemRarity>('green');
@@ -272,7 +272,9 @@ export default function ItemLevelChecker() {
   const [filterStat, setFilterStat]         = useState<string>('');
   const [page, setPage] = useState(0);
 
-  const maxLevel = characterLevel + 16;
+  const maxLevel = characterLevel >= 33
+    ? characterLevel + 16
+    : Math.ceil(1.25 * characterLevel + 7.75);
   const resetPage = () => setPage(0);
 
   const bases = useMemo(
@@ -601,6 +603,11 @@ export default function ItemLevelChecker() {
 
             const statValue = sortBy === 'level' ? 0 : getComboStat(combo, sortBy);
 
+            const plannerParams = new URLSearchParams({ base: combo.base.name });
+            if (combo.prefix) plannerParams.set('prefix', combo.prefix.name);
+            if (combo.suffix) plannerParams.set('suffix', combo.suffix.name);
+            const plannerHref = `/item-planner?${plannerParams.toString()}`;
+
             return (
               <div key={combo.key} style={{ textAlign: 'center', width: '64px' }}>
                 <Item
@@ -614,13 +621,14 @@ export default function ItemLevelChecker() {
                 <div
                   style={{
                     fontSize: '10px',
-                    color: 'var(--ifm-font-color-base)',
                     marginTop: '4px',
                     lineHeight: '1.3',
                     wordBreak: 'break-word',
                   }}
                 >
-                  {fullName}
+                  <a href={plannerHref} target="_blank" rel="noopener noreferrer" style={{ color: 'var(--ifm-font-color-base)', textDecoration: 'none' }}>
+                    {fullName}
+                  </a>
                 </div>
                 <div style={{ fontSize: '10px', color: 'var(--ifm-font-color-base)' }}>
                   Lv.{combo.finalLevel}
