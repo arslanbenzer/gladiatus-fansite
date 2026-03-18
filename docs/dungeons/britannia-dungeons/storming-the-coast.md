@@ -106,6 +106,8 @@ Defeating the last Ambush Champion completes quest 2
 
 The last part of the dungeon is to face the boss. Quest is called **Defeat the leader**.
 
+![Phase 3](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Britannia/storming-the-coast/phase3.jpg)
+
 <div className="player_name_bg">
   <div className="playername">Dubnovellaunus</div>
 </div>
