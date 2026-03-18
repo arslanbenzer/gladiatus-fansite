@@ -19,11 +19,11 @@ Click on each dungeon link (+picture) to open the full guide of the dungeon
 
 **Level 120 - [Storming the Coast](/dungeons/britannia-dungeons/storming-the-coast "Storming the Coast") (Bank of the Thames)**
 
-<!-- [![Dark Catacombs](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Dark_Catacombs/Dark_Catacombs_Overview2.png "Dark Catacombs")](/dungeons/britannia-dungeons/dark-catacombs "Dark Catacombs") -->
+[![Storming the Coast](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Britannia/storming-the-coast/storming-the-coast-overview.jpg "Storming the Coast")](/dungeons/britannia-dungeons/storming-the-coast "Storming the Coast")
 
 **Boss:**
 
-Unknown (Level ??-??)
+Dubnovellaunus (Level 134-136)
 
 ---
 
@@ -35,7 +35,7 @@ Unknown (Level ??-??)
 
 **Boss:**
 
-Unknown (Level ??-??)
+Evil Fairy Queen Clíodhna (Level ??-??)
 
 ---
 

@@ -105,322 +105,332 @@ Hit chance, Double hit, Chance for critical hit, Chance to block a hit, Chance t
 
 ---
 
-**Name of the dungeon:** [Gustavos Country House](/dungeons/italy-dungeons/gustavos-country-house "Gustavos Country House")
-**Name of the Boss:** King Gustavo
-**Level:** 9-11
-**Required Level for the area:** 10
+**Name of the dungeon:** [Gustavos Country House](/dungeons/italy-dungeons/gustavos-country-house "Gustavos Country House")  
+**Name of the Boss:** King Gustavo  
+**Level:** 9-11  
+**Required Level for the area:** 10  
 **Location:** Italy – Grimwood – Normal
 
 ![King Gustavo](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/Gustavos_Country_House/King_Gustavo.jpg)
 
 ---
 
-**Name of the dungeon:** [On the Run](/dungeons/italy-dungeons/on-the-run "On the Run")
-**Name of the Boss:** Gnaeus Aurelius Flavio
-**Level:** 14-16
-**Required Level for the area:** 10
+**Name of the dungeon:** [On the Run](/dungeons/italy-dungeons/on-the-run "On the Run")  
+**Name of the Boss:** Gnaeus Aurelius Flavio  
+**Level:** 14-16  
+**Required Level for the area:** 10  
 **Location:** Italy – Pirate Harbour – Normal
 
 ![Gnaeus Aurelius Flavio](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/On_the_Run/Gnaeus_Aurelius_Flavio.jpg)
 
 ---
 
-**Name of the dungeon:** [The Dragon Stronghold](/dungeons/italy-dungeons/the-dragon-stronghold "The Dragon Stronghold")
-**Name of the Boss:** Oribas
-**Level:** 19-21
-**Required Level for the area:** 10
+**Name of the dungeon:** [The Dragon Stronghold](/dungeons/italy-dungeons/the-dragon-stronghold "The Dragon Stronghold")  
+**Name of the Boss:** Oribas  
+**Level:** 19-21  
+**Required Level for the area:** 10  
 **Location:** Italy – Misty Mountains – Normal
 
 ![Oribas](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/The_Dragon_Stronghold/Oribas.jpg)
 
 ---
 
-**Name of the dungeon:** [The Cave of Dark intrigue](/dungeons/italy-dungeons/the-cave-of-dark-intrigue "The Cave of Dark intrigue")
-**Name of the Boss:** Hell Dog
-**Level:** 24-26
-**Required Level for the area:** 15
+**Name of the dungeon:** [The Cave of Dark intrigue](/dungeons/italy-dungeons/the-cave-of-dark-intrigue "The Cave of Dark intrigue")  
+**Name of the Boss:** Hell Dog  
+**Level:** 24-26  
+**Required Level for the area:** 15  
 **Location:** Italy – Wolf Cave – Normal
 
 ![Hell Dog](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/The_Cave_of_Dark_intrigue/Hell_Dog.jpg)
 
 ---
 
-**Name of the dungeon:** [Temple of Perdition](/dungeons/africa-dungeons/temple-of-perdition "Temple of Perdition")
-**Name of the Boss:** Themba
-**Level:** 29-31
-**Required Level for the area:** 20
+**Name of the dungeon:** [Temple of Perdition](/dungeons/africa-dungeons/temple-of-perdition "Temple of Perdition")  
+**Name of the Boss:** Themba  
+**Level:** 29-31  
+**Required Level for the area:** 20  
 **Location:** Africa – Voodoo Temple – Normal
 
 ![Themba](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Temple_of_Perdition/Themba.jpg)
 
 ---
 
-**Name of the dungeon:** [Abducted](/dungeons/africa-dungeons/abducted "Abducted")
-**Name of the Boss:** Shetu
-**Level:** 34-36
-**Required Level for the area:** 25
+**Name of the dungeon:** [Abducted](/dungeons/africa-dungeons/abducted "Abducted")  
+**Name of the Boss:** Shetu  
+**Level:** 34-36  
+**Required Level for the area:** 25  
 **Location:** Africa – Bridge – Normal
 
 ![Shetu](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Abducted/Shetu.jpg)
 
 ---
 
-**Name of the dungeon:** [Chamber of Pyro](/dungeons/africa-dungeons/chamber-of-pyro "Chamber of Pyro")
-**Name of the Boss:** Pyro
-**Level:** 39-41
-**Required Level for the area:** 30
+**Name of the dungeon:** [Chamber of Pyro](/dungeons/africa-dungeons/chamber-of-pyro "Chamber of Pyro")  
+**Name of the Boss:** Pyro  
+**Level:** 39-41  
+**Required Level for the area:** 30  
 **Location:** Africa – Blood Cave – Normal
 
 ![Pyro](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Chamber_of_Pyro/Pyro.jpg)
 
 ---
 
-**Name of the dungeon:** [Poisoned Country](/dungeons/africa-dungeons/poisoned-country "Poisoned Country")
-**Name of the Boss:** Nithotep
-**Level:** 44-46
-**Required Level for the area:** 35
+**Name of the dungeon:** [Poisoned Country](/dungeons/africa-dungeons/poisoned-country "Poisoned Country")  
+**Name of the Boss:** Nithotep  
+**Level:** 44-46  
+**Required Level for the area:** 35  
 **Location:** Africa – Lost Harbour – Normal
 
 ![Nithotep](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Poisoned_Country/Nithotep.jpg)
 
 ---
 
-**Name of the dungeon:** [Dark Catacombs](/dungeons/germania-dungeons/dark-catacombs "Dark Catacombs")
-**Name of the Boss:** Lord Aesteron
-**Level:** 49-51
-**Required Level for the area:** 40
+**Name of the dungeon:** [Dark Catacombs](/dungeons/germania-dungeons/dark-catacombs "Dark Catacombs")  
+**Name of the Boss:** Lord Aesteron  
+**Level:** 49-51  
+**Required Level for the area:** 40  
 **Location:** Germania – Cave Temple – Normal
 
 ![Lord Aesteron](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Dark_Catacombs/Lord_Aesteron.jpg)
 
 ---
 
-**Name of the dungeon:** [With all its might](/dungeons/germania-dungeons/with-all-its-might "With all its might")
-**Name of the Boss:** Oak Lord
-**Level:** 54-56
-**Required Level for the area:** 45
+**Name of the dungeon:** [With all its might](/dungeons/germania-dungeons/with-all-its-might "With all its might")  
+**Name of the Boss:** Oak Lord  
+**Level:** 54-56  
+**Required Level for the area:** 45  
 **Location:** Germania – The Green Forest – Normal
 
 ![Oak Lord](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/With_all_its_might/Oak_Lord.jpg)
 
 ---
 
-**Name of the dungeon:** [Viking Camp](/dungeons/germania-dungeons/viking-camp "Viking Camp")
-**Name of the Boss:** Homo Nautilus
-**Level:** 59-61
-**Required Level for the area:** 50
+**Name of the dungeon:** [Viking Camp](/dungeons/germania-dungeons/viking-camp "Viking Camp")  
+**Name of the Boss:** Homo Nautilus  
+**Level:** 59-61  
+**Required Level for the area:** 50  
 **Location:** Germania – Cursed Village – Normal
 
 ![Homo Nautilus](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Viking_Camp/Homo_Nautilus.jpg)
 
 ---
 
-**Name of the dungeon:** [Hidden Grave](/dungeons/italy-dungeons/hidden-grave "Hidden Grave")
-**Name of the Boss:** Nekromar
-**Level:** 59-61
-**Required Level for the area:** 60
+**Name of the dungeon:** [Hidden Grave](/dungeons/italy-dungeons/hidden-grave "Hidden Grave")  
+**Name of the Boss:** Nekromar  
+**Level:** 59-61  
+**Required Level for the area:** 60  
 **Location:** Italy – Ancient Temple – Normal
 
 ![Nekromar](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/Hidden_Grave/Nekromar.jpg)
 
 ---
 
-**Name of the dungeon:** [In enemy hands](/dungeons/italy-dungeons/in-enemy-hands "In enemy hands")
-**Name of the Boss:** Trakovar
-**Level:** 74-76
-**Required Level for the area:** 65
+**Name of the dungeon:** [In enemy hands](/dungeons/italy-dungeons/in-enemy-hands "In enemy hands")  
+**Name of the Boss:** Trakovar  
+**Level:** 74-76  
+**Required Level for the area:** 65  
 **Location:** Italy – Barbarian Village – Normal
 
 ![Trakovar](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/In_enemy_hands/Trakovar.jpg)
 
 ---
 
-**Name of the dungeon:** [The Last Resort](/dungeons/italy-dungeons/the-last-resort "The Last Resort")
-**Name of the Boss:** Captain Kratos
-**Level:** 77-79
-**Required Level for the area:** 68
+**Name of the dungeon:** [The Last Resort](/dungeons/italy-dungeons/the-last-resort "The Last Resort")  
+**Name of the Boss:** Captain Kratos  
+**Level:** 77-79  
+**Required Level for the area:** 68  
 **Location:** Italy – Pirate Harbour – Advanced
 
 ![Captain Kratos](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/The_Last_Resort/Captain_Kratos.jpg)
 
 ---
 
-**Name of the dungeon:** [The True Owner](/dungeons/italy-dungeons/the-true-owner "The True Owner")
-**Name of the Boss:** Gernasch
-**Level:** 79-81
-**Required Level for the area:** 70
+**Name of the dungeon:** [The True Owner](/dungeons/italy-dungeons/the-true-owner "The True Owner")  
+**Name of the Boss:** Gernasch  
+**Level:** 79-81  
+**Required Level for the area:** 70  
 **Location:** Italy – Misty Mountains – Advanced
 
 ![Gernasch](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/The_True_Owner/Gernasch.jpg)
 
 ---
 
-**Name of the dungeon:** [Gioll Passage](/dungeons/italy-dungeons/gioll-passage "Gioll Passage")
-**Name of the Boss:** Fenrirson
-**Level:** 82-84
-**Required Level for the area:** 73
+**Name of the dungeon:** [Gioll Passage](/dungeons/italy-dungeons/gioll-passage "Gioll Passage")  
+**Name of the Boss:** Fenrirson  
+**Level:** 82-84  
+**Required Level for the area:** 73  
 **Location:** Italy – Wolf Cave – Advanced
 
 ![Fenrirson](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/Gioll_Passage/Fenrirson.jpg)
 
 ---
 
-**Name of the dungeon:** [Zagrash's Fort](/dungeons/italy-dungeons/zagrashs-fort "Zagrash's Fort")
-**Name of the Boss:** Zagrash
-**Level:** 87-89
-**Required Level for the area:** 78
+**Name of the dungeon:** [Zagrash's Fort](/dungeons/italy-dungeons/zagrashs-fort "Zagrash's Fort")  
+**Name of the Boss:** Zagrash  
+**Level:** 87-89  
+**Required Level for the area:** 78  
 **Location:** Italy – Barbarian Village – Advanced
 
 ![Zagrash](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Italy/Zagrashs_Fort/Zagrash.jpg)
 
 ---
 
-**Name of the dungeon:** [Mysterious Laboratory](/dungeons/germania-dungeons/mysterious-laboratory "Mysterious Laboratory")
-**Name of the Boss:** Frank N.Stein
-**Level:** 89-91
-**Required Level for the area:** 80
+**Name of the dungeon:** [Mysterious Laboratory](/dungeons/germania-dungeons/mysterious-laboratory "Mysterious Laboratory")  
+**Name of the Boss:** Frank N.Stein  
+**Level:** 89-91  
+**Required Level for the area:** 80  
 **Location:** Germania – Death Hill – Normal
 
 ![Frank N.Stein](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Mysterious_Laboratory/Frank_N_Stein.jpg)
 
 ---
 
-**Name of the dungeon:** [Fairground](/dungeons/africa-dungeons/fairground "Fairground")
-**Name of the Boss:** Papa Sasama
-**Level:** 89-91
-**Required Level for the area:** 80
+**Name of the dungeon:** [Fairground](/dungeons/africa-dungeons/fairground "Fairground")  
+**Name of the Boss:** Papa Sasama  
+**Level:** 89-91  
+**Required Level for the area:** 80  
 **Location:** Africa – Umpokta Tribe – Normal
 
 ![Papa Sasama](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Fairground/Papa_Sasama.jpg)
 
 ---
 
-**Name of the dungeon:** [Under a Blood-red Sky](/dungeons/africa-dungeons/under-a-blood-red-sky "Under a Blood-red Sky")
-**Name of the Boss:** Shetu bin Seth
-**Level:** 95-97
-**Required Level for the area:** 86
+**Name of the dungeon:** [Under a Blood-red Sky](/dungeons/africa-dungeons/under-a-blood-red-sky "Under a Blood-red Sky")  
+**Name of the Boss:** Shetu bin Seth  
+**Level:** 95-97  
+**Required Level for the area:** 86  
 **Location:** Africa – Bridge – Advanced
 
 ![Shetu bin Seth](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Under_a_Blood-Red_Sky/Shetu_bin_Seth.jpg)
 
 ---
 
-**Name of the dungeon:** [In the Heart of Decay](/dungeons/africa-dungeons/in-the-heart-of-decay "In the Heart of Decay")
-**Name of the Boss:** Corruption
-**Level:** 99-101
-**Required Level for the area:** 90
+**Name of the dungeon:** [In the Heart of Decay](/dungeons/africa-dungeons/in-the-heart-of-decay "In the Heart of Decay")  
+**Name of the Boss:** Corruption  
+**Level:** 99-101  
+**Required Level for the area:** 90  
 **Location:** Africa – Lost Harbour – Advanced
 
 ![Corruption](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/In_the_Heart_of_Decay/Corruption.jpg)
 
 ---
 
-**Name of the dungeon:** [Sasama's last journey](/dungeons/africa-dungeons/sasama-s-last-journey "Sasama's last journey")
-**Name of the Boss:** Akhekhu
-**Level:** 101-103
-**Required Level for the area:** 92
+**Name of the dungeon:** [Sasama's last journey](/dungeons/africa-dungeons/sasama-s-last-journey "Sasama's last journey")  
+**Name of the Boss:** Akhekhu  
+**Level:** 101-103  
+**Required Level for the area:** 92  
 **Location:** Africa – Umpokta Tribe – Advanced
 
 ![Akhekhu](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Africa/Sasamas_Last_Journey/Akhekhu.jpg)
 
 ---
 
-**Name of the dungeon:** [Externsteine](/dungeons/germania-dungeons/externsteine "Externsteine")
-**Name of the Boss:** Wrath Mountain
-**Level:** 111-113
-**Required Level for the area:** 102
+**Name of the dungeon:** [Externsteine](/dungeons/germania-dungeons/externsteine "Externsteine")  
+**Name of the Boss:** Wrath Mountain  
+**Level:** 111-113  
+**Required Level for the area:** 102  
 **Location:** Germania – The Green Forest – Advanced
 
 ![Wrath Mountain](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Externsteine/Wrath_Mountain.jpg)
 
 ---
 
-**Name of the dungeon:** [Late Revenge](/dungeons/germania-dungeons/late-revenge "Late Revenge")
-**Name of the Boss:** Valerius Filius Gustavo
-**Level:** 121-123
-**Required Level for the area:** 112
+**Name of the dungeon:** [Late Revenge](/dungeons/germania-dungeons/late-revenge "Late Revenge")  
+**Name of the Boss:** Valerius Filius Gustavo  
+**Level:** 121-123  
+**Required Level for the area:** 112  
 **Location:** Germania – Dragon Remains – Normal
 
 ![Valerius Filius Gustavo](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Late_Revenge/Valerius_Filius_Gustavo.jpg)
 
 ---
 
-**Name of the dungeon:** [Alpha & Omega](/dungeons/germania-dungeons/alpha-omega "Alpha & Omega")
-**Name of the Boss:** Dracolich
-**Level:** 129-131
-**Required Level for the area:** 120
+**Name of the dungeon:** [Alpha & Omega](/dungeons/germania-dungeons/alpha-omega "Alpha & Omega")  
+**Name of the Boss:** Dracolich  
+**Level:** 129-131  
+**Required Level for the area:** 120  
 **Location:** Germania – Dragon Remains – Advanced
 
 ![Dracolich](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Germania/Alpha_and_Omega/Dracolich.jpg)
 
 ---
 
-**Name of the dungeon:** [Storming the Coast](/dungeons/britannia-dungeons/storming-the-coast "Storming the Coast")
-**Name of the Boss:** Unknown
-**Level:** ???-???
-**Required Level for the area:** 120
+**Name of the dungeon:** [Storming the Coast](/dungeons/britannia-dungeons/storming-the-coast "Storming the Coast")  
+**Name of the Boss:** Dubnovellaunus  
+**Level:** 134-136  
+**Required Level for the area:** 120  
 **Location:** Britannia – Bank of the Thames – Normal
 
+![Dubnovellaunus](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Britannia/storming-the-coast/dubnovellaunus.jpg)
+
 ---
 
-**Name of the dungeon:** [The Corrupted World Tree](/dungeons/britannia-dungeons/the-corrupted-world-tree "The Corrupted World Tree")
-**Name of the Boss:** Unknown
-**Level:** ???-???
-**Required Level for the area:** 135
+**Name of the dungeon:** [The Corrupted World Tree](/dungeons/britannia-dungeons/the-corrupted-world-tree "The Corrupted World Tree")  
+**Name of the Boss:** Evil Fairy Queen Clíodhna  
+**Level:** ???-???  
+**Required Level for the area:** 135  
 **Location:** Britannia – Forest Fortress – Normal
 
+![Evil Fairy Queen Clíodhna](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Britannia/the-corrupted-world-tree/corrupted_fairy_queen_cliodhna.jpg)
+
 ---
 
-**Name of the dungeon:** [Marshes of Death](/dungeons/britannia-dungeons/marshes-of-death "Marshes of Death")
-**Name of the Boss:** Unknown
-**Level:** ???-???
-**Required Level for the area:** 150
+**Name of the dungeon:** [Marshes of Death](/dungeons/britannia-dungeons/marshes-of-death "Marshes of Death")  
+**Name of the Boss:** Athair Nathra  
+**Level:** ???-???  
+**Required Level for the area:** 150  
 **Location:** Britannia – The Moor – Normal
 
+![Athair Nathra](https://gladiatusfansite.blob.core.windows.net/images/marshes-of-death/athair_nathra.jpg)
+
 ---
 
-**Name of the dungeon:** [The Final Bastion](/dungeons/britannia-dungeons/the-final-bastion "The Final Bastion")
-**Name of the Boss:** Unknown
-**Level:** ???-???
-**Required Level for the area:** 165
+**Name of the dungeon:** [The Final Bastion](/dungeons/britannia-dungeons/the-final-bastion "The Final Bastion")  
+**Name of the Boss:** Nennius  
+**Level:** ???-???  
+**Required Level for the area:** 165  
 **Location:** Britannia – Camp Cassivellaunus – Normal
 
+![Nennius](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Britannia/the-final-bastion/nennius.jpg)
+
 ---
 
-**Name of the dungeon:** [Before the Dawn](/dungeons/britannia-dungeons/before-the-dawn "Before the Dawn")
-**Name of the Boss:** Unknown
-**Level:** ???-???
-**Required Level for the area:** 180
+**Name of the dungeon:** [Before the Dawn](/dungeons/britannia-dungeons/before-the-dawn "Before the Dawn")  
+**Name of the Boss:** Lugotrix  
+**Level:** ???-???  
+**Required Level for the area:** 180  
 **Location:** Britannia – Kent – Normal
 
+![Lugotrix](https://gladiatusfansite.blob.core.windows.net/images/Dungeons/Britannia/before-the-dawn/lugotrix.jpg)
+
 ---
 
-**Name of the dungeon:** [Madness in the Fog](/dungeons/britannia-dungeons/madness-in-the-fog "Madness in the Fog")
-**Name of the Boss:** Unknown
-**Level:** ???-???
-**Required Level for the area:** 195
+**Name of the dungeon:** [Madness in the Fog](/dungeons/britannia-dungeons/madness-in-the-fog "Madness in the Fog")  
+**Name of the Boss:** Unknown  
+**Level:** ???-???  
+**Required Level for the area:** 195  
 **Location:** Britannia – The Ford – Normal
 
 ---
 
-**Name of the dungeon:** [Ashes of War](/dungeons/britannia-dungeons/ashes-of-war "Ashes of War")
-**Name of the Boss:** Unknown
-**Level:** ???-???
-**Required Level for the area:** 210
+**Name of the dungeon:** [Ashes of War](/dungeons/britannia-dungeons/ashes-of-war "Ashes of War")  
+**Name of the Boss:** Unknown  
+**Level:** ???-???  
+**Required Level for the area:** 210  
 **Location:** Britannia – Camulodunum – Normal
 
 ---
 
-**Name of the dungeon:** [Forest Ambush](/dungeons/britannia-dungeons/forest-ambush "Forest Ambush")
-**Name of the Boss:** Unknown
-**Level:** ???-???
-**Required Level for the area:** 230
+**Name of the dungeon:** [Forest Ambush](/dungeons/britannia-dungeons/forest-ambush "Forest Ambush")  
+**Name of the Boss:** Unknown  
+**Level:** ???-???  
+**Required Level for the area:** 230  
 **Location:** Britannia – Cambria – Normal
 
 ---
 
-**Name of the dungeon:** [The Great Ritual](/dungeons/britannia-dungeons/the-great-ritual "The Great Ritual")
-**Name of the Boss:** Unknown
-**Level:** ???-???
-**Required Level for the area:** 250
+**Name of the dungeon:** [The Great Ritual](/dungeons/britannia-dungeons/the-great-ritual "The Great Ritual")  
+**Name of the Boss:** Unknown  
+**Level:** ???-???  
+**Required Level for the area:** 250  
 **Location:** Britannia – Mona Isle – Normal

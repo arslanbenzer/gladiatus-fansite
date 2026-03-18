@@ -165,6 +165,10 @@ Also there will be a Happy Day Event
 
 ## Latest website news
 
+### 18.03.2026
+
+- Storming the Coast dungeon page is now completed as well as few other dungeons bosses that got revealed. Just as names and images
+
 ### 10.03.2026
 
 - New tool - Loot Explorer. Let's you explore all the possible combination of items in Gladiatus, searching for loot that you need
