@@ -1498,6 +1498,17 @@
         "id": 29
     },
     {
+        "name": "Moon Rune",
+        "type": "rune",
+        "image": "https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/moon_rune.png",
+        "description": "New rune from Battle for Britannia update",
+        "scarcity": "Rare",
+        "drops": [
+            
+        ],
+        "id": 999
+    },
+    {
         "name": "Waters of Oblivion",
         "type": "flask",
         "image": "https://gladiatusfansite.blob.core.windows.net/images/Forging/Forging_goods/Waters_of_Oblivion.png",

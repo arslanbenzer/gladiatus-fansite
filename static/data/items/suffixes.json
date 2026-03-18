@@ -6183,5 +6183,30 @@
             "Sapphire": 7
         },
         "id": 117
+    },
+    {
+        "name": "of Myth",
+        "level": 95,
+        "gold": 0,
+        "stats": {
+            "armour": {
+                "flat": 80,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": 12
+            },
+            "healing": {
+                "flat": 78,
+                "percent": 0
+            },
+            "blocking_value": {
+                "flat": 57,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 999999
     }
 ]
