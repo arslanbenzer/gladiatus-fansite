@@ -6733,5 +6733,109 @@
         },
         "materials": {},
         "id": 999980
+    },
+    {
+        "name": "of Justice",
+        "level": 120,
+        "gold": 0,
+        "new": true,
+        "stats": {
+            "armour": {
+                "flat": 61,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 317,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 60,
+                "percent": 0
+            },
+            "blocking_value": {
+                "flat": 40,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 999979
+    },
+    {
+        "name": "of Force",
+        "level": 132,
+        "gold": 0,
+        "new": true,
+        "stats": {
+            "armour": {
+                "flat": 812,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 39,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 84,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 21,
+                "percent": 0
+            },
+            "blocking_value": {
+                "flat": 59,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 999978
+    },
+    {
+        "name": "of Swordplay",
+        "level": 110,
+        "gold": 0,
+        "new": true,
+        "stats": {
+            "armour": {
+                "flat": 42,
+                "percent": 0
+            },
+            "health": {
+                "flat": 77,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 287,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 80,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 999977
+    },
+    {
+        "name": "of Bloodletting",
+        "level": 87,
+        "gold": 0,
+        "new": true,
+        "stats": {
+            "health": {
+                "flat": 599,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 14
+            },
+            "threat": {
+                "flat": 76,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 999976
     }
 ]
