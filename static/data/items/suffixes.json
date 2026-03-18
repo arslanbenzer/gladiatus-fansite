@@ -6188,6 +6188,7 @@
         "name": "of Myth",
         "level": 95,
         "gold": 0,
+        "new": true,
         "stats": {
             "armour": {
                 "flat": 80,
@@ -6213,6 +6214,7 @@
         "name": "of Daredevilry",
         "level": 107,
         "gold": 0,
+        "new": true,
         "stats": {
             "armour": {
                 "flat": 120,
@@ -6241,5 +6243,327 @@
         },
         "materials": {},
         "id": 999998
+    },
+    {
+        "name": "of Bravery",
+        "level": 90,
+        "gold": 343000,
+        "new": true,
+        "stats": {
+            "health": {
+                "flat": 37,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 25,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 59,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 67,
+                "percent": 0
+            }
+        },
+        "materials": {
+            "Hellstone": 2,
+            "Totem of Healing": 20,
+            "Essence of Reaction": 20,
+            "Phial of Charisma": 20
+        },
+        "id": 999997
+    },
+    {
+        "name": "of Awe",
+        "level": 101,
+        "gold": 0,
+        "new": true,
+        "stats": {
+            "armour": {
+                "flat": 79,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 30,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 268,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 55,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 75,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 999996
+    },
+    {
+        "name": "of Legend",
+        "level": 87,
+        "gold": 0,
+        "new": true,
+        "stats": {
+            "health": {
+                "flat": 38,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 24,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 210,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 69,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 82,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 999995
+    },
+    {
+        "name": "of Heroism",
+        "level": 125,
+        "gold": 539192,
+        "new": true,
+        "stats": {
+            "armour": {
+                "flat": 90,
+                "percent": 0
+            },
+            "intelligence": {
+                "flat": -8,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 354,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 70,
+                "percent": 0
+            },
+            "blocking_value": {
+                "flat": 81,
+                "percent": 0
+            }
+        },
+        "materials": {
+        },
+        "id": 999994
+    },
+    {
+        "name": "of Renown",
+        "level": 85,
+        "gold": 229172,
+        "new": true,
+        "stats": {
+            "health": {
+                "flat": 79,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 0,
+                "percent": 13
+            },
+            "critical_healing_value": {
+                "flat": 61,
+                "percent": 0
+            },
+            "blocking_value": {
+                "flat": 53,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 999993
+    },
+    {
+        "name": "of the Saviour",
+        "level": 90,
+        "gold": 192500,
+        "new": true,
+        "stats": {
+            "constitution": {
+                "flat": 0,
+                "percent": 34
+            },
+            "blocking_value": {
+                "flat": 83,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 135,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 999992
+    },
+    {
+        "name": "of Arbitration",
+        "level": 85,
+        "gold": 305562,
+        "new": true,
+        "stats": {
+            "healing": {
+                "flat": 76,
+                "percent": 0
+            },
+            "blocking_value": {
+                "flat": 39,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 999991
+    },
+    {
+        "name": "of the Fallen",
+        "level": 88,
+        "gold": 0,
+        "new": true,
+        "stats": {
+            "armour": {
+                "flat": 558,
+                "percent": 0
+            },
+            "charisma": {
+                "flat": 25,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 79,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 85,
+                "percent": 0
+            },
+            "critical_attack_value": {
+                "flat": 18,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 999990
+    },
+    {
+        "name": "of Reason",
+        "level": 95,
+        "gold": 0,
+        "new": true,
+        "stats": {
+            "constitution": {
+                "flat": -12,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 64,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 61,
+                "percent": 0
+            },
+            "blocking_value": {
+                "flat": 75,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 999989
+    },
+    {
+        "name": "of Distance",
+        "level": 93,
+        "gold": 0,
+        "new": true,
+        "stats": {
+            "health": {
+                "flat": 75,
+                "percent": 0
+            },
+            "strength": {
+                "flat": 0,
+                "percent": 23
+            },
+            "healing": {
+                "flat": 85,
+                "percent": 0
+            },
+            "blocking_value": {
+                "flat": 52,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 999988
+    },
+    {
+        "name": "of Destiny",
+        "level": 102,
+        "gold": 0,
+        "new": true,
+        "stats": {
+            "armour": {
+                "flat": 90,
+                "percent": 0
+            },
+            "health": {
+                "flat": 84,
+                "percent": 0
+            },
+            "constitution": {
+                "flat": -4,
+                "percent": 0
+            },
+            "blocking_value": {
+                "flat": 39,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 999987
+    },
+    {
+        "name": "of Elder",
+        "level": 85,
+        "gold": 0,
+        "new": true,
+        "stats": {
+            "charisma": {
+                "flat": 24,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 38,
+                "percent": 0
+            },
+            "critical_healing_value": {
+                "flat": 67,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 79,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 999986
     }
 ]

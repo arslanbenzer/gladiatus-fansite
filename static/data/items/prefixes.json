@@ -5201,5 +5201,23 @@
             "Flintstone": 3
         },
         "id": 89
+    },
+    {
+        "name": "Regulus",
+        "level": 162,
+        "new": true,
+        "gold": 0,
+        "stats": {
+            "charisma": {
+                "flat": 58,
+                "percent": 0
+            },
+            "healing": {
+                "flat": 364,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 9999
     }
 ]

@@ -19,6 +19,7 @@ export default function ItemAffixList({ items, type = 'prefix', showFilters = tr
   const [statFilterValue, setStatFilterValue] = useState(''); // number
   const [sortKey, setSortKey] = useState(''); // 'name' | 'level' | 'gold'
   const [sortOrder, setSortOrder] = useState('asc'); // 'asc' | 'desc'
+  const [showNewOnly, setShowNewOnly] = useState(false);
 
   const allStats = useMemo(() => {
     const set = new Set();
@@ -31,11 +32,15 @@ export default function ItemAffixList({ items, type = 'prefix', showFilters = tr
   // Filtered items
   const filteredItems = useMemo(() => {
     return items.filter(item => {
+
       // Skip items with asterisks in the name
       if (item.name && item.name.includes('*')) return false;
 
       // Name search
       if (search && !item.name.toLowerCase().includes(search.toLowerCase())) return false;
+
+      // New only filter
+      if (showNewOnly && !item.new) return false;
 
       // Stat filter
       if (statFilter && statFilterValue) {
@@ -49,7 +54,7 @@ export default function ItemAffixList({ items, type = 'prefix', showFilters = tr
 
       return true;
     });
-  }, [items, search, statFilter, statFilterValue]);
+  }, [items, search, statFilter, statFilterValue, showNewOnly]);
 
   const sortedItems = useMemo(() => {
     if (!sortKey) return filteredItems;
@@ -76,14 +81,24 @@ export default function ItemAffixList({ items, type = 'prefix', showFilters = tr
     <div>
       {showFilters && (
         <>
-          {/* Search input */}
-          <input
-            type="text"
-            placeholder="Search by name..."
-            value={search}
-            onChange={e => setSearch(e.target.value)}
-            style={{ marginBottom: '8px', padding: '6px', borderRadius: '4px', width: '180px' }}
-          />
+          {/* Search + New only filter */}
+          <div style={{ display: 'flex', alignItems: 'center', gap: '8px', marginBottom: '8px' }}>
+            <input
+              type="text"
+              placeholder="Search by name..."
+              value={search}
+              onChange={e => setSearch(e.target.value)}
+              style={{ padding: '6px', borderRadius: '4px', width: '180px' }}
+            />
+            <label style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', cursor: 'pointer' }}>
+              <input
+                type="checkbox"
+                checked={showNewOnly}
+                onChange={e => setShowNewOnly(e.target.checked)}
+              />
+              <span>New only</span>
+            </label>
+          </div>
 
           {/* Stat filter */}
           <div style={{ marginBottom: '12px' }}>
@@ -155,7 +170,9 @@ export default function ItemAffixList({ items, type = 'prefix', showFilters = tr
             {/* Name */}
             <div
               style={{
-                color: '#00ff00',
+                display: 'flex',
+                alignItems: 'center',
+                gap: '6px',
                 fontWeight: 'bold',
                 fontSize: '16px',
                 marginBottom: '6px',
@@ -170,6 +187,19 @@ export default function ItemAffixList({ items, type = 'prefix', showFilters = tr
               >
                 {item.name}
               </Link>
+              {item.new && (
+                <span style={{
+                  backgroundColor: '#cc0000',
+                  color: '#fff',
+                  fontSize: '10px',
+                  fontWeight: 'bold',
+                  padding: '1px 5px',
+                  borderRadius: '3px',
+                  letterSpacing: '0.5px',
+                }}>
+                  NEW
+                </span>
+              )}
             </div>
 
             {/* Stats */}
