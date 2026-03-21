@@ -107,7 +107,8 @@
             "Cuprit": 10,
             "Hellstone": 8
         },
-        "id": 258
+        "id": 258,
+        "underworld": true
     },
     {
         "name": "of Aggression",
@@ -204,7 +205,8 @@
             "Waters of Oblivion": 32,
             "Hellstone": 2
         },
-        "id": 269
+        "id": 269,
+        "underworld": true
     },
     {
         "name": "of Anguish",
@@ -237,7 +239,8 @@
             "Cuprit": 2,
             "Hellstone": 3
         },
-        "id": 283
+        "id": 283,
+        "underworld": true
     },
     {
         "name": "of Antiquity",
@@ -536,7 +539,8 @@
             "Hellstone": 20,
             "Jasper": 6
         },
-        "id": 272
+        "id": 272,
+        "underworld": true
     },
     {
         "name": "of Boost",
@@ -607,7 +611,8 @@
             }
         },
         "materials": {},
-        "id": 194
+        "id": 194,
+        "underworld": true
     },
     {
         "name": "of Calling",
@@ -659,7 +664,8 @@
         "materials": {
             "Hellstone": 33
         },
-        "id": 261
+        "id": 261,
+        "underworld": true
     },
     {
         "name": "of Ceremony",
@@ -741,7 +747,8 @@
             "Waters of Oblivion": 28,
             "Hellstone": 2
         },
-        "id": 241
+        "id": 241,
+        "underworld": true
     },
     {
         "name": "of Concealment",
@@ -949,7 +956,8 @@
             }
         },
         "materials": {},
-        "id": 166
+        "id": 166,
+        "underworld": true
     },
     {
         "name": "of Darkness",
@@ -1041,7 +1049,8 @@
             "Jasper": 5,
             "Shadow Rune": 4
         },
-        "id": 287
+        "id": 287,
+        "underworld": true
     },
     {
         "name": "of Delicacy",
@@ -1123,7 +1132,8 @@
             "Hellstone": 8,
             "Jasper": 10
         },
-        "id": 266
+        "id": 266,
+        "underworld": true
     },
     {
         "name": "of Denomination",
@@ -1174,7 +1184,8 @@
             "Jasper": 10,
             "Shadow Rune": 13
         },
-        "id": 246
+        "id": 246,
+        "underworld": true
     },
     {
         "name": "of Desperation",
@@ -1216,7 +1227,8 @@
             "Waters of Oblivion": 30,
             "Hellstone": 4
         },
-        "id": 277
+        "id": 277,
+        "underworld": true
     },
     {
         "name": "of Difficulty",
@@ -1344,7 +1356,8 @@
             "Jasper": 3,
             "Shadow Rune": 12
         },
-        "id": 248
+        "id": 248,
+        "underworld": true
     },
     {
         "name": "of Dominance",
@@ -1449,7 +1462,8 @@
             "Hellstone": 22,
             "Jasper": 5
         },
-        "id": 247
+        "id": 247,
+        "underworld": true
     },
     {
         "name": "of Earth",
@@ -1625,7 +1639,8 @@
             "Cuprit": 11,
             "Hellstone": 19
         },
-        "id": 270
+        "id": 270,
+        "underworld": true
     },
     {
         "name": "of Evasion",
@@ -1669,7 +1684,8 @@
             }
         },
         "materials": {},
-        "id": 202
+        "id": 202,
+        "underworld": true
     },
     {
         "name": "of Expansion",
@@ -2162,7 +2178,8 @@
             "Hellstone": 3,
             "Jasper": 2
         },
-        "id": 242
+        "id": 242,
+        "underworld": true
     },
     {
         "name": "of Heaven",
@@ -2668,7 +2685,8 @@
             "Jasper": 4,
             "Shadow Rune": 6
         },
-        "id": 254
+        "id": 254,
+        "underworld": true
     },
     {
         "name": "of Knowledge",
@@ -2714,7 +2732,8 @@
             "Hellstone": 14,
             "Jasper": 10
         },
-        "id": 274
+        "id": 274,
+        "underworld": true
     },
     {
         "name": "of Learning",
@@ -3121,7 +3140,8 @@
             "Cuprit": 27,
             "Hellstone": 3
         },
-        "id": 256
+        "id": 256,
+        "underworld": true
     },
     {
         "name": "of Mercy",
@@ -3188,7 +3208,8 @@
             "Hellstone": 4,
             "Jasper": 13
         },
-        "id": 245
+        "id": 245,
+        "underworld": true
     },
     {
         "name": "of Mourning",
@@ -3243,7 +3264,8 @@
             "Hellstone": 5,
             "Shadow Rune": 27
         },
-        "id": 250
+        "id": 250,
+        "underworld": true
     },
     {
         "name": "of Normality",
@@ -3471,7 +3493,8 @@
             "Jasper": 4,
             "Shadow Rune": 26
         },
-        "id": 268
+        "id": 268,
+        "underworld": true
     },
     {
         "name": "of Poison",
@@ -3722,7 +3745,8 @@
             "Hellstone": 5,
             "Shadow Rune": 23
         },
-        "id": 244
+        "id": 244,
+        "underworld": true
     },
     {
         "name": "of Rapidity",
@@ -4378,7 +4402,8 @@
             "Cuprit": 16,
             "Shadow Rune": 17
         },
-        "id": 265
+        "id": 265,
+        "underworld": true
     },
     {
         "name": "of Strength",
@@ -4485,7 +4510,8 @@
         "materials": {
             "Waters of Oblivion": 33
         },
-        "id": 263
+        "id": 263,
+        "underworld": true
     },
     {
         "name": "of Tears",
@@ -4535,7 +4561,8 @@
         "materials": {
             "Cuprit": 34
         },
-        "id": 275
+        "id": 275,
+        "underworld": true
     },
     {
         "name": "of the Amazons",
@@ -4577,7 +4604,8 @@
             "Waters of Oblivion": 5,
             "Hellstone": 29
         },
-        "id": 282
+        "id": 282,
+        "underworld": true
     },
     {
         "name": "of the Behemoth",
@@ -4605,7 +4633,8 @@
             "Hellstone": 11,
             "Jasper": 13
         },
-        "id": 259
+        "id": 259,
+        "underworld": true
     },
     {
         "name": "of the Blessed",
@@ -4821,7 +4850,8 @@
             "Hellstone": 11,
             "Jasper": 2
         },
-        "id": 278
+        "id": 278,
+        "underworld": true
     },
     {
         "name": "of the Dragon",
@@ -4874,7 +4904,8 @@
             "Jasper": 20,
             "Shadow Rune": 11
         },
-        "id": 276
+        "id": 276,
+        "underworld": true
     },
     {
         "name": "of the Druid",
@@ -4980,7 +5011,8 @@
             "Cuprit": 4,
             "Jasper": 2
         },
-        "id": 289
+        "id": 289,
+        "underworld": true
     },
     {
         "name": "of the Hills",
@@ -5018,7 +5050,8 @@
             "Waters of Oblivion": 13,
             "Hellstone": 20
         },
-        "id": 262
+        "id": 262,
+        "underworld": true
     },
     {
         "name": "of the Inferno",
@@ -5160,7 +5193,8 @@
             "Waters of Oblivion": 15,
             "Hellstone": 17
         },
-        "id": 252
+        "id": 252,
+        "underworld": true
     },
     {
         "name": "of the Plague",
@@ -5313,7 +5347,8 @@
             "Hellstone": 10,
             "Jasper": 7
         },
-        "id": 271
+        "id": 271,
+        "underworld": true
     },
     {
         "name": "of the Soul",
@@ -5332,7 +5367,8 @@
             "Hellstone": 26,
             "Jasper": 7
         },
-        "id": 257
+        "id": 257,
+        "underworld": true
     },
     {
         "name": "of the Sphinx",
@@ -5360,7 +5396,8 @@
             "Hellstone": 16,
             "Shadow Rune": 4
         },
-        "id": 288
+        "id": 288,
+        "underworld": true
     },
     {
         "name": "of the Spirit",
@@ -5449,7 +5486,8 @@
             "Waters of Oblivion": 16,
             "Hellstone": 17
         },
-        "id": 260
+        "id": 260,
+        "underworld": true
     },
     {
         "name": "of the Vanquishers",
@@ -5563,7 +5601,8 @@
             "Waters of Oblivion": 9,
             "Hellstone": 25
         },
-        "id": 281
+        "id": 281,
+        "underworld": true
     },
     {
         "name": "of Torsion",
@@ -5587,7 +5626,8 @@
             "Hellstone": 13,
             "Jasper": 13
         },
-        "id": 280
+        "id": 280,
+        "underworld": true
     },
     {
         "name": "of Torture",
@@ -5664,7 +5704,8 @@
             "Waters of Oblivion": 25,
             "Cerberus' Pelt": 8
         },
-        "id": 264
+        "id": 264,
+        "underworld": true
     },
     {
         "name": "of Triumph",
@@ -5892,7 +5933,8 @@
             "Jasper": 1,
             "Shadow Rune": 27
         },
-        "id": 267
+        "id": 267,
+        "underworld": true
     },
     {
         "name": "of Wounds",

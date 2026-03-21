@@ -84,7 +84,8 @@
             "Sugilite": 58,
             "Almandin": 12
         },
-        "id": 183
+        "id": 183,
+        "underworld": true
     },
     {
         "name": "Ambrosius`",
@@ -126,7 +127,8 @@
             "Sphinx Feather": 1,
             "Sugilite": 26
         },
-        "id": 162
+        "id": 162,
+        "underworld": true
     },
     {
         "name": "Amelias",
@@ -259,7 +261,8 @@
             "Soul Essence": 3,
             "Typhon Leather": 1
         },
-        "id": 173
+        "id": 173,
+        "underworld": true
     },
     {
         "name": "Antonius",
@@ -375,7 +378,8 @@
             "Sugilite": 4,
             "Sphinx Feather": 3
         },
-        "id": 175
+        "id": 175,
+        "underworld": true
     },
     {
         "name": "Asayseths",
@@ -507,7 +511,8 @@
             "Soul Essence": 5,
             "Sugilite": 39
         },
-        "id": 156
+        "id": 156,
+        "underworld": true
     },
     {
         "name": "Aulus`",
@@ -606,7 +611,8 @@
             "Soul Essence": 1,
             "Hydra Scale": 1
         },
-        "id": 180
+        "id": 180,
+        "underworld": true
     },
     {
         "name": "Avalonius",
@@ -889,7 +895,8 @@
             "Hydra Scale": 24,
             "Typhon Leather": 1
         },
-        "id": 178
+        "id": 178,
+        "underworld": true
     },
     {
         "name": "Caldus`",
@@ -980,7 +987,8 @@
             "Almandin": 8,
             "Sphinx Feather": 4
         },
-        "id": 177
+        "id": 177,
+        "underworld": true
     },
     {
         "name": "Chabdyns",
@@ -2046,7 +2054,8 @@
             "Soul Essence": 19,
             "Sugilite": 47
         },
-        "id": 179
+        "id": 179,
+        "underworld": true
     },
     {
         "name": "Gratius`",
@@ -2359,7 +2368,8 @@
             "Sugilite": 40,
             "Typhon Leather": 1
         },
-        "id": 172
+        "id": 172,
+        "underworld": true
     },
     {
         "name": "Kedyssis",
@@ -2549,7 +2559,8 @@
             "Sphinx Feather": 33,
             "Sugilite": 5
         },
-        "id": 155
+        "id": 155,
+        "underworld": true
     },
     {
         "name": "Liloels",
@@ -2747,7 +2758,8 @@
             "Soul Essence": 4,
             "Sphinx Feather": 2
         },
-        "id": 171
+        "id": 171,
+        "underworld": true
     },
     {
         "name": "Mandalus",
@@ -2996,7 +3008,8 @@
             "Hydra Scale": 14,
             "Sugilite": 3
         },
-        "id": 168
+        "id": 168,
+        "underworld": true
     },
     {
         "name": "Mermereus",
@@ -3104,7 +3117,8 @@
             "Almandin": 5,
             "Sphinx Feather": 3
         },
-        "id": 167
+        "id": 167,
+        "underworld": true
     },
     {
         "name": "Monychustas",
@@ -3206,7 +3220,8 @@
             "Sphinx Feather": 2,
             "Hydra Scale": 2
         },
-        "id": 159
+        "id": 159,
+        "underworld": true
     },
     {
         "name": "Nariths",
@@ -3311,7 +3326,8 @@
             "Almandin": 5,
             "Sugilite": 4
         },
-        "id": 166
+        "id": 166,
+        "underworld": true
     },
     {
         "name": "Orlelds",
@@ -3555,7 +3571,8 @@
             "Soul Essence": 4,
             "Hydra Scale": 1
         },
-        "id": 164
+        "id": 164,
+        "underworld": true
     },
     {
         "name": "Purmanns",
@@ -3876,7 +3893,8 @@
         "materials": {
             "Almandin": 70
         },
-        "id": 181
+        "id": 181,
+        "underworld": true
     },
     {
         "name": "Sebastianus`",
@@ -4448,7 +4466,8 @@
             "Sugilite": 2,
             "Sphinx Feather": 1
         },
-        "id": 161
+        "id": 161,
+        "underworld": true
     },
     {
         "name": "Tinothiels",
@@ -4833,7 +4852,8 @@
             "Hydra Scale": 8,
             "Soul Essence": 6
         },
-        "id": 165
+        "id": 165,
+        "underworld": true
     },
     {
         "name": "Valerius",
