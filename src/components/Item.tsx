@@ -4,6 +4,7 @@ import basesData from '@site/static/data/items/bases.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
 import type { Upgrade, AppliedUpgrade } from './CharacterPlanner/useCharacterState';
+import { calcAffixGoldBase } from '@site/src/utils/affixGold';
 
 // Base item type from bases.json
 export interface BaseItem {
@@ -28,7 +29,6 @@ export interface BaseItem {
 export interface PrefixSuffix {
   name: string;
   level: number;
-  gold: number;
   stats: Record<string, { flat: number; percent: number }>;
   materials: Record<string, number>;
 }
@@ -422,7 +422,9 @@ export function calculateItemStats(
   // Calculate total gold value
   const rarityMultiplier = getDamageMultiplier(); // Uses rarity: blue=1.15, purple=1.30, orange=1.50, red=1.75, red+=2.0
   const baseGold = baseItem.gold ? Math.ceil(baseItem.gold * rarityMultiplier) : 0;
-  const totalGold = baseGold + (prefix?.gold || 0) + (suffix?.gold || 0);
+  const prefixGold = prefix ? calcAffixGoldBase(prefix.level, 'prefix') : 0;
+  const suffixGold = suffix ? calcAffixGoldBase(suffix.level, 'suffix') : 0;
+  const totalGold = baseGold + prefixGold + suffixGold;
 
   return {
     name: fullName,

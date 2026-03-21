@@ -4,14 +4,12 @@ import Layout from '@theme/Layout';
 import Link from '@docusaurus/Link';
 import prefixes from '@site/static/data/items/prefixes.json';
 import suffixes from '@site/static/data/items/suffixes.json';
+import { calcAffixGoldRange, formatGoldDots } from '@site/src/utils/affixGold';
 
 const slugify = (value?: string) =>
   typeof value === 'string'
     ? value.toLowerCase().replace(/\s+/g, '-')
     : '';
-
-const formatGold = (value: number) =>
-  value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
 
 export default function ItemPage() {
   const location = useLocation();
@@ -115,14 +113,19 @@ export default function ItemPage() {
           </div>
 
           {/* Gold */}
-          <div style={{ marginTop: '8px', fontWeight: 'bold' }}>
-            Value {formatGold(item.gold)}{' '}
-            <img
-              src="https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif"
-              alt="gold"
-              style={{ verticalAlign: 'middle', width: '16px', height: '16px' }}
-            />
-          </div>
+          {item.level > 0 && (() => {
+            const { min, max } = calcAffixGoldRange(item.level, type);
+            return (
+              <div style={{ marginTop: '8px', fontWeight: 'bold' }}>
+                Value {formatGoldDots(min)} – {formatGoldDots(max)}{' '}
+                <img
+                  src="https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif"
+                  alt="gold"
+                  style={{ verticalAlign: 'middle', width: '16px', height: '16px' }}
+                />
+              </div>
+            );
+          })()}
         </div>
 
         {/* Materials Section */}

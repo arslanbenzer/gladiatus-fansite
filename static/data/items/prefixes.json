@@ -2,7 +2,6 @@
     {
         "name": "Accas",
         "level": 140,
-        "gold": 580989,
         "stats": {
             "strength": {
                 "flat": 8,
@@ -40,7 +39,6 @@
     {
         "name": "Adendathiels",
         "level": 36,
-        "gold": 64348,
         "stats": {
             "damage": {
                 "flat": 6,
@@ -64,7 +62,6 @@
     {
         "name": "Africanus`",
         "level": 120,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 537,
@@ -92,7 +89,6 @@
     {
         "name": "Ambrosius`",
         "level": 106,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 23,
@@ -135,7 +131,6 @@
     {
         "name": "Amelias",
         "level": 30,
-        "gold": 69570,
         "stats": {
             "damage": {
                 "flat": 2,
@@ -159,7 +154,6 @@
     {
         "name": "Amoviels",
         "level": 16,
-        "gold": 43750,
         "stats": {
             "strength": {
                 "flat": 2,
@@ -174,7 +168,6 @@
     {
         "name": "Amulius",
         "level": 105,
-        "gold": 254356,
         "stats": {
             "damage": {
                 "flat": 16,
@@ -204,7 +197,6 @@
     {
         "name": "Anchorons",
         "level": 80,
-        "gold": 211320,
         "stats": {
             "damage": {
                 "flat": -6,
@@ -238,7 +230,6 @@
     {
         "name": "Angelus`",
         "level": 112,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 31,
@@ -273,7 +264,6 @@
     {
         "name": "Antonius",
         "level": 92,
-        "gold": 240798,
         "stats": {
             "damage": {
                 "flat": 16,
@@ -307,7 +297,6 @@
     {
         "name": "Appius",
         "level": 82,
-        "gold": 279090,
         "stats": {
             "damage": {
                 "flat": 4,
@@ -342,7 +331,6 @@
     {
         "name": "Aquilius",
         "level": 232,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -351,7 +339,6 @@
     {
         "name": "Arpagius`",
         "level": 114,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 21,
@@ -393,7 +380,6 @@
     {
         "name": "Asayseths",
         "level": 32,
-        "gold": 86081,
         "stats": {
             "damage": {
                 "flat": 3,
@@ -428,7 +414,6 @@
     {
         "name": "Asendacs",
         "level": 29,
-        "gold": 83722,
         "stats": {
             "armour": {
                 "flat": 220,
@@ -453,7 +438,6 @@
     {
         "name": "Ashitills",
         "level": 40,
-        "gold": 106950,
         "stats": {
             "damage": {
                 "flat": 6,
@@ -491,7 +475,6 @@
     {
         "name": "Asphodel`s",
         "level": 102,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 60,
@@ -529,7 +512,7 @@
     {
         "name": "Aulus`",
         "level": 120,
-        "gold": 0,
+        "underworld": true,
         "stats": {
             "damage": {
                 "flat": 13,
@@ -571,7 +554,6 @@
     {
         "name": "Aurelius",
         "level": 100,
-        "gold": 253812,
         "stats": {
             "agility": {
                 "flat": 15,
@@ -595,7 +577,6 @@
     {
         "name": "Auroras",
         "level": 119,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 557,
@@ -630,7 +611,6 @@
     {
         "name": "Avalonius",
         "level": 99,
-        "gold": 375538,
         "stats": {
             "damage": {
                 "flat": 8,
@@ -669,7 +649,6 @@
     {
         "name": "Bacias",
         "level": 30,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 7,
@@ -703,7 +682,6 @@
     {
         "name": "Barbekuus",
         "level": 65,
-        "gold": 160756,
         "stats": {
             "strength": {
                 "flat": 4,
@@ -733,7 +711,6 @@
     {
         "name": "Bassianus",
         "level": 217,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -742,7 +719,6 @@
     {
         "name": "Beasthammers",
         "level": 32,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 6,
@@ -761,7 +737,6 @@
     {
         "name": "Belisarius",
         "level": 96,
-        "gold": 210083,
         "stats": {
             "damage": {
                 "flat": 15,
@@ -799,7 +774,6 @@
     {
         "name": "Bereccas",
         "level": 37,
-        "gold": 97471,
         "stats": {
             "strength": {
                 "flat": -1,
@@ -827,7 +801,6 @@
     {
         "name": "Berrys",
         "level": 31,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 200,
@@ -852,7 +825,6 @@
     {
         "name": "Bilgs",
         "level": 28,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 240,
@@ -886,7 +858,6 @@
     {
         "name": "Caesius`",
         "level": 117,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 12,
@@ -923,7 +894,6 @@
     {
         "name": "Caldus`",
         "level": 110,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 17,
@@ -958,7 +928,6 @@
         "id": 36,
         "name": "Calódiens",
         "level": 16,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 100,
@@ -982,7 +951,6 @@
     {
         "name": "Camillus`",
         "level": 116,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 491,
@@ -1017,7 +985,6 @@
     {
         "name": "Chabdyns",
         "level": 32,
-        "gold": 93566,
         "stats": {
             "damage": {
                 "flat": 3,
@@ -1041,7 +1008,6 @@
     {
         "name": "Chalinis",
         "level": 28,
-        "gold": 83744,
         "stats": {
             "armour": {
                 "flat": 100,
@@ -1066,7 +1032,6 @@
     {
         "name": "Chealoths",
         "level": 24,
-        "gold": 54520,
         "stats": {
             "health": {
                 "flat": 300,
@@ -1090,7 +1055,6 @@
     {
         "name": "Cheggovs",
         "level": 62,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -1124,7 +1088,6 @@
     {
         "name": "Chucks",
         "level": 74,
-        "gold": 222301,
         "stats": {
             "armour": {
                 "flat": 194,
@@ -1144,7 +1107,6 @@
     {
         "name": "Ciallans",
         "level": 31,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 4,
@@ -1168,7 +1130,6 @@
     {
         "name": "Cisiens",
         "level": 31,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 300,
@@ -1198,7 +1159,6 @@
     {
         "name": "Constantius",
         "level": 97,
-        "gold": 365250,
         "stats": {
             "damage": {
                 "flat": 12,
@@ -1246,7 +1206,6 @@
     {
         "name": "Dairus",
         "level": 87,
-        "gold": 315262,
         "stats": {
             "armour": {
                 "flat": 650,
@@ -1280,7 +1239,6 @@
     {
         "name": "Decimus",
         "level": 83,
-        "gold": 246637,
         "stats": {
             "damage": {
                 "flat": 9,
@@ -1309,7 +1267,6 @@
     {
         "name": "Demonkillers",
         "level": 32,
-        "gold": 93566,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -1329,7 +1286,6 @@
     {
         "name": "Denovs",
         "level": 21,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": 2,
@@ -1346,7 +1302,6 @@
     {
         "name": "Dexterus",
         "level": 86,
-        "gold": 297466,
         "stats": {
             "damage": {
                 "flat": 5,
@@ -1393,7 +1348,6 @@
     {
         "name": "Doitrems",
         "level": 25,
-        "gold": 71178,
         "stats": {
             "armour": {
                 "flat": 50,
@@ -1423,7 +1377,6 @@
     {
         "name": "Domitius",
         "level": 222,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -1432,7 +1385,6 @@
     {
         "name": "Doomeniks",
         "level": 68,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": -5,
@@ -1461,7 +1413,7 @@
     {
         "name": "Dragonus`",
         "level": 104,
-        "gold": 0,
+        "underworld": true,
         "stats": {
             "armour": {
                 "flat": 768,
@@ -1496,7 +1448,6 @@
     {
         "name": "Elrarangs",
         "level": 31,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": 0,
@@ -1511,7 +1462,6 @@
     {
         "name": "Elvilmandels",
         "level": 20,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 1,
@@ -1535,7 +1485,6 @@
     {
         "name": "Elywens",
         "level": 26,
-        "gold": 41580,
         "stats": {
             "health": {
                 "flat": 180,
@@ -1564,7 +1513,6 @@
     {
         "name": "Evotavs",
         "level": 50,
-        "gold": 102247,
         "stats": {
             "armour": {
                 "flat": 400,
@@ -1602,7 +1550,6 @@
     {
         "name": "Faustus`",
         "level": 215,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -1636,7 +1583,6 @@
     {
         "name": "Fernabasts",
         "level": 63,
-        "gold": 162945,
         "stats": {
             "health": {
                 "flat": 74,
@@ -1675,7 +1621,6 @@
     {
         "name": "Fitschis",
         "level": 41,
-        "gold": 120191,
         "stats": {
             "strength": {
                 "flat": -3,
@@ -1708,7 +1653,6 @@
     {
         "name": "Frabos",
         "level": 23,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 2,
@@ -1733,7 +1677,6 @@
     {
         "name": "Frickoys",
         "level": 26,
-        "gold": 0,
         "stats": {
             "charisma": {
                 "flat": 0,
@@ -1757,7 +1700,6 @@
     {
         "name": "Frientas",
         "level": 32,
-        "gold": 82338,
         "stats": {
             "armour": {
                 "flat": 99,
@@ -1791,7 +1733,6 @@
     {
         "name": "Fustriels",
         "level": 48,
-        "gold": 151840,
         "stats": {
             "armour": {
                 "flat": 147,
@@ -1825,7 +1766,6 @@
     {
         "name": "Gadriewens",
         "level": 28,
-        "gold": 67639,
         "stats": {
             "armour": {
                 "flat": 140,
@@ -1850,7 +1790,7 @@
     {
         "name": "Gaias",
         "level": 130,
-        "gold": 478315,
+        "underworld": true,
         "stats": {
             "damage": {
                 "flat": 20,
@@ -1885,7 +1825,6 @@
     {
         "name": "Gaius",
         "level": 90,
-        "gold": 275000,
         "stats": {
             "damage": {
                 "flat": 17,
@@ -1918,7 +1857,6 @@
     {
         "name": "Galarands",
         "level": 33,
-        "gold": 93050,
         "stats": {
             "armour": {
                 "flat": 200,
@@ -1938,7 +1876,6 @@
     {
         "name": "Gidras",
         "level": 46,
-        "gold": 103719,
         "stats": {
             "strength": {
                 "flat": 2,
@@ -1972,7 +1909,6 @@
     {
         "name": "Giganticus",
         "level": 92,
-        "gold": 198304,
         "stats": {
             "damage": {
                 "flat": 8,
@@ -2010,7 +1946,6 @@
     {
         "name": "Gonaks",
         "level": 31,
-        "gold": 54147,
         "stats": {
             "damage": {
                 "flat": 6,
@@ -2039,7 +1974,6 @@
     {
         "name": "Granks",
         "level": 28,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 100,
@@ -2069,7 +2003,6 @@
     {
         "name": "Grasscrawlers",
         "level": 30,
-        "gold": 59135,
         "stats": {
             "armour": {
                 "flat": 100,
@@ -2094,7 +2027,6 @@
     {
         "name": "Gratias",
         "level": 118,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": 0,
@@ -2119,7 +2051,7 @@
     {
         "name": "Gratius`",
         "level": 113,
-        "gold": 0,
+        "underworld": true,
         "stats": {
             "damage": {
                 "flat": 17,
@@ -2162,7 +2094,6 @@
     {
         "name": "Grills",
         "level": 53,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": -2,
@@ -2195,7 +2126,6 @@
     {
         "name": "Heudois",
         "level": 35,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": 0,
@@ -2224,7 +2154,6 @@
     {
         "name": "Heuhois",
         "level": 49,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": -2,
@@ -2256,7 +2185,6 @@
     {
         "name": "Ibiwans",
         "level": 29,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 6,
@@ -2281,7 +2209,6 @@
     {
         "name": "Ichorus",
         "level": 80,
-        "gold": 234799,
         "stats": {
             "damage": {
                 "flat": 15,
@@ -2315,7 +2242,6 @@
     {
         "name": "Ismaels",
         "level": 30,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": -1,
@@ -2353,7 +2279,6 @@
     {
         "name": "Isundels",
         "level": 30,
-        "gold": 83485,
         "stats": {
             "armour": {
                 "flat": 140,
@@ -2378,7 +2303,6 @@
     {
         "name": "Jennifers",
         "level": 71,
-        "gold": 190452,
         "stats": {
             "health": {
                 "flat": 94,
@@ -2402,7 +2326,6 @@
     {
         "name": "Joves",
         "level": 111,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 20,
@@ -2441,7 +2364,6 @@
     {
         "name": "Kedyssis",
         "level": 30,
-        "gold": 90442,
         "stats": {
             "health": {
                 "flat": 60,
@@ -2461,7 +2383,6 @@
     {
         "name": "Kerrannas",
         "level": 33,
-        "gold": 100805,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -2486,7 +2407,6 @@
     {
         "name": "Korks",
         "level": 59,
-        "gold": 149738,
         "stats": {
             "armour": {
                 "flat": 113,
@@ -2516,7 +2436,6 @@
     {
         "name": "Kosmonas",
         "level": 17,
-        "gold": 48227,
         "stats": {
             "health": {
                 "flat": 26,
@@ -2536,7 +2455,6 @@
     {
         "name": "Leandronimus",
         "level": 69,
-        "gold": 251025,
         "stats": {
             "strength": {
                 "flat": 3,
@@ -2561,7 +2479,6 @@
     {
         "name": "Lepidus",
         "level": 94,
-        "gold": 364580,
         "stats": {
             "damage": {
                 "flat": 12,
@@ -2600,7 +2517,6 @@
     {
         "name": "Lethe`s",
         "level": 101,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 19,
@@ -2638,7 +2554,6 @@
     {
         "name": "Liloels",
         "level": 56,
-        "gold": 132707,
         "stats": {
             "constitution": {
                 "flat": -2,
@@ -2666,7 +2581,6 @@
     {
         "name": "Lothays",
         "level": 26,
-        "gold": 62370,
         "stats": {
             "damage": {
                 "flat": 4,
@@ -2686,7 +2600,6 @@
     {
         "name": "Lucius",
         "level": 84,
-        "gold": 200500,
         "stats": {
             "damage": {
                 "flat": 5,
@@ -2734,7 +2647,6 @@
     {
         "name": "Lulus",
         "level": 39,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 2,
@@ -2769,7 +2681,6 @@
     {
         "name": "Lurtscharas",
         "level": 31,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 1,
@@ -2803,7 +2714,6 @@
     {
         "name": "Magnus`",
         "level": 111,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 23,
@@ -2842,7 +2752,6 @@
     {
         "name": "Mandalus",
         "level": 90,
-        "gold": 220000,
         "stats": {
             "agility": {
                 "flat": 8,
@@ -2870,7 +2779,6 @@
     {
         "name": "Manius",
         "level": 85,
-        "gold": 203708,
         "stats": {
             "charisma": {
                 "flat": 25,
@@ -2895,7 +2803,6 @@
     {
         "name": "Marcellus",
         "level": 95,
-        "gold": 281087,
         "stats": {
             "damage": {
                 "flat": 18,
@@ -2924,7 +2831,6 @@
     {
         "name": "Marcus",
         "level": 81,
-        "gold": 0,
         "stats": {
             "intelligence": {
                 "flat": 20,
@@ -2947,7 +2853,6 @@
     {
         "name": "Mateus",
         "level": 85,
-        "gold": 280099,
         "stats": {
             "damage": {
                 "flat": 16,
@@ -2971,7 +2876,6 @@
     {
         "name": "Medonis",
         "level": 45,
-        "gold": 0,
         "stats": {
             "agility": {
                 "flat": 0,
@@ -2999,7 +2903,6 @@
     {
         "name": "Melanchaetas",
         "level": 36,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 76,
@@ -3029,7 +2932,6 @@
     {
         "name": "Melaneos",
         "level": 50,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 3,
@@ -3063,7 +2965,6 @@
     {
         "name": "Melior's",
         "level": 225,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -3072,7 +2973,6 @@
     {
         "name": "Mercurialis`",
         "level": 109,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 10,
@@ -3101,7 +3001,6 @@
     {
         "name": "Mermereus",
         "level": 23,
-        "gold": 65165,
         "stats": {
             "strength": {
                 "flat": 1,
@@ -3135,7 +3034,6 @@
     {
         "name": "Mimas",
         "level": 19,
-        "gold": 51536,
         "stats": {
             "strength": {
                 "flat": 1,
@@ -3165,7 +3063,6 @@
     {
         "name": "Minucius`",
         "level": 109,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 14,
@@ -3212,7 +3109,6 @@
     {
         "name": "Monychustas",
         "level": 64,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": -3,
@@ -3245,7 +3141,6 @@
     {
         "name": "Mooncruchers",
         "level": 30,
-        "gold": 51536,
         "stats": {
             "armour": {
                 "flat": 220,
@@ -3275,7 +3170,6 @@
     {
         "name": "Mycandrilles`",
         "level": 104,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 468,
@@ -3317,7 +3211,6 @@
     {
         "name": "Nariths",
         "level": 21,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 1,
@@ -3342,7 +3235,6 @@
     {
         "name": "Opiehnzas",
         "level": 70,
-        "gold": 226290,
         "stats": {
             "damage": {
                 "flat": 5,
@@ -3385,7 +3277,6 @@
     {
         "name": "Oranius`",
         "level": 108,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 790,
@@ -3425,7 +3316,6 @@
     {
         "name": "Orlelds",
         "level": 35,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 3,
@@ -3444,7 +3334,6 @@
     {
         "name": "Peragos",
         "level": 32,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 350,
@@ -3473,7 +3362,6 @@
     {
         "name": "Phalangens",
         "level": 40,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 108,
@@ -3488,7 +3376,7 @@
     {
         "name": "Pilatus`",
         "level": 115,
-        "gold": 0,
+        "underworld": true,
         "stats": {
             "damage": {
                 "flat": 13,
@@ -3517,7 +3405,6 @@
     {
         "name": "Poirins",
         "level": 23,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 280,
@@ -3547,7 +3434,6 @@
     {
         "name": "Pontius",
         "level": 99,
-        "gold": 312949,
         "stats": {
             "damage": {
                 "flat": 14,
@@ -3590,7 +3476,6 @@
     {
         "name": "Porcius`",
         "level": 120,
-        "gold": 346471,
         "stats": {
             "damage": {
                 "flat": 5,
@@ -3628,7 +3513,6 @@
     {
         "name": "Primulus`",
         "level": 107,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 664,
@@ -3676,7 +3560,6 @@
     {
         "name": "Purmanns",
         "level": 60,
-        "gold": 161057,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -3713,7 +3596,6 @@
     {
         "name": "Quietus",
         "level": 230,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -3722,7 +3604,6 @@
     {
         "name": "Quintas",
         "level": 150,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 12,
@@ -3760,7 +3641,6 @@
     {
         "name": "Quintus",
         "level": 93,
-        "gold": 316214,
         "stats": {
             "damage": {
                 "flat": 13,
@@ -3807,7 +3687,6 @@
     {
         "name": "Rakrests",
         "level": 33,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 190,
@@ -3837,7 +3716,6 @@
     {
         "name": "Rayols",
         "level": 27,
-        "gold": 61892,
         "stats": {
             "damage": {
                 "flat": 7,
@@ -3866,7 +3744,6 @@
     {
         "name": "Redos",
         "level": 27,
-        "gold": 49514,
         "stats": {
             "armour": {
                 "flat": 100,
@@ -3896,7 +3773,6 @@
     {
         "name": "Reinkes",
         "level": 18,
-        "gold": 0,
         "stats": {
             "agility": {
                 "flat": 0,
@@ -3929,7 +3805,6 @@
     {
         "name": "Ronaldas",
         "level": 44,
-        "gold": 114581,
         "stats": {
             "health": {
                 "flat": 49,
@@ -3968,7 +3843,6 @@
     {
         "name": "Rynightes",
         "level": 28,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 60,
@@ -3993,7 +3867,6 @@
     {
         "name": "Scribonius`",
         "level": 120,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": 18,
@@ -4008,7 +3881,7 @@
     {
         "name": "Sebastianus`",
         "level": 103,
-        "gold": 0,
+        "underworld": true,
         "stats": {
             "damage": {
                 "flat": 16,
@@ -4056,7 +3929,6 @@
     {
         "name": "Sentarions",
         "level": 78,
-        "gold": 283771,
         "stats": {
             "armour": {
                 "flat": 208,
@@ -4090,7 +3962,7 @@
     {
         "name": "Sergius`",
         "level": 110,
-        "gold": 0,
+        "underworld": true,
         "stats": {
             "armour": {
                 "flat": 605,
@@ -4132,7 +4004,6 @@
     {
         "name": "Servius",
         "level": 86,
-        "gold": 297466,
         "stats": {
             "damage": {
                 "flat": 8,
@@ -4166,7 +4037,6 @@
     {
         "name": "Sextus",
         "level": 89,
-        "gold": 257341,
         "stats": {
             "damage": {
                 "flat": 12,
@@ -4205,7 +4075,6 @@
     {
         "name": "Shivas",
         "level": 76,
-        "gold": 175457,
         "stats": {
             "charisma": {
                 "flat": -3,
@@ -4229,7 +4098,6 @@
     {
         "name": "Silvanus",
         "level": 91,
-        "gold": 293092,
         "stats": {
             "intelligence": {
                 "flat": 45,
@@ -4248,7 +4116,6 @@
     {
         "name": "Skiterus",
         "level": 27,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 1,
@@ -4287,7 +4154,6 @@
     {
         "name": "Solitanis",
         "level": 22,
-        "gold": 59737,
         "stats": {
             "constitution": {
                 "flat": -1,
@@ -4319,7 +4185,6 @@
     {
         "name": "Sphingens",
         "level": 58,
-        "gold": 131074,
         "stats": {
             "strength": {
                 "flat": 3,
@@ -4344,7 +4209,6 @@
     {
         "name": "Spurius",
         "level": 88,
-        "gold": 293471,
         "stats": {
             "intelligence": {
                 "flat": 25,
@@ -4363,7 +4227,6 @@
     {
         "name": "Stoybaers",
         "level": 72,
-        "gold": 255249,
         "stats": {
             "strength": {
                 "flat": -3,
@@ -4401,7 +4264,6 @@
     {
         "name": "Sugos",
         "level": 22,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 3,
@@ -4430,7 +4292,6 @@
     {
         "name": "Tanias",
         "level": 25,
-        "gold": 39876,
         "stats": {
             "armour": {
                 "flat": 250,
@@ -4455,7 +4316,6 @@
     {
         "name": "Tantus",
         "level": 81,
-        "gold": 238724,
         "stats": {
             "damage": {
                 "flat": 10,
@@ -4493,7 +4353,6 @@
     {
         "name": "Tellus",
         "level": 93,
-        "gold": 229974,
         "stats": {
             "damage": {
                 "flat": 12,
@@ -4528,7 +4387,6 @@
     {
         "name": "Thorstens",
         "level": 73,
-        "gold": 259932,
         "stats": {
             "strength": {
                 "flat": 3,
@@ -4557,7 +4415,6 @@
     {
         "name": "Tiberius`",
         "level": 105,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 22,
@@ -4596,7 +4453,6 @@
     {
         "name": "Tinothiels",
         "level": 16,
-        "gold": 30990,
         "stats": {
             "armour": {
                 "flat": 60,
@@ -4616,7 +4472,6 @@
     {
         "name": "Titanius",
         "level": 98,
-        "gold": 216056,
         "stats": {
             "damage": {
                 "flat": 18,
@@ -4655,7 +4510,6 @@
     {
         "name": "Titus",
         "level": 88,
-        "gold": 213433,
         "stats": {
             "armour": {
                 "flat": 500,
@@ -4689,7 +4543,6 @@
     {
         "name": "Trafans",
         "level": 60,
-        "gold": 177163,
         "stats": {
             "damage": {
                 "flat": 9,
@@ -4724,7 +4577,6 @@
         "id": 7,
         "name": "Táliths",
         "level": 45,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 7,
@@ -4752,7 +4604,6 @@
         "id": 73,
         "name": "Tûnêsés",
         "level": 33,
-        "gold": 0,
         "stats": {
             "charisma": {
                 "flat": 0,
@@ -4779,7 +4630,6 @@
     {
         "name": "Umbros",
         "level": 67,
-        "gold": 167229,
         "stats": {
             "armour": {
                 "flat": 199,
@@ -4794,7 +4644,6 @@
     {
         "name": "Umfetas",
         "level": 42,
-        "gold": 108275,
         "stats": {
             "strength": {
                 "flat": 2,
@@ -4828,7 +4677,6 @@
     {
         "name": "Umilawens",
         "level": 27,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 2,
@@ -4853,7 +4701,6 @@
     {
         "name": "Uridos",
         "level": 42,
-        "gold": 118587,
         "stats": {
             "damage": {
                 "flat": 7,
@@ -4891,7 +4738,7 @@
     {
         "name": "Ursus`",
         "level": 107,
-        "gold": 0,
+        "underworld": true,
         "stats": {
             "damage": {
                 "flat": 9,
@@ -4930,7 +4777,6 @@
     {
         "name": "Uróthiens",
         "level": 25,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 6,
@@ -4959,7 +4805,6 @@
     {
         "name": "Valentinus`",
         "level": 107,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 900,
@@ -4993,7 +4838,6 @@
     {
         "name": "Valerius",
         "level": 100,
-        "gold": 348992,
         "stats": {
             "damage": {
                 "flat": 19,
@@ -5018,7 +4862,6 @@
     {
         "name": "Vergilius",
         "level": 95,
-        "gold": 325469,
         "stats": {
             "intelligence": {
                 "flat": -30,
@@ -5041,7 +4884,6 @@
     {
         "name": "Vuthiels",
         "level": 22,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 2,
@@ -5066,7 +4908,6 @@
     {
         "name": "Watzmanns",
         "level": 24,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 30,
@@ -5100,7 +4941,6 @@
     {
         "name": "Xenphlames",
         "level": 55,
-        "gold": 187347,
         "stats": {
             "armour": {
                 "flat": 151,
@@ -5120,7 +4960,6 @@
     {
         "name": "Xus",
         "level": 28,
-        "gold": 51535,
         "stats": {
             "health": {
                 "flat": 32,
@@ -5149,7 +4988,6 @@
     {
         "name": "Yas",
         "level": 51,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 158,
@@ -5162,7 +5000,6 @@
     {
         "name": "Zeindras",
         "level": 32,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 3,
@@ -5197,7 +5034,6 @@
     {
         "name": "Zickezackes",
         "level": 21,
-        "gold": 42719,
         "stats": {
             "health": {
                 "flat": 21,
@@ -5226,7 +5062,6 @@
     {
         "name": "Zimbris",
         "level": 77,
-        "gold": 156211,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -5255,7 +5090,6 @@
     {
         "name": "Zombers",
         "level": 54,
-        "gold": 119680,
         "stats": {
             "strength": {
                 "flat": 4,
@@ -5285,7 +5119,6 @@
         "name": "Regulus",
         "level": 162,
         "new": true,
-        "gold": 0,
         "stats": {
             "charisma": {
                 "flat": 58,
@@ -5303,7 +5136,6 @@
         "name": "Timotius`",
         "level": 155,
         "new": true,
-        "gold": 582853,
         "stats": {
             "damage": {
                 "flat": 22,
@@ -5332,7 +5164,6 @@
     {
         "name": "Elegarius",
         "level": 155,
-        "gold": 0,
         "new": true,
         "stats": {
             "agility": {
@@ -5354,7 +5185,6 @@
     {
         "name": "Darius`",
         "level": 162,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -5388,7 +5218,6 @@
     {
         "name": "Cassius",
         "level": 155,
-        "gold": 0,
         "new": true,
         "stats": {
             "health": {
@@ -5426,7 +5255,6 @@
     {
         "name": "Varus",
         "level": 157,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -5460,7 +5288,6 @@
     {
         "name": "Horatius",
         "level": 158,
-        "gold": 0,
         "new": true,
         "stats": {
             "strength": {
@@ -5490,7 +5317,6 @@
     {
         "name": "Plinius",
         "level": 159,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -5499,7 +5325,6 @@
     {
         "name": "Zenobius",
         "level": 160,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -5533,7 +5358,6 @@
     {
         "name": "Nicodemus`",
         "level": 160,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -5567,7 +5391,6 @@
     {
         "name": "Crispinus",
         "level": 160,
-        "gold": 0,
         "new": true,
         "stats": {
             "health": {
@@ -5593,7 +5416,6 @@
     {
         "name": "Caelius",
         "level": 160,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -5623,7 +5445,6 @@
     {
         "name": "Florentinus",
         "level": 162,
-        "gold": 465251,
         "new": true,
         "stats": {
             "damage": {
@@ -5657,7 +5478,6 @@
     {
         "name": "Honoratus",
         "level": 163,
-        "gold": 0,
         "new": true,
         "stats": {
             "strength": {
@@ -5687,7 +5507,6 @@
     {
         "name": "Secundus",
         "level": 165,
-        "gold": 0,
         "new": true,
         "stats": {
             "intelligence": {
@@ -5705,7 +5524,6 @@
     {
         "name": "Proculus",
         "level": 165,
-        "gold": 0,
         "new": true,
         "stats": {
             "health": {
@@ -5731,7 +5549,6 @@
     {
         "name": "Peregrinus`",
         "level": 165,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -5761,7 +5578,6 @@
     {
         "name": "Marinus",
         "level": 165,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -5795,7 +5611,6 @@
     {
         "name": "Victorinus`",
         "level": 167,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -5829,7 +5644,6 @@
     {
         "name": "Nonius",
         "level": 168,
-        "gold": 0,
         "new": true,
         "stats": {
             "strength": {
@@ -5871,7 +5685,6 @@
     {
         "name": "Galerius",
         "level": 168,
-        "gold": 0,
         "new": true,
         "stats": {
             "intelligence": {
@@ -5893,7 +5706,6 @@
     {
         "name": "Cornelius",
         "level": 170,
-        "gold": 0,
         "new": true,
         "stats": {
             "agility": {
@@ -5919,7 +5731,6 @@
     {
         "name": "Acrobas",
         "level": 170,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -5957,7 +5768,6 @@
     {
         "name": "Flavius",
         "level": 172,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -5995,7 +5805,6 @@
     {
         "name": "Claudius`",
         "level": 173,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -6033,7 +5842,6 @@
     {
         "name": "Taurus",
         "level": 175,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -6071,7 +5879,6 @@
     {
         "name": "Iunius",
         "level": 177,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -6109,7 +5916,6 @@
     {
         "name": "Herestia`s",
         "level": 178,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -6143,7 +5949,6 @@
     {
         "name": "Saturninus",
         "level": 180,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -6181,7 +5986,6 @@
     {
         "name": "Baurus",
         "level": 182,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -6211,7 +6015,6 @@
     {
         "name": "Atticus`",
         "level": 183,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -6249,7 +6052,6 @@
     {
         "name": "Severus",
         "level": 185,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -6287,7 +6089,6 @@
     {
         "name": "Julius`",
         "level": 187,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -6296,7 +6097,6 @@
     {
         "name": "Trajenus",
         "level": 188,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -6305,7 +6105,6 @@
     {
         "name": "Laelius",
         "level": 190,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -6314,7 +6113,6 @@
     {
         "name": "Scripio's",
         "level": 192,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -6323,7 +6121,6 @@
     {
         "name": "Aurius",
         "level": 193,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -6332,7 +6129,6 @@
     {
         "name": "Calpurnicus",
         "level": 195,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -6341,7 +6137,6 @@
     {
         "name": "Tacitus`",
         "level": 197,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -6379,7 +6174,6 @@
     {
         "name": "Maximus",
         "level": 198,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -6388,7 +6182,6 @@
     {
         "name": "Helvius",
         "level": 198,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -6397,7 +6190,6 @@
     {
         "name": "Aemilius",
         "level": 200,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -6435,7 +6227,6 @@
     {
         "name": "Fabius`",
         "level": 202,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -6469,7 +6260,6 @@
     {
         "name": "Astarius",
         "level": 203,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -6478,7 +6268,6 @@
     {
         "name": "Valcarus",
         "level": 209,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -6487,7 +6276,6 @@
     {
         "name": "Primus`",
         "level": 210,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -6521,7 +6309,6 @@
     {
         "name": "Acilius",
         "level": 212,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -6530,7 +6317,6 @@
     {
         "name": "Aequitanius",
         "level": 227,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -6539,7 +6325,6 @@
     {
         "name": "Mercurius`",
         "level": 0,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -6548,7 +6333,6 @@
     {
         "name": "Augustus`",
         "level": 220,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -6590,7 +6374,6 @@
     {
         "name": "Gratianus`",
         "level": 207,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {

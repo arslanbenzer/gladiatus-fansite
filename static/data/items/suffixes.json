@@ -3,7 +3,6 @@
         "id": 100,
         "name": "+1",
         "level": 1,
-        "gold": 0,
         "stats": {},
         "materials": {}
     },
@@ -11,7 +10,6 @@
         "id": 101,
         "name": "+2",
         "level": 2,
-        "gold": 0,
         "stats": {},
         "materials": {}
     },
@@ -19,7 +17,6 @@
         "id": 102,
         "name": "+3",
         "level": 3,
-        "gold": 0,
         "stats": {},
         "materials": {}
     },
@@ -27,7 +24,6 @@
         "id": 103,
         "name": "+4",
         "level": 4,
-        "gold": 0,
         "stats": {
             "intelligence": {
                 "flat": 2,
@@ -40,7 +36,6 @@
         "id": 104,
         "name": "+5",
         "level": 5,
-        "gold": 0,
         "stats": {},
         "materials": {}
     },
@@ -48,7 +43,6 @@
         "id": 105,
         "name": "+6",
         "level": 6,
-        "gold": 0,
         "stats": {},
         "materials": {}
     },
@@ -56,7 +50,6 @@
         "id": 106,
         "name": "+7",
         "level": 7,
-        "gold": 0,
         "stats": {},
         "materials": {}
     },
@@ -64,7 +57,6 @@
         "id": 107,
         "name": "+8",
         "level": 8,
-        "gold": 0,
         "stats": {},
         "materials": {}
     },
@@ -72,14 +64,12 @@
         "id": 108,
         "name": "+9",
         "level": 9,
-        "gold": 0,
         "stats": {},
         "materials": {}
     },
     {
         "name": "of Accuracy",
         "level": 34,
-        "gold": 100328,
         "stats": {
             "armour": {
                 "flat": 206,
@@ -94,7 +84,6 @@
     {
         "name": "of Acheron",
         "level": 55,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 22,
@@ -123,7 +112,6 @@
     {
         "name": "of Aggression",
         "level": 34,
-        "gold": 92302,
         "stats": {
             "strength": {
                 "flat": 3,
@@ -152,7 +140,7 @@
     {
         "name": "of Agony",
         "level": 59,
-        "gold": 0,
+        "underworld": true,
         "stats": {
             "dexterity": {
                 "flat": 0,
@@ -176,7 +164,6 @@
     {
         "name": "of Alleluia",
         "level": 33,
-        "gold": 93050,
         "stats": {
             "intelligence": {
                 "flat": 0,
@@ -199,7 +186,6 @@
     {
         "name": "of Angst",
         "level": 57,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 10,
@@ -223,7 +209,6 @@
     {
         "name": "of Anguish",
         "level": 59,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 392,
@@ -257,7 +242,6 @@
     {
         "name": "of Antiquity",
         "level": 30,
-        "gold": 69570,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -282,7 +266,6 @@
     {
         "name": "of Apprenticeship",
         "level": 20,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 3,
@@ -306,7 +289,6 @@
     {
         "name": "of Arrogance",
         "level": 18,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 100,
@@ -323,7 +305,6 @@
     {
         "name": "of Assassination",
         "level": 20,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 4,
@@ -348,7 +329,6 @@
     {
         "name": "of Attrition",
         "level": 18,
-        "gold": 28522,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -368,7 +348,6 @@
     {
         "name": "of Balance",
         "level": 15,
-        "gold": 34375,
         "stats": {
             "strength": {
                 "flat": 2,
@@ -403,7 +382,6 @@
     {
         "name": "of Baptism",
         "level": 28,
-        "gold": 67639,
         "stats": {
             "intelligence": {
                 "flat": 0,
@@ -426,7 +404,6 @@
     {
         "name": "of Battle",
         "level": 20,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 4,
@@ -441,7 +418,6 @@
     {
         "name": "of Belief",
         "level": 18,
-        "gold": 30559,
         "stats": {
             "armour": {
                 "flat": 100,
@@ -466,7 +442,6 @@
     {
         "name": "of Benevolence",
         "level": 37,
-        "gold": 0,
         "stats": {
             "charisma": {
                 "flat": -4,
@@ -490,7 +465,6 @@
     {
         "name": "of Blocking",
         "level": 39,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 80,
@@ -520,7 +494,6 @@
     {
         "name": "of Blood",
         "level": 13,
-        "gold": 37917,
         "stats": {
             "health": {
                 "flat": 10,
@@ -540,7 +513,6 @@
     {
         "name": "of Bondage",
         "level": 58,
-        "gold": 146494,
         "stats": {
             "damage": {
                 "flat": -8,
@@ -569,7 +541,6 @@
     {
         "name": "of Boost",
         "level": 22,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 1,
@@ -593,7 +564,6 @@
     {
         "name": "of Brightness",
         "level": 10,
-        "gold": 0,
         "stats": {
             "charisma": {
                 "flat": 10,
@@ -608,7 +578,6 @@
     {
         "name": "of Brutality",
         "level": 19,
-        "gold": 32210,
         "stats": {
             "damage": {
                 "flat": 3,
@@ -627,7 +596,6 @@
     {
         "name": "of Caesar",
         "level": 35,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 3,
@@ -644,7 +612,6 @@
     {
         "name": "of Calling",
         "level": 31,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 3,
@@ -664,7 +631,6 @@
     {
         "name": "of Capriciousness",
         "level": 14,
-        "gold": 38800,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -684,7 +650,6 @@
     {
         "name": "of Cerberus",
         "level": 56,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 10,
@@ -699,7 +664,6 @@
     {
         "name": "of Ceremony",
         "level": 18,
-        "gold": 0,
         "stats": {
             "intelligence": {
                 "flat": 2,
@@ -718,7 +682,6 @@
     {
         "name": "of Chakra",
         "level": 19,
-        "gold": 47242,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -738,7 +701,6 @@
     {
         "name": "of Cleverness",
         "level": 20,
-        "gold": 47447,
         "stats": {
             "intelligence": {
                 "flat": 0,
@@ -757,7 +719,6 @@
     {
         "name": "of Cold",
         "level": 51,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 411,
@@ -785,7 +746,6 @@
     {
         "name": "of Concealment",
         "level": 14,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 1,
@@ -806,7 +766,6 @@
     {
         "name": "of Concentration",
         "level": 27,
-        "gold": 0,
         "stats": {
             "constitution": {
                 "flat": -4,
@@ -829,7 +788,6 @@
     {
         "name": "of Conflict",
         "level": 15,
-        "gold": 27500,
         "stats": {
             "damage": {
                 "flat": 2,
@@ -854,7 +812,6 @@
     {
         "name": "of Confusion",
         "level": 15,
-        "gold": 24063,
         "stats": {
             "damage": {
                 "flat": -1,
@@ -884,7 +841,6 @@
     {
         "name": "of Consecration",
         "level": 14,
-        "gold": 30717,
         "stats": {
             "intelligence": {
                 "flat": 2,
@@ -907,7 +863,6 @@
     {
         "name": "of Considerateness",
         "level": 35,
-        "gold": 95467,
         "stats": {
             "intelligence": {
                 "flat": 3,
@@ -926,7 +881,6 @@
     {
         "name": "of Corniness",
         "level": 24,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 125,
@@ -941,7 +895,6 @@
     {
         "name": "of Corrosion",
         "level": 25,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 3,
@@ -966,7 +919,6 @@
     {
         "name": "of Courage",
         "level": 20,
-        "gold": 54225,
         "stats": {
             "health": {
                 "flat": 50,
@@ -986,7 +938,6 @@
     {
         "name": "of Crime",
         "level": 27,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": 0,
@@ -1003,7 +954,6 @@
     {
         "name": "of Darkness",
         "level": 23,
-        "gold": 0,
         "stats": {
             "constitution": {
                 "flat": 5,
@@ -1020,7 +970,6 @@
     {
         "name": "of Death",
         "level": 36,
-        "gold": 111536,
         "stats": {
             "strength": {
                 "flat": 4,
@@ -1050,7 +999,6 @@
     {
         "name": "of Decapitation",
         "level": 13,
-        "gold": 24267,
         "stats": {
             "dexterity": {
                 "flat": 1,
@@ -1074,7 +1022,6 @@
     {
         "name": "of Decay",
         "level": 60,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": 31,
@@ -1099,7 +1046,6 @@
     {
         "name": "of Delicacy",
         "level": 21,
-        "gold": 56959,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -1129,7 +1075,6 @@
     {
         "name": "of Demolition",
         "level": 17,
-        "gold": 30866,
         "stats": {
             "charisma": {
                 "flat": 2,
@@ -1154,7 +1099,6 @@
     {
         "name": "of Demons",
         "level": 56,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 347,
@@ -1184,7 +1128,6 @@
     {
         "name": "of Denomination",
         "level": 30,
-        "gold": 52178,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -1208,7 +1151,6 @@
     {
         "name": "of Despair",
         "level": 52,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -1237,7 +1179,6 @@
     {
         "name": "of Desperation",
         "level": 17,
-        "gold": 32795,
         "stats": {
             "constitution": {
                 "flat": 4,
@@ -1257,7 +1198,6 @@
     {
         "name": "of Destruction",
         "level": 58,
-        "gold": 42440,
         "stats": {
             "health": {
                 "flat": 405,
@@ -1281,7 +1221,6 @@
     {
         "name": "of Difficulty",
         "level": 15,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 10,
@@ -1306,7 +1245,6 @@
     {
         "name": "of Diligence",
         "level": 20,
-        "gold": 56484,
         "stats": {
             "health": {
                 "flat": 20,
@@ -1326,7 +1264,6 @@
     {
         "name": "of Distraction",
         "level": 18,
-        "gold": 50931,
         "stats": {
             "dexterity": {
                 "flat": 3,
@@ -1346,7 +1283,6 @@
     {
         "name": "of Division",
         "level": 22,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -1371,7 +1307,6 @@
     {
         "name": "of Dolour",
         "level": 54,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 10,
@@ -1414,7 +1349,6 @@
     {
         "name": "of Dominance",
         "level": 42,
-        "gold": 134055,
         "stats": {
             "damage": {
                 "flat": 4,
@@ -1457,7 +1391,6 @@
     {
         "name": "of Downfall",
         "level": 11,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 1,
@@ -1470,7 +1403,6 @@
     {
         "name": "of Dread",
         "level": 58,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 351,
@@ -1498,7 +1430,6 @@
     {
         "name": "of Dusk",
         "level": 53,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 24,
@@ -1523,7 +1454,6 @@
     {
         "name": "of Earth",
         "level": 48,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 5,
@@ -1562,7 +1492,6 @@
     {
         "name": "of Ease",
         "level": 43,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 2,
@@ -1592,7 +1521,6 @@
     {
         "name": "of Elimination",
         "level": 33,
-        "gold": 73665,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -1621,7 +1549,6 @@
     {
         "name": "of Emasculation",
         "level": 16,
-        "gold": 27344,
         "stats": {
             "intelligence": {
                 "flat": 0,
@@ -1636,7 +1563,6 @@
     {
         "name": "of Endurance",
         "level": 20,
-        "gold": 38409,
         "stats": {
             "armour": {
                 "flat": 30,
@@ -1661,7 +1587,6 @@
     {
         "name": "of Eradication",
         "level": 11,
-        "gold": 25142,
         "stats": {
             "agility": {
                 "flat": 0,
@@ -1681,7 +1606,6 @@
     {
         "name": "of Escape",
         "level": 58,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -1706,7 +1630,6 @@
     {
         "name": "of Evasion",
         "level": 21,
-        "gold": 42719,
         "stats": {
             "health": {
                 "flat": 46,
@@ -1731,7 +1654,6 @@
     {
         "name": "of Execution",
         "level": 37,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -1752,7 +1674,6 @@
     {
         "name": "of Expansion",
         "level": 29,
-        "gold": 56931,
         "stats": {
             "strength": {
                 "flat": 2,
@@ -1777,7 +1698,6 @@
     {
         "name": "of Failure",
         "level": 15,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": -5,
@@ -1794,7 +1714,6 @@
     {
         "name": "of Fairness",
         "level": 17,
-        "gold": 34724,
         "stats": {
             "constitution": {
                 "flat": 5,
@@ -1814,7 +1733,6 @@
     {
         "name": "of Faith",
         "level": 70,
-        "gold": 147581,
         "stats": {
             "constitution": {
                 "flat": 0,
@@ -1839,7 +1757,6 @@
     {
         "name": "of Fatuity",
         "level": 36,
-        "gold": 107246,
         "stats": {
             "intelligence": {
                 "flat": 3,
@@ -1858,7 +1775,6 @@
     {
         "name": "of Favour",
         "level": 20,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 100,
@@ -1887,7 +1803,6 @@
     {
         "name": "of Fear",
         "level": 10,
-        "gold": 27057,
         "stats": {
             "agility": {
                 "flat": 0,
@@ -1907,7 +1822,6 @@
     {
         "name": "of Fire",
         "level": 41,
-        "gold": 115183,
         "stats": {
             "damage": {
                 "flat": 3,
@@ -1941,7 +1855,6 @@
     {
         "name": "of Fragmentation",
         "level": 24,
-        "gold": 65424,
         "stats": {
             "strength": {
                 "flat": 2,
@@ -1971,7 +1884,6 @@
     {
         "name": "of Freedom",
         "level": 38,
-        "gold": 114316,
         "stats": {
             "strength": {
                 "flat": 5,
@@ -1996,7 +1908,6 @@
     {
         "name": "of Generosity",
         "level": 16,
-        "gold": 30990,
         "stats": {
             "strength": {
                 "flat": 5,
@@ -2021,7 +1932,7 @@
     {
         "name": "of Gloom",
         "level": 52,
-        "gold": 161103,
+        "underworld": true,
         "stats": {
             "damage": {
                 "flat": 7,
@@ -2060,7 +1971,6 @@
     {
         "name": "of Glory",
         "level": 10,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 1,
@@ -2079,7 +1989,6 @@
     {
         "name": "of Grace",
         "level": 10,
-        "gold": 23367,
         "stats": {
             "dexterity": {
                 "flat": 5,
@@ -2099,7 +2008,6 @@
     {
         "name": "of Greed",
         "level": 15,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": 0,
@@ -2112,7 +2020,6 @@
     {
         "name": "of Harmony",
         "level": 20,
-        "gold": 0,
         "stats": {
             "constitution": {
                 "flat": 0,
@@ -2132,7 +2039,6 @@
     {
         "name": "of Haste",
         "level": 19,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": 0,
@@ -2152,7 +2058,6 @@
     {
         "name": "of Hate",
         "level": 25,
-        "gold": 59790,
         "stats": {
             "damage": {
                 "flat": 2,
@@ -2171,7 +2076,6 @@
     {
         "name": "of Haughtiness",
         "level": 18,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": -2,
@@ -2195,7 +2099,6 @@
     {
         "name": "of Healing",
         "level": 38,
-        "gold": 0,
         "stats": {
             "intelligence": {
                 "flat": 0,
@@ -2212,7 +2115,6 @@
     {
         "name": "of Health",
         "level": 20,
-        "gold": 38409,
         "stats": {
             "armour": {
                 "flat": 10,
@@ -2236,7 +2138,6 @@
     {
         "name": "of Heat",
         "level": 52,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 300,
@@ -2266,7 +2167,6 @@
     {
         "name": "of Heaven",
         "level": 35,
-        "gold": 58110,
         "stats": {
             "armour": {
                 "flat": 300,
@@ -2295,7 +2195,6 @@
     {
         "name": "of Hell",
         "level": 40,
-        "gold": 87505,
         "stats": {
             "damage": {
                 "flat": 5,
@@ -2324,7 +2223,6 @@
     {
         "name": "of Hellfire",
         "level": 65,
-        "gold": 169687,
         "stats": {
             "constitution": {
                 "flat": -12,
@@ -2339,7 +2237,6 @@
     {
         "name": "of Hesitation",
         "level": 15,
-        "gold": 25782,
         "stats": {
             "armour": {
                 "flat": 35,
@@ -2364,7 +2261,6 @@
     {
         "name": "of Hindrance",
         "level": 15,
-        "gold": 41250,
         "stats": {
             "armour": {
                 "flat": 20,
@@ -2389,7 +2285,6 @@
     {
         "name": "of Holiness",
         "level": 13,
-        "gold": 36401,
         "stats": {
             "intelligence": {
                 "flat": 0,
@@ -2408,7 +2303,6 @@
     {
         "name": "of Homunculus",
         "level": 29,
-        "gold": 77025,
         "stats": {
             "armour": {
                 "flat": 164,
@@ -2428,7 +2322,6 @@
     {
         "name": "of Honour",
         "level": 15,
-        "gold": 32657,
         "stats": {
             "constitution": {
                 "flat": 0,
@@ -2448,7 +2341,6 @@
     {
         "name": "of Hope",
         "level": 44,
-        "gold": 125494,
         "stats": {
             "damage": {
                 "flat": 6,
@@ -2473,7 +2365,6 @@
     {
         "name": "of Hypocrisy",
         "level": 32,
-        "gold": 97309,
         "stats": {
             "damage": {
                 "flat": -4,
@@ -2497,7 +2388,6 @@
     {
         "name": "of Ignorance",
         "level": 25,
-        "gold": 39860,
         "stats": {
             "armour": {
                 "flat": 125,
@@ -2516,7 +2406,6 @@
     {
         "name": "of Illusion",
         "level": 20,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 100,
@@ -2546,7 +2435,6 @@
     {
         "name": "of Inadequacy",
         "level": 19,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 46,
@@ -2559,7 +2447,6 @@
     {
         "name": "of Incompetence",
         "level": 15,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": -2,
@@ -2572,7 +2459,6 @@
     {
         "name": "of Independence",
         "level": 20,
-        "gold": 42928,
         "stats": {
             "armour": {
                 "flat": 100,
@@ -2606,7 +2492,6 @@
     {
         "name": "of Inevitability",
         "level": 15,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 93,
@@ -2626,7 +2511,6 @@
     {
         "name": "of Ingenuity",
         "level": 39,
-        "gold": 0,
         "stats": {
             "intelligence": {
                 "flat": 5,
@@ -2645,7 +2529,6 @@
     {
         "name": "of Inquisitiveness",
         "level": 11,
-        "gold": 0,
         "stats": {
             "healing": {
                 "flat": 20,
@@ -2664,7 +2547,6 @@
     {
         "name": "of Insanity",
         "level": 41,
-        "gold": 125199,
         "stats": {
             "agility": {
                 "flat": 8,
@@ -2692,7 +2574,6 @@
     {
         "name": "of Inspiration",
         "level": 23,
-        "gold": 0,
         "stats": {
             "intelligence": {
                 "flat": 0,
@@ -2711,7 +2592,6 @@
     {
         "name": "of Insult",
         "level": 15,
-        "gold": 34375,
         "stats": {
             "damage": {
                 "flat": 1,
@@ -2741,7 +2621,6 @@
     {
         "name": "of Invisibility",
         "level": 13,
-        "gold": 25784,
         "stats": {
             "health": {
                 "flat": 27,
@@ -2761,7 +2640,6 @@
     {
         "name": "of Judgement",
         "level": 55,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 10,
@@ -2795,7 +2673,6 @@
     {
         "name": "of Knowledge",
         "level": 29,
-        "gold": 66978,
         "stats": {
             "intelligence": {
                 "flat": 0,
@@ -2814,7 +2691,6 @@
     {
         "name": "of Languor",
         "level": 58,
-        "gold": 169625,
         "stats": {
             "damage": {
                 "flat": 5,
@@ -2843,7 +2719,6 @@
     {
         "name": "of Learning",
         "level": 15,
-        "gold": 42969,
         "stats": {
             "damage": {
                 "flat": 1,
@@ -2873,7 +2748,6 @@
     {
         "name": "of Life",
         "level": 25,
-        "gold": 0,
         "stats": {
             "constitution": {
                 "flat": 0,
@@ -2888,7 +2762,6 @@
     {
         "name": "of Light",
         "level": 22,
-        "gold": 62226,
         "stats": {
             "charisma": {
                 "flat": 0,
@@ -2903,7 +2776,6 @@
     {
         "name": "of Liturgy",
         "level": 10,
-        "gold": 22137,
         "stats": {
             "healing": {
                 "flat": 16,
@@ -2918,7 +2790,6 @@
     {
         "name": "of Looseness",
         "level": 10,
-        "gold": 28287,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -2933,7 +2804,6 @@
     {
         "name": "of Love",
         "level": 50,
-        "gold": 153371,
         "stats": {
             "intelligence": {
                 "flat": 20,
@@ -2956,7 +2826,6 @@
     {
         "name": "of Madness",
         "level": 15,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 2,
@@ -2981,7 +2850,6 @@
     {
         "name": "of Magic",
         "level": 15,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": 10,
@@ -3001,7 +2869,6 @@
     {
         "name": "of Magnificence",
         "level": 20,
-        "gold": 54225,
         "stats": {
             "armour": {
                 "flat": 60,
@@ -3026,7 +2893,6 @@
     {
         "name": "of Magnitude",
         "level": 15,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -3046,7 +2912,6 @@
     {
         "name": "of Malediction",
         "level": 14,
-        "gold": 40417,
         "stats": {
             "constitution": {
                 "flat": 0,
@@ -3066,7 +2931,6 @@
     {
         "name": "of Malice",
         "level": 33,
-        "gold": 81419,
         "stats": {
             "damage": {
                 "flat": 4,
@@ -3085,7 +2949,6 @@
     {
         "name": "of Marriage",
         "level": 26,
-        "gold": 41580,
         "stats": {
             "health": {
                 "flat": 71,
@@ -3105,7 +2968,6 @@
     {
         "name": "of Mars",
         "level": 31,
-        "gold": 90244,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -3125,7 +2987,6 @@
     {
         "name": "of Martial Arts",
         "level": 16,
-        "gold": 40104,
         "stats": {
             "strength": {
                 "flat": 1,
@@ -3150,7 +3011,6 @@
     {
         "name": "of Masculinity",
         "level": 21,
-        "gold": 52212,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -3180,7 +3040,6 @@
     {
         "name": "of Meat",
         "level": 18,
-        "gold": 30599,
         "stats": {
             "strength": {
                 "flat": 2,
@@ -3210,7 +3069,6 @@
     {
         "name": "of Melting",
         "level": 15,
-        "gold": 30938,
         "stats": {
             "strength": {
                 "flat": 1,
@@ -3240,7 +3098,6 @@
     {
         "name": "of Mercury",
         "level": 55,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": -3,
@@ -3269,7 +3126,6 @@
     {
         "name": "of Mercy",
         "level": 30,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 2,
@@ -3289,7 +3145,6 @@
     {
         "name": "of Merit",
         "level": 23,
-        "gold": 67772,
         "stats": {
             "strength": {
                 "flat": 3,
@@ -3314,7 +3169,6 @@
     {
         "name": "of Misery",
         "level": 52,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 389,
@@ -3339,7 +3193,6 @@
     {
         "name": "of Mourning",
         "level": 15,
-        "gold": 42969,
         "stats": {
             "health": {
                 "flat": 100,
@@ -3358,7 +3211,6 @@
     {
         "name": "of Mystery",
         "level": 21,
-        "gold": 54585,
         "stats": {
             "damage": {
                 "flat": 1,
@@ -3377,7 +3229,6 @@
     {
         "name": "of Night",
         "level": 54,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 23,
@@ -3397,7 +3248,6 @@
     {
         "name": "of Normality",
         "level": 12,
-        "gold": 25540,
         "stats": {
             "health": {
                 "flat": 15,
@@ -3412,7 +3262,6 @@
     {
         "name": "of Nostalgia",
         "level": 19,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -3432,7 +3281,6 @@
     {
         "name": "of Obsession",
         "level": 20,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": 0,
@@ -3449,7 +3297,6 @@
     {
         "name": "of Ordinance",
         "level": 16,
-        "gold": 29167,
         "stats": {
             "intelligence": {
                 "flat": 0,
@@ -3468,7 +3315,6 @@
     {
         "name": "of Orion",
         "level": 32,
-        "gold": 59882,
         "stats": {
             "health": {
                 "flat": 96,
@@ -3483,7 +3329,6 @@
     {
         "name": "of Pain",
         "level": 16,
-        "gold": 34365,
         "stats": {
             "damage": {
                 "flat": 1,
@@ -3507,7 +3352,6 @@
     {
         "name": "of Pandemic",
         "level": 22,
-        "gold": 49781,
         "stats": {
             "agility": {
                 "flat": 0,
@@ -3531,7 +3375,6 @@
     {
         "name": "of Passion",
         "level": 25,
-        "gold": 71178,
         "stats": {
             "damage": {
                 "flat": 1,
@@ -3556,7 +3399,6 @@
     {
         "name": "of Peace",
         "level": 20,
-        "gold": 33891,
         "stats": {
             "constitution": {
                 "flat": 0,
@@ -3571,7 +3413,6 @@
     {
         "name": "of Perdition",
         "level": 20,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -3591,7 +3432,6 @@
     {
         "name": "of Perfection",
         "level": 30,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": 0,
@@ -3608,7 +3448,6 @@
     {
         "name": "of Peril",
         "level": 57,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 31,
@@ -3637,7 +3476,6 @@
     {
         "name": "of Poison",
         "level": 20,
-        "gold": 58744,
         "stats": {
             "damage": {
                 "flat": 3,
@@ -3666,7 +3504,6 @@
     {
         "name": "of Power",
         "level": 20,
-        "gold": 56484,
         "stats": {
             "armour": {
                 "flat": 10,
@@ -3686,7 +3523,6 @@
     {
         "name": "of Pressure",
         "level": 35,
-        "gold": 58110,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -3711,7 +3547,6 @@
     {
         "name": "of Prevention",
         "level": 31,
-        "gold": 68586,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -3736,7 +3571,6 @@
     {
         "name": "of Pride",
         "level": 15,
-        "gold": 37813,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -3761,7 +3595,6 @@
     {
         "name": "of Promise",
         "level": 47,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 2,
@@ -3805,7 +3638,6 @@
     {
         "name": "of Protection",
         "level": 25,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 150,
@@ -3825,7 +3657,6 @@
     {
         "name": "of Purity",
         "level": 25,
-        "gold": 65424,
         "stats": {
             "charisma": {
                 "flat": 0,
@@ -3849,7 +3680,6 @@
     {
         "name": "of Purposefulness",
         "level": 28,
-        "gold": 67639,
         "stats": {
             "health": {
                 "flat": 86,
@@ -3869,7 +3699,6 @@
     {
         "name": "of Qualm",
         "level": 52,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 353,
@@ -3898,7 +3727,6 @@
     {
         "name": "of Rapidity",
         "level": 12,
-        "gold": 19864,
         "stats": {
             "agility": {
                 "flat": 10,
@@ -3913,7 +3741,6 @@
     {
         "name": "of Readiness",
         "level": 10,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 20,
@@ -3933,7 +3760,6 @@
     {
         "name": "of Recovery",
         "level": 34,
-        "gold": 60197,
         "stats": {
             "intelligence": {
                 "flat": 0,
@@ -3952,7 +3778,6 @@
     {
         "name": "of Regeneration",
         "level": 34,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": -4,
@@ -3980,7 +3805,6 @@
     {
         "name": "of Regret",
         "level": 10,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 1,
@@ -3997,7 +3821,6 @@
     {
         "name": "of Religiousness",
         "level": 19,
-        "gold": 54225,
         "stats": {
             "intelligence": {
                 "flat": 1,
@@ -4020,7 +3843,6 @@
     {
         "name": "of Reprisal",
         "level": 12,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -4035,7 +3857,6 @@
     {
         "name": "of Restitution",
         "level": 26,
-        "gold": 0,
         "stats": {
             "intelligence": {
                 "flat": 0,
@@ -4054,7 +3875,6 @@
     {
         "name": "of Retreat",
         "level": 20,
-        "gold": 49706,
         "stats": {
             "armour": {
                 "flat": 200,
@@ -4074,7 +3894,6 @@
     {
         "name": "of Retribution",
         "level": 40,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 6,
@@ -4098,7 +3917,6 @@
     {
         "name": "of Return",
         "level": 20,
-        "gold": 49706,
         "stats": {
             "health": {
                 "flat": 200,
@@ -4117,7 +3935,6 @@
     {
         "name": "of Revenge",
         "level": 20,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 10,
@@ -4132,7 +3949,6 @@
     {
         "name": "of Reversion",
         "level": 16,
-        "gold": 43750,
         "stats": {
             "armour": {
                 "flat": 80,
@@ -4151,7 +3967,6 @@
     {
         "name": "of Rigor Mortis",
         "level": 31,
-        "gold": 65586,
         "stats": {
             "intelligence": {
                 "flat": 3,
@@ -4170,7 +3985,6 @@
     {
         "name": "of Riot",
         "level": 25,
-        "gold": 71178,
         "stats": {
             "damage": {
                 "flat": 2,
@@ -4204,7 +4018,6 @@
     {
         "name": "of Rivalry",
         "level": 49,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 3,
@@ -4234,7 +4047,6 @@
     {
         "name": "of Sacrament",
         "level": 21,
-        "gold": 42719,
         "stats": {
             "damage": {
                 "flat": -2,
@@ -4262,7 +4074,6 @@
     {
         "name": "of Sacrifice",
         "level": 27,
-        "gold": 74271,
         "stats": {
             "armour": {
                 "flat": 124,
@@ -4277,7 +4088,6 @@
     {
         "name": "of Satisfaction",
         "level": 15,
-        "gold": 25782,
         "stats": {
             "damage": {
                 "flat": 2,
@@ -4297,7 +4107,6 @@
     {
         "name": "of Security",
         "level": 21,
-        "gold": 52212,
         "stats": {
             "armour": {
                 "flat": 100,
@@ -4317,7 +4126,6 @@
     {
         "name": "of Self-Assurance",
         "level": 17,
-        "gold": 32795,
         "stats": {
             "strength": {
                 "flat": 2,
@@ -4332,7 +4140,6 @@
     {
         "name": "of Self-Discipline",
         "level": 23,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 132,
@@ -4351,7 +4158,6 @@
     {
         "name": "of Shrieks",
         "level": 54,
-        "gold": 0,
         "stats": {
             "healing": {
                 "flat": 108,
@@ -4370,7 +4176,6 @@
     {
         "name": "of Sickness",
         "level": 36,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 203,
@@ -4390,7 +4195,6 @@
     {
         "name": "of Silence",
         "level": 20,
-        "gold": 33891,
         "stats": {
             "dexterity": {
                 "flat": 0,
@@ -4405,7 +4209,6 @@
     {
         "name": "of Skill",
         "level": 10,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": 0,
@@ -4425,7 +4228,6 @@
     {
         "name": "of Slaughtering",
         "level": 25,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -4442,7 +4244,6 @@
     {
         "name": "of Solitude",
         "level": 55,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 400,
@@ -4466,7 +4267,6 @@
     {
         "name": "of Spiritual Superiority",
         "level": 25,
-        "gold": 62637,
         "stats": {
             "intelligence": {
                 "flat": 3,
@@ -4485,7 +4285,6 @@
     {
         "name": "of Spirituality",
         "level": 15,
-        "gold": 32657,
         "stats": {
             "constitution": {
                 "flat": 0,
@@ -4508,7 +4307,6 @@
     {
         "name": "of Spreader",
         "level": 28,
-        "gold": 57977,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -4533,7 +4331,6 @@
     {
         "name": "of Stamina",
         "level": 33,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 83,
@@ -4548,7 +4345,6 @@
     {
         "name": "of Stars",
         "level": 10,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 1,
@@ -4568,7 +4364,6 @@
     {
         "name": "of Stone",
         "level": 56,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": 0,
@@ -4588,7 +4383,6 @@
     {
         "name": "of Strength",
         "level": 46,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 300,
@@ -4613,7 +4407,6 @@
     {
         "name": "of Success",
         "level": 15,
-        "gold": 44688,
         "stats": {
             "damage": {
                 "flat": 2,
@@ -4632,7 +4425,6 @@
     {
         "name": "of Suffering",
         "level": 26,
-        "gold": 65340,
         "stats": {
             "agility": {
                 "flat": 0,
@@ -4652,7 +4444,6 @@
     {
         "name": "of Superiority",
         "level": 32,
-        "gold": 0,
         "stats": {
             "agility": {
                 "flat": 0,
@@ -4669,7 +4460,6 @@
     {
         "name": "of Suspicion",
         "level": 15,
-        "gold": 0,
         "stats": {
             "charisma": {
                 "flat": 0,
@@ -4682,7 +4472,6 @@
     {
         "name": "of Tartarus",
         "level": 56,
-        "gold": 0,
         "stats": {
             "constitution": {
                 "flat": -11,
@@ -4701,7 +4490,6 @@
     {
         "name": "of Tears",
         "level": 10,
-        "gold": 0,
         "stats": {
             "constitution": {
                 "flat": -10,
@@ -4714,7 +4502,6 @@
     {
         "name": "of Terror",
         "level": 20,
-        "gold": 45187,
         "stats": {
             "armour": {
                 "flat": 100,
@@ -4739,7 +4526,6 @@
     {
         "name": "of the Abyss",
         "level": 58,
-        "gold": 0,
         "stats": {
             "block_value": {
                 "flat": 35,
@@ -4754,7 +4540,6 @@
     {
         "name": "of the Amazons",
         "level": 28,
-        "gold": 57977,
         "stats": {
             "strength": {
                 "flat": 2,
@@ -4774,7 +4559,6 @@
     {
         "name": "of the Apparition",
         "level": 58,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": -7,
@@ -4798,7 +4582,6 @@
     {
         "name": "of the Behemoth",
         "level": 55,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 413,
@@ -4827,7 +4610,6 @@
     {
         "name": "of the Blessed",
         "level": 17,
-        "gold": 42440,
         "stats": {
             "damage": {
                 "flat": -1,
@@ -4855,7 +4637,6 @@
     {
         "name": "of the Chasm",
         "level": 80,
-        "gold": 199580,
         "stats": {
             "health": {
                 "flat": 406,
@@ -4879,7 +4660,6 @@
     {
         "name": "of the Clouds",
         "level": 11,
-        "gold": 29111,
         "stats": {
             "health": {
                 "flat": 5,
@@ -4899,7 +4679,6 @@
     {
         "name": "of the Creature",
         "level": 14,
-        "gold": 0,
         "stats": {
             "agility": {
                 "flat": 0,
@@ -4912,7 +4691,6 @@
     {
         "name": "of the Critical Strike",
         "level": 39,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 4,
@@ -4942,7 +4720,6 @@
     {
         "name": "of the Curse",
         "level": 45,
-        "gold": 117779,
         "stats": {
             "damage": {
                 "flat": 4,
@@ -4976,7 +4753,6 @@
     {
         "name": "of the Cursed",
         "level": 23,
-        "gold": 54739,
         "stats": {
             "armour": {
                 "flat": 100,
@@ -5001,7 +4777,6 @@
     {
         "name": "of the Damned",
         "level": 35,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -5018,7 +4793,6 @@
     {
         "name": "of the Deep",
         "level": 58,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 6,
@@ -5052,7 +4826,6 @@
     {
         "name": "of the Dragon",
         "level": 50,
-        "gold": 153371,
         "stats": {
             "damage": {
                 "flat": 7,
@@ -5082,7 +4855,6 @@
     {
         "name": "of the Dream",
         "level": 58,
-        "gold": 0,
         "stats": {
             "dexterity": {
                 "flat": 23,
@@ -5107,7 +4879,6 @@
     {
         "name": "of the Druid",
         "level": 75,
-        "gold": 193957,
         "stats": {
             "armour": {
                 "flat": 398,
@@ -5137,7 +4908,6 @@
     {
         "name": "of the Elysian Fields",
         "level": 51,
-        "gold": 98263,
         "stats": {
             "armour": {
                 "flat": 400,
@@ -5167,7 +4937,6 @@
     {
         "name": "of the Flesh Wound",
         "level": 37,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 3,
@@ -5192,7 +4961,6 @@
     {
         "name": "of the Gods",
         "level": 60,
-        "gold": 0,
         "stats": {
             "agility": {
                 "flat": 0,
@@ -5217,7 +4985,6 @@
     {
         "name": "of the Hills",
         "level": 12,
-        "gold": 35472,
         "stats": {
             "constitution": {
                 "flat": 4,
@@ -5237,7 +5004,6 @@
     {
         "name": "of the Hydra",
         "level": 56,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -5257,7 +5023,7 @@
     {
         "name": "of the Inferno",
         "level": 58,
-        "gold": 0,
+        "underworld": true,
         "stats": {
             "damage": {
                 "flat": 8,
@@ -5290,7 +5056,6 @@
     {
         "name": "of the Moment",
         "level": 20,
-        "gold": 56484,
         "stats": {
             "armour": {
                 "flat": 115,
@@ -5305,7 +5070,6 @@
     {
         "name": "of the Moon",
         "level": 18,
-        "gold": 40745,
         "stats": {
             "health": {
                 "flat": 10,
@@ -5330,7 +5094,6 @@
     {
         "name": "of the Mountains",
         "level": 14,
-        "gold": 38800,
         "stats": {
             "strength": {
                 "flat": 2,
@@ -5350,7 +5113,6 @@
     {
         "name": "of the Parade",
         "level": 22,
-        "gold": 37336,
         "stats": {
             "health": {
                 "flat": 55,
@@ -5380,7 +5142,6 @@
     {
         "name": "of the Phantom",
         "level": 54,
-        "gold": 0,
         "stats": {
             "health": {
                 "flat": 321,
@@ -5404,7 +5165,6 @@
     {
         "name": "of the Plague",
         "level": 60,
-        "gold": 201322,
         "stats": {
             "health": {
                 "flat": 419,
@@ -5433,7 +5193,6 @@
     {
         "name": "of the Rain",
         "level": 13,
-        "gold": 31851,
         "stats": {
             "health": {
                 "flat": 8,
@@ -5453,7 +5212,6 @@
     {
         "name": "of the Safe Parade",
         "level": 37,
-        "gold": 75318,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -5483,7 +5241,6 @@
     {
         "name": "of the Sea",
         "level": 12,
-        "gold": 36890,
         "stats": {
             "health": {
                 "flat": 10,
@@ -5508,7 +5265,7 @@
     {
         "name": "of the Shadows",
         "level": 55,
-        "gold": 0,
+        "underworld": true,
         "stats": {
             "damage": {
                 "flat": 4,
@@ -5533,7 +5290,6 @@
     {
         "name": "of the Snake",
         "level": 58,
-        "gold": 161915,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -5562,7 +5318,6 @@
     {
         "name": "of the Soul",
         "level": 55,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 19,
@@ -5582,7 +5337,6 @@
     {
         "name": "of the Sphinx",
         "level": 60,
-        "gold": 0,
         "stats": {
             "damage": {
                 "flat": 4,
@@ -5611,7 +5365,6 @@
     {
         "name": "of the Spirit",
         "level": 54,
-        "gold": 105600,
         "stats": {
             "agility": {
                 "flat": 8,
@@ -5635,7 +5388,6 @@
     {
         "name": "of the Sun",
         "level": 22,
-        "gold": 57248,
         "stats": {
             "health": {
                 "flat": 100,
@@ -5655,7 +5407,6 @@
     {
         "name": "of the Undead",
         "level": 25,
-        "gold": 59790,
         "stats": {
             "dexterity": {
                 "flat": 0,
@@ -5680,7 +5431,6 @@
     {
         "name": "of the Unknown",
         "level": 56,
-        "gold": 154824,
         "stats": {
             "damage": {
                 "flat": 5,
@@ -5704,7 +5454,6 @@
     {
         "name": "of the Vanquishers",
         "level": 40,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 240,
@@ -5717,7 +5466,6 @@
     {
         "name": "of the Victim",
         "level": 22,
-        "gold": 39825,
         "stats": {
             "damage": {
                 "flat": -1,
@@ -5742,7 +5490,6 @@
     {
         "name": "of the Woods",
         "level": 14,
-        "gold": 24250,
         "stats": {
             "damage": {
                 "flat": 1,
@@ -5767,7 +5514,6 @@
     {
         "name": "of Thorns",
         "level": 30,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 100,
@@ -5784,7 +5530,6 @@
     {
         "name": "of Tightrope Walk",
         "level": 22,
-        "gold": 39825,
         "stats": {
             "armour": {
                 "flat": 130,
@@ -5804,7 +5549,6 @@
     {
         "name": "of Torment",
         "level": 58,
-        "gold": 210489,
         "stats": {
             "damage": {
                 "flat": 7,
@@ -5824,7 +5568,6 @@
     {
         "name": "of Torsion",
         "level": 58,
-        "gold": 154205,
         "stats": {
             "health": {
                 "flat": 460,
@@ -5849,7 +5592,7 @@
     {
         "name": "of Torture",
         "level": 60,
-        "gold": 177163,
+        "underworld": true,
         "stats": {
             "armour": {
                 "flat": 304,
@@ -5873,7 +5616,6 @@
     {
         "name": "of Total Defence",
         "level": 38,
-        "gold": 68590,
         "stats": {
             "strength": {
                 "flat": 4,
@@ -5908,7 +5650,6 @@
     {
         "name": "of Transition",
         "level": 56,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 354,
@@ -5928,7 +5669,6 @@
     {
         "name": "of Triumph",
         "level": 13,
-        "gold": 0,
         "stats": {
             "armour": {
                 "flat": 66,
@@ -5943,7 +5683,6 @@
     {
         "name": "of Triviality",
         "level": 43,
-        "gold": 137940,
         "stats": {
             "strength": {
                 "flat": 15,
@@ -5973,7 +5712,6 @@
     {
         "name": "of Trouble",
         "level": 14,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -5990,7 +5728,6 @@
     {
         "name": "of Truth",
         "level": 48,
-        "gold": 0,
         "stats": {
             "agility": {
                 "flat": 8,
@@ -6018,7 +5755,6 @@
     {
         "name": "of Vigour",
         "level": 15,
-        "gold": 0,
         "stats": {
             "strength": {
                 "flat": 0,
@@ -6033,7 +5769,6 @@
     {
         "name": "of Violence",
         "level": 20,
-        "gold": 47447,
         "stats": {
             "armour": {
                 "flat": 40,
@@ -6053,7 +5788,6 @@
     {
         "name": "of Virtuousness",
         "level": 24,
-        "gold": 0,
         "stats": {
             "intelligence": {
                 "flat": 0,
@@ -6072,7 +5806,6 @@
     {
         "name": "of War",
         "level": 30,
-        "gold": 0,
         "stats": {
             "constitution": {
                 "flat": 0,
@@ -6085,7 +5818,6 @@
     {
         "name": "of Warning",
         "level": 16,
-        "gold": 38281,
         "stats": {
             "damage": {
                 "flat": 1,
@@ -6110,7 +5842,6 @@
     {
         "name": "of Weakness",
         "level": 10,
-        "gold": 0,
         "stats": {},
         "materials": {},
         "id": 57
@@ -6118,7 +5849,6 @@
     {
         "name": "of Willpower",
         "level": 12,
-        "gold": 32634,
         "stats": {
             "armour": {
                 "flat": 57,
@@ -6143,7 +5873,6 @@
     {
         "name": "of Wings",
         "level": 57,
-        "gold": 180979,
         "stats": {
             "armour": {
                 "flat": 324,
@@ -6168,7 +5897,6 @@
     {
         "name": "of Wounds",
         "level": 12,
-        "gold": 36890,
         "stats": {
             "healing": {
                 "flat": 24,
@@ -6187,7 +5915,6 @@
     {
         "name": "of Myth",
         "level": 95,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -6213,7 +5940,6 @@
     {
         "name": "of Daredevilry",
         "level": 107,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -6247,7 +5973,6 @@
     {
         "name": "of Bravery",
         "level": 90,
-        "gold": 343000,
         "new": true,
         "stats": {
             "health": {
@@ -6278,7 +6003,6 @@
     {
         "name": "of Awe",
         "level": 101,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -6308,7 +6032,6 @@
     {
         "name": "of Legend",
         "level": 87,
-        "gold": 0,
         "new": true,
         "stats": {
             "health": {
@@ -6338,7 +6061,6 @@
     {
         "name": "of Heroism",
         "level": 125,
-        "gold": 539192,
         "new": true,
         "stats": {
             "armour": {
@@ -6362,14 +6084,12 @@
                 "percent": 0
             }
         },
-        "materials": {
-        },
+        "materials": {},
         "id": 999994
     },
     {
         "name": "of Renown",
         "level": 85,
-        "gold": 229172,
         "new": true,
         "stats": {
             "health": {
@@ -6395,7 +6115,6 @@
     {
         "name": "of the Saviour",
         "level": 90,
-        "gold": 192500,
         "new": true,
         "stats": {
             "constitution": {
@@ -6417,7 +6136,6 @@
     {
         "name": "of Arbitration",
         "level": 85,
-        "gold": 305562,
         "new": true,
         "stats": {
             "healing": {
@@ -6435,7 +6153,6 @@
     {
         "name": "of the Fallen",
         "level": 88,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -6465,7 +6182,6 @@
     {
         "name": "of Reason",
         "level": 95,
-        "gold": 0,
         "new": true,
         "stats": {
             "constitution": {
@@ -6491,7 +6207,6 @@
     {
         "name": "of Distance",
         "level": 93,
-        "gold": 0,
         "new": true,
         "stats": {
             "health": {
@@ -6517,7 +6232,6 @@
     {
         "name": "of Destiny",
         "level": 102,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -6543,7 +6257,6 @@
     {
         "name": "of the Elder",
         "level": 85,
-        "gold": 0,
         "new": true,
         "stats": {
             "charisma": {
@@ -6569,7 +6282,6 @@
     {
         "name": "of the Arena",
         "level": 100,
-        "gold": 0,
         "new": true,
         "stats": {
             "healing": {
@@ -6587,7 +6299,6 @@
     {
         "name": "of Threat",
         "level": 105,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -6613,7 +6324,6 @@
     {
         "name": "of Prudence",
         "level": 103,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -6647,7 +6357,6 @@
     {
         "name": "of the Eclipse",
         "level": 94,
-        "gold": 0,
         "new": true,
         "stats": {
             "health": {
@@ -6677,7 +6386,6 @@
     {
         "name": "of Fortune",
         "level": 98,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -6707,7 +6415,6 @@
     {
         "name": "of Jubilation",
         "level": 117,
-        "gold": 491981,
         "new": true,
         "stats": {
             "damage": {
@@ -6737,7 +6444,6 @@
     {
         "name": "of Justice",
         "level": 120,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -6763,7 +6469,6 @@
     {
         "name": "of Force",
         "level": 132,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -6793,7 +6498,6 @@
     {
         "name": "of Swordplay",
         "level": 110,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -6819,7 +6523,6 @@
     {
         "name": "of Bloodletting",
         "level": 87,
-        "gold": 0,
         "new": true,
         "stats": {
             "health": {
@@ -6841,7 +6544,6 @@
     {
         "name": "of the Older",
         "level": 85,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -6850,7 +6552,6 @@
     {
         "name": "of Impermanence",
         "level": 85,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -6884,7 +6585,6 @@
     {
         "name": "of Challenge",
         "level": 85,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -6914,7 +6614,6 @@
     {
         "name": "of Ruthlessness",
         "level": 90,
-        "gold": 0,
         "new": true,
         "stats": {
             "damage": {
@@ -6944,7 +6643,6 @@
     {
         "name": "of Corruption",
         "level": 90,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -6970,7 +6668,6 @@
     {
         "name": "of Deference",
         "level": 92,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -7000,7 +6697,6 @@
     {
         "name": "of Shade",
         "level": 95,
-        "gold": 384645,
         "new": true,
         "stats": {
             "strength": {
@@ -7034,7 +6730,6 @@
     {
         "name": "of Vengeance",
         "level": 95,
-        "gold": 2514899,
         "new": true,
         "stats": {
             "damage": {
@@ -7068,7 +6763,6 @@
     {
         "name": "of Purification",
         "level": 95,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -7090,7 +6784,6 @@
     {
         "name": "of Unyielding",
         "level": 97,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -7120,7 +6813,6 @@
     {
         "name": "of Broken Oaths",
         "level": 108,
-        "gold": 0,
         "new": true,
         "stats": {
             "health": {
@@ -7146,7 +6838,6 @@
     {
         "name": "of Ramparts",
         "level": 112,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -7184,7 +6875,6 @@
     {
         "name": "of Absolution",
         "level": 115,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -7214,7 +6904,6 @@
     {
         "name": "of Exultation",
         "level": 117,
-        "gold": 0,
         "new": true,
         "stats": {},
         "materials": {},
@@ -7223,7 +6912,6 @@
     {
         "name": "of Resolve",
         "level": 127,
-        "gold": 396877,
         "new": true,
         "stats": {
             "damage": {
@@ -7253,7 +6941,6 @@
     {
         "name": "of Ascendency",
         "level": 130,
-        "gold": 0,
         "new": true,
         "stats": {
             "armour": {
@@ -7279,7 +6966,6 @@
     {
         "name": "of Danger",
         "level": 122,
-        "gold": 354497,
         "new": true,
         "stats": {
             "armour": {
@@ -7309,7 +6995,6 @@
     {
         "name": "of Hazard",
         "level": 132,
-        "gold": 333645,
         "new": true,
         "stats": {
             "armour": {
@@ -7339,7 +7024,6 @@
     {
         "name": "of Menace",
         "level": 122,
-        "gold": 485761,
         "new": true,
         "stats": {
             "armour": {

@@ -1,10 +1,6 @@
 import React, { useState, useMemo } from 'react';
 import Link from '@docusaurus/Link';
-
-// Helper: format gold numbers with dots
-function formatGold(value) {
-  return value.toString().replace(/\B(?=(\d{3})+(?!\d))/g, '.');
-}
+import { calcAffixGoldBase, calcAffixGoldRange, formatGoldDots } from '@site/src/utils/affixGold';
 
 // Helper: slugify item name
 function slugify(value) {
@@ -20,6 +16,7 @@ export default function ItemAffixList({ items, type = 'prefix', showFilters = tr
   const [sortKey, setSortKey] = useState(''); // 'name' | 'level' | 'gold'
   const [sortOrder, setSortOrder] = useState('asc'); // 'asc' | 'desc'
   const [showNewOnly, setShowNewOnly] = useState(false);
+  const [showUWOnly, setShowUWOnly] = useState(false);
 
   const allStats = useMemo(() => {
     const set = new Set();
@@ -42,6 +39,9 @@ export default function ItemAffixList({ items, type = 'prefix', showFilters = tr
       // New only filter
       if (showNewOnly && !item.new) return false;
 
+      // Underworld only filter
+      if (showUWOnly && !item.underworld) return false;
+
       // Stat filter
       if (statFilter && statFilterValue) {
         const statKey = statFilter.toLowerCase().replace(/\s+/g, '_');
@@ -54,7 +54,7 @@ export default function ItemAffixList({ items, type = 'prefix', showFilters = tr
 
       return true;
     });
-  }, [items, search, statFilter, statFilterValue, showNewOnly]);
+  }, [items, search, statFilter, statFilterValue, showNewOnly, showUWOnly]);
 
   const sortedItems = useMemo(() => {
     if (!sortKey) return filteredItems;
@@ -67,8 +67,8 @@ export default function ItemAffixList({ items, type = 'prefix', showFilters = tr
         bVal = b.name.toLowerCase();
         return sortOrder === 'asc' ? aVal.localeCompare(bVal) : bVal.localeCompare(aVal);
       } else if (sortKey === 'level' || sortKey === 'gold') {
-        aVal = a[sortKey] ?? 0;
-        bVal = b[sortKey] ?? 0;
+        aVal = sortKey === 'gold' ? calcAffixGoldBase(a.level, type) : (a[sortKey] ?? 0);
+        bVal = sortKey === 'gold' ? calcAffixGoldBase(b.level, type) : (b[sortKey] ?? 0);
         return sortOrder === 'asc' ? aVal - bVal : bVal - aVal;
       }
 
@@ -97,6 +97,14 @@ export default function ItemAffixList({ items, type = 'prefix', showFilters = tr
                 onChange={e => setShowNewOnly(e.target.checked)}
               />
               <span>New only</span>
+            </label>
+            <label style={{ display: 'inline-flex', alignItems: 'center', gap: '6px', cursor: 'pointer' }}>
+              <input
+                type="checkbox"
+                checked={showUWOnly}
+                onChange={e => setShowUWOnly(e.target.checked)}
+              />
+              <span>UW only</span>
             </label>
           </div>
 
@@ -188,7 +196,7 @@ export default function ItemAffixList({ items, type = 'prefix', showFilters = tr
                 {item.name}
               </Link>
               {item.new && (
-                <span style={{
+                <span title="Added in Battle for Britannia patch" style={{
                   backgroundColor: '#cc0000',
                   color: '#fff',
                   fontSize: '10px',
@@ -196,8 +204,23 @@ export default function ItemAffixList({ items, type = 'prefix', showFilters = tr
                   padding: '1px 5px',
                   borderRadius: '3px',
                   letterSpacing: '0.5px',
+                  cursor: 'pointer',
                 }}>
                   NEW
+                </span>
+              )}
+              {item.underworld && (
+                <span title="Only found in Underworld" style={{
+                  backgroundColor: '#cc0000',
+                  color: '#fff',
+                  fontSize: '10px',
+                  fontWeight: 'bold',
+                  padding: '1px 5px',
+                  borderRadius: '3px',
+                  letterSpacing: '0.5px',
+                  cursor: 'pointer',
+                }}>
+                  UW
                 </span>
               )}
             </div>
@@ -236,14 +259,19 @@ export default function ItemAffixList({ items, type = 'prefix', showFilters = tr
             <div style={{ color: '#9b9b9b', marginTop: '4px' }}>Level {item.level}</div>
 
             {/* Gold */}
-            <div style={{ marginBottom: '4px', fontWeight: 'bold' }}>
-              Value {formatGold(item.gold)}{' '}
-              <img
-                src="https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif"
-                alt="gold"
-                style={{ verticalAlign: 'middle', width: '16px', height: '16px' }}
-              />
-            </div>
+            {item.level > 0 && (() => {
+              const { min, max } = calcAffixGoldRange(item.level, type);
+              return (
+                <div style={{ marginBottom: '4px', fontWeight: 'bold' }}>
+                  Value {formatGoldDots(min)} – {formatGoldDots(max)}{' '}
+                  <img
+                    src="https://gladiatusfansite.blob.core.windows.net/images/icon_gold.gif"
+                    alt="gold"
+                    style={{ verticalAlign: 'middle', width: '16px', height: '16px' }}
+                  />
+                </div>
+              );
+            })()}
           </div>
         ))}
       </div>
