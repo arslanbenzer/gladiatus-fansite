@@ -488,7 +488,7 @@ export function useCharacterState(): CharacterState {
     const finalAgility = Math.min(uncappedAgility, maxAgility);
     
     // Calculate Resilience: floor(Agility/10) + hardening_value from items
-    const hardeningValueStat = combinedStats.get('Hardening Value') || { flat: 0, percent: 0 };
+    const hardeningValueStat = combinedStats.get('hardening value') || { flat: 0, percent: 0 };
     const resilienceFromAgility = Math.floor(finalAgility / 10);
     const resilienceFromItems = hardeningValueStat.flat;
     const totalResilience = resilienceFromAgility + resilienceFromItems;
@@ -512,7 +512,7 @@ export function useCharacterState(): CharacterState {
     const finalStrength = Math.min(uncappedStrength, maxStrength);
     
     // Calculate Blocking: floor(Strength/10) + block_value from items
-    const blockValueStat = combinedStats.get('Block Value') || { flat: 0, percent: 0 };
+    const blockValueStat = combinedStats.get('Block value') || { flat: 0, percent: 0 };
     const blockingFromStrength = Math.floor(finalStrength / 10);
     const blockingFromItems = blockValueStat.flat;
     const totalBlocking = blockingFromStrength + blockingFromItems;
@@ -535,7 +535,7 @@ export function useCharacterState(): CharacterState {
     const finalDexterity = Math.min(uncappedDexterity, maxDexterity);
     
     // Calculate Critical Attack: floor(Dexterity/10) + Critical Attack Value from items
-    const criticalAttackValueStat = combinedStats.get('Critical Attack Value') || { flat: 0, percent: 0 };
+    const criticalAttackValueStat = combinedStats.get('Critical attack value') || { flat: 0, percent: 0 };
     const criticalAttackFromDexterity = Math.floor(finalDexterity / 10);
     const criticalAttackFromItems = criticalAttackValueStat.flat;
     const totalCriticalAttack = criticalAttackFromDexterity + criticalAttackFromItems;
