@@ -6941,5 +6941,46 @@
             "Lead Ore": 7
         },
         "id": 9950
+    },
+    {
+        "name": "Cato`s",
+        "level": 235,
+        "new": true,
+        "stats": {
+            "damage": {
+                "flat": 39,
+                "percent": 0
+            },
+            "armour": {
+                "flat": 200,
+                "percent": 0
+            },
+            "health": {
+                "flat": 950,
+                "percent": 0
+            },
+            "agility": {
+                "flat": 0,
+                "percent": 41
+            },
+            "constitution": {
+                "flat": 0,
+                "percent": 18
+            },
+            "healing": {
+                "flat": 40,
+                "percent": 0
+            },
+            "blocking_value": {
+                "flat": 75,
+                "percent": 0
+            },
+            "threat": {
+                "flat": 114,
+                "percent": 0
+            }
+        },
+        "materials": {},
+        "id": 9949
     }
 ]
