@@ -6369,7 +6369,11 @@
         "percent": 0
       }
     },
-    "materials": {},
+    "materials": {
+      "Bark": 28,
+      "Jet": 27
+
+    },
     "id": 307
   },
   {

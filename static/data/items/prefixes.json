@@ -5153,7 +5153,10 @@
         "percent": 0
       }
     },
-    "materials": {},
+    "materials": {
+      "Typhon Leather": 15,
+      "Mead": 76
+    },
     "id": 9995
   },
   {
@@ -5872,7 +5875,7 @@
     "id": 212
   },
   {
-    "name": "Taurus",
+    "name": "Taurus`",
     "level": 175,
     "new": true,
     "stats": {
@@ -5905,7 +5908,13 @@
         "percent": 0
       }
     },
-    "materials": {},
+    "materials": {
+      "Soul Essence": 6,
+      "Mead": 26,
+      "Almandin": 5,
+      "Tin Ore": 22,
+      "Lead Ore": 49
+    },
     "id": 9973
   },
   {
