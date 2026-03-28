@@ -23,6 +23,8 @@ Hey guys. We have a couple of open questions that need answering. Like formulas 
 4. What happens when you wear broken items
 5. What is the formula for experience needed for level after level 80
 
+---
+
 ## Latest Gladiatus News
 
 ### Wild Farm Event 2026
@@ -36,6 +38,64 @@ Hey guys. We have a couple of open questions that need answering. Like formulas 
 ### Battle at Hadrian's Wall event
 
 - 08.03.2026 00:00:00 - 14.03.2026 23:59:59 - The Hadrian's wall event - [Battle at Hadrian's Wall](/events/battle-at-hadrian-s-wall "Battle at Hadrian's Wall")
+
+---
+
+## Events – April 2026
+
+### 02.04.2026 0:00:00 - 04.04.2026 23:59:59
+
+- 30% chance of finding an item
+- 25% forging success
+- -10% forge duration
+- 10% chance of a resource / scroll
+
+### 06.04.2026 0:00:00 - 08.04.2026 23:59:59
+
+- 100% Pantheon quest gold, experience, grace, honor
+- -50% cooldown for quests
+- 50% more expedition points
+
+### 10.04.2026 0:00:00 - 11.04.2026 23:59:59
+
+- 20% chance of a resource / scroll
+
+### 12.04.2026 0:00:00 - 13.04.2026 23:59:59
+
+- The chance to obtain additional loot on expeditions and in dungeons is increased by 20%
+- 25% more dungeon points
+- 25% more expedition points
+
+### 15.04.2026 0:00:00 - 16.04.2026 23:59:59
+
+- 20% forge helper drop chance
+
+### 18.04.2026 0:00:00 - 19.04.2026 23:59:59
+
+- 50% more expedition points
+- 50% faster regeneration of expedition points
+- -50% cooldown for quests
+- 50% more dungeon points
+- 10% chance of finding ruby on expedition
+
+### 21.04.2026 0:00:00 - 22.04.2026 23:59:59
+
+- -50% Forging time (and smelting)
+- -15% Ruby costs at Malefica
+
+### 24.04.2026 0:00:00 - 26.04.2026 23:59:59
+
+- 200% dungeon XP
+- 200% arena XP
+- 50% expedition XP
+- 50% more dungeon points
+- 50% more expedition points
+
+### 28.04.2026 0:00:00 - 29.04.2026 23:59:59
+
+- -20% training costs
+
+---
 
 ## Events – March 2026
 
@@ -94,12 +154,16 @@ Hey guys. We have a couple of open questions that need answering. Like formulas 
 
 - -50% Forging time (and smelting)
 
+---
+
 ## To Do List
 
 - Find what the formula for materials is when prefix and suffix are mixed together. So far we hardcode them through a file that has all possible variations. Taken from [gladiatus-tools](https://gitlab.com/gladiatus-tools-ng/website/-/raw/master/src/data/prefixes_suffixes_recipes.json?ref_type=heads "gladiatus tools")
 - Make Expeditions come from data files and not just plain text
 - Character planner partial costumes do not render well
 - Find what the formula is for gold, durability and conditiong is when prefix/suffix or both are applied to an item
+
+---
 
 ## Latest website news
 
