@@ -86,20 +86,41 @@ The weather is gradually warming up across the Empire, and young minds are start
 
 Check out the [Costumes](/costumes "Costumes") page for extended info on the costume and other costumes
 
-- The costume pieces will have a chance to drop on the first event expedition kill of the day
+:::tip Costume drop rate
+
+You start with 1 piece and the other 4 drop on day 3, day 6, day 9 and day 11 usually from the event kill of the day. Costume is **NOT** usable during the event. It becomes usable AFTER Wild Farm is over. This provides a unique training discount opportunity. Read below
+
+:::
 
 ![Bubona's Bull Armour piece drop](https://gladiatusfansite.blob.core.windows.net/images/Events/Wild_Farm/Bubona_drop.png "Bubona's Bull Armour piece drop")
 
-- Costume may not drop every day but if you participate every day of the event you are guaranteed to have it in the end
-- During the event the mobs from the event expedition will start to drop event bunnies
-
-### Golden Bunny
+## Golden Bunny
 
 ![Golden Bunny](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Golden_Bunny.png "Golden Bunny")
 
 ![Golden Bunny description](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Event_Items/Golden_Bunny_stats.png "Golden Bunny description")
 
 Associated with the [Wild Farm](/events/wild-farm "Wild Farm") event. Drag it onto your character picture to activate one of the [Bubona's Bull Armour](/costumes/event-costumes "Bubona's Bull Armour") costume properties (if you have collected any)
+
+:::tip
+
+Bunnies drop during the event and are immediately usable (despite the red text in the tooltip) if you have costume pieces already.
+:::
+
+## Training discount opportunity (like no other)
+
+The Bubona Costume becomes available immediately after the Wild Farm event ends. Which means that you can save up your Golden Bunnies and activate them all 30 mins (or so) before the event ends, then the event ends and Costume Festival begins. By now you would already have a number of hours from the Bunnies on -20% dicount. Then you equip the Bubona's costume and get another 20% dicount from the costume itself (yes the bunnies effect and Costume effect, although should be the same thing, actually stack), you can get 40% training dicsount. Paired with Training Grounds this can get up to 60% off. If you are low on Bunnies and the bunnies effect is only will last an hour or two, you will be pushed to spend your gold quickly so you could prepare in advance by packaging a lot of the gold to be ready for this moment.
+
+:::tip
+Summary
+
+1. Be sure to have the full costume unlocked
+2. Save all your bunnies for the end of the event (at aleast as many as you would feel comfortable)
+3. Some time before the Wild Farm event ends, use all your bunnies so you can accumulate some hours on the -20% discount effect
+4. After event ends, equip the Bubona'a costume
+5. Train
+
+:::
 
 ## Easter eggs
 
