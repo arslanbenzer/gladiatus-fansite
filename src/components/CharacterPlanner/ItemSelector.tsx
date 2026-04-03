@@ -204,7 +204,7 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
                     </div>
                   )}
                   <div className={styles.dropdownList}>
-                    {filteredPrefixes.slice(0, 50).map((prefix) => (
+                    {filteredPrefixes.map((prefix) => (
                       <div
                         key={prefix.name}
                         className={`${styles.dropdownItem} ${selectedPrefix?.name === prefix.name ? styles.selectedDropdownItem : ''}`}
@@ -223,11 +223,6 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
                         {prefix.name} (Lvl {prefix.level})
                       </div>
                     ))}
-                    {filteredPrefixes.length > 50 && (
-                      <div className={styles.dropdownHint}>
-                        Showing first 50 results. Type to refine search.
-                      </div>
-                    )}
                     {filteredPrefixes.length === 0 && (
                       <div className={styles.dropdownHint}>
                         No prefixes found
@@ -259,7 +254,7 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
                     </div>
                   )}
                   <div className={styles.dropdownList}>
-                    {filteredSuffixes.slice(0, 50).map((suffix) => (
+                    {filteredSuffixes.map((suffix) => (
                       <div
                         key={suffix.name}
                         className={`${styles.dropdownItem} ${selectedSuffix?.name === suffix.name ? styles.selectedDropdownItem : ''}`}
@@ -278,11 +273,6 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
                         {suffix.name} (Lvl {suffix.level})
                       </div>
                     ))}
-                    {filteredSuffixes.length > 50 && (
-                      <div className={styles.dropdownHint}>
-                        Showing first 50 results. Type to refine search.
-                      </div>
-                    )}
                     {filteredSuffixes.length === 0 && (
                       <div className={styles.dropdownHint}>
                         No suffixes found

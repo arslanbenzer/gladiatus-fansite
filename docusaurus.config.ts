@@ -158,6 +158,11 @@ const config: Config = {
           label: 'Character Planner',
         },
         {
+          to: '/forge-simulator',
+          position: 'left',
+          label: 'Forge Simulator',
+        },
+        {
           href: 'https://gladiatus-api.gamerz-bg.com/',
           position: 'left',
           label: 'Global Ranking',

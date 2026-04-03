@@ -1,0 +1,826 @@
+/* ── Layout ─────────────────────────────────────────────────────────────── */
+
+.simulator {
+  max-width: 960px;
+  margin: 0 auto;
+}
+
+.section {
+  margin-bottom: 24px;
+  padding: 20px 24px;
+  background: var(--ifm-color-emphasis-100);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+}
+
+.stepHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 16px;
+}
+
+.stepNum {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 28px;
+  height: 28px;
+  border-radius: 50%;
+  background: var(--ifm-color-primary);
+  color: #fff;
+  font-size: 13px;
+  font-weight: 800;
+  flex-shrink: 0;
+}
+
+.sectionTitle {
+  font-size: 16px;
+  font-weight: 700;
+  color: var(--ifm-font-color-base);
+  margin: 0;
+}
+
+/* ── Step 1: Character Level ────────────────────────────────────────────── */
+
+.charLevelRow {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex-wrap: wrap;
+}
+
+.charLevelLabel {
+  font-size: 14px;
+  font-weight: 600;
+  color: var(--ifm-font-color-base);
+}
+
+.charLevelInput {
+  width: 76px;
+  padding: 7px 10px;
+  border: 2px solid var(--ifm-color-emphasis-400);
+  border-radius: 5px;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  font-size: 16px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.charLevelInput:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+}
+
+.charLevelHint {
+  font-size: 13px;
+  color: var(--ifm-color-emphasis-700);
+}
+
+/* ── Step 2: Item Selection ─────────────────────────────────────────────── */
+
+.itemSelectors {
+  display: flex;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 16px;
+}
+
+.selectWrapper {
+  position: relative;
+  flex: 1 1 175px;
+  min-width: 150px;
+}
+
+.selectLabel {
+  display: block;
+  font-size: 11px;
+  font-weight: 700;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 4px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.selectInput {
+  width: 100%;
+  padding: 8px 28px 8px 10px;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  border-radius: 4px;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  font-size: 13px;
+  box-sizing: border-box;
+}
+
+.selectInput:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+  box-shadow: 0 0 0 2px var(--ifm-color-primary-lightest, rgba(37, 194, 160, 0.15));
+}
+
+.clearBtn {
+  position: absolute;
+  right: 6px;
+  top: calc(50% + 10px);
+  transform: translateY(-50%);
+  border: none;
+  background: none;
+  cursor: pointer;
+  font-size: 18px;
+  color: var(--ifm-color-emphasis-500);
+  padding: 0 2px;
+  line-height: 1;
+}
+
+.clearBtn:hover { color: var(--ifm-font-color-base); }
+
+.selectBackdrop {
+  position: fixed;
+  inset: 0;
+  z-index: 10;
+  background: transparent;
+  border: none;
+  cursor: default;
+  padding: 0;
+}
+
+.selectDropdown {
+  position: absolute;
+  top: 100%;
+  left: 0;
+  right: 0;
+  max-height: 280px;
+  overflow-y: auto;
+  background: var(--ifm-background-color);
+  border: 1px solid var(--ifm-color-emphasis-400);
+  border-radius: 4px;
+  z-index: 11;
+  box-shadow: 0 4px 16px rgba(0, 0, 0, 0.2);
+}
+
+.selectOption {
+  display: block;
+  width: 100%;
+  padding: 7px 12px;
+  text-align: left;
+  background: none;
+  border: none;
+  cursor: pointer;
+  font-size: 13px;
+  color: var(--ifm-font-color-base);
+  transition: background 0.1s;
+}
+
+.selectOption:hover { background: var(--ifm-color-emphasis-200); }
+
+.selectOptionHeader {
+  padding: 10px 12px 6px;
+  font-weight: 700;
+  font-size: 10px;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ifm-color-primary);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.selectNoResults {
+  padding: 8px 12px;
+  font-size: 13px;
+  color: var(--ifm-color-emphasis-600);
+  font-style: italic;
+}
+
+/* ── Item Preview ───────────────────────────────────────────────────────── */
+
+.itemPreview {
+  margin-top: 4px;
+  padding: 14px 16px;
+  background: var(--ifm-color-emphasis-200);
+  border-radius: 6px;
+}
+
+.itemPreviewMeta {
+  display: flex;
+  align-items: baseline;
+  gap: 14px;
+  flex-wrap: wrap;
+  margin-bottom: 12px;
+}
+
+.itemPreviewName {
+  font-size: 15px;
+  font-weight: 700;
+  color: #ff8000;
+}
+
+.itemPreviewLevel {
+  font-size: 13px;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.itemPreviewDuration {
+  font-size: 13px;
+  color: var(--ifm-color-emphasis-700);
+}
+
+.itemTooltipWrapper {
+  display: inline-block;
+}
+
+/* ── Step 3: Tools ──────────────────────────────────────────────────────── */
+
+.toolsGrid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+  gap: 14px;
+  margin-bottom: 20px;
+}
+
+.toolCard {
+  border: 2px solid var(--ifm-color-emphasis-300);
+  border-radius: 8px;
+  overflow: hidden;
+  transition: border-color 0.2s;
+}
+
+.toolCardHeader {
+  display: flex;
+  align-items: flex-start;
+  gap: 10px;
+  padding: 12px 14px;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+  background: var(--ifm-color-emphasis-200);
+}
+
+.toolIcon {
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+  flex-shrink: 0;
+}
+
+.toolIconPlaceholder {
+  width: 40px;
+  height: 40px;
+  flex-shrink: 0;
+}
+
+.toolCardTitle {
+  flex: 1;
+}
+
+.toolName {
+  font-size: 13px;
+  font-weight: 700;
+  color: var(--ifm-font-color-base);
+  line-height: 1.3;
+}
+
+.toolDesc {
+  font-size: 11px;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 2px;
+}
+
+.toolSelectedBadge {
+  padding: 6px 14px;
+  font-size: 12px;
+  font-weight: 600;
+  background: var(--ifm-color-emphasis-100);
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.toolPrice {
+  font-weight: 400;
+  color: var(--ifm-color-emphasis-600);
+}
+
+.toolTierRow {
+  display: flex;
+  gap: 0;
+}
+
+.toolTierBtn {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 4px;
+  padding: 8px 4px;
+  font-size: 11px;
+  font-weight: 700;
+  border: none;
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  border-right: 1px solid var(--ifm-color-emphasis-300);
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  color: var(--ifm-color-emphasis-600);
+  transition: background 0.15s, color 0.15s;
+  text-align: center;
+}
+
+.toolTierBtn:last-child { border-right: none; }
+
+.toolTierBtn:hover:not(.toolTierActive) {
+  background: var(--ifm-color-emphasis-200);
+  color: var(--ifm-font-color-base);
+}
+
+.toolTierActive {
+  font-weight: 800;
+  /* background + color set via inline style (tier colour) */
+}
+
+.toolTierBtnImg {
+  width: 28px;
+  height: 28px;
+  object-fit: contain;
+}
+
+/* ── Events ─────────────────────────────────────────────────────────────── */
+
+.eventModifiers {
+  border-top: 1px solid var(--ifm-color-emphasis-300);
+  padding-top: 16px;
+}
+
+.eventChecks {
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+}
+
+.checkLabel {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  font-size: 13px;
+  cursor: pointer;
+  user-select: none;
+}
+
+.checkbox {
+  width: 16px;
+  height: 16px;
+  cursor: pointer;
+  flex-shrink: 0;
+  accent-color: var(--ifm-color-primary);
+}
+
+.checkDesc {
+  color: var(--ifm-color-emphasis-600);
+  font-size: 12px;
+}
+
+.eventBonusRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+}
+
+.eventBonusLabel {
+  font-size: 13px;
+  font-weight: 600;
+  color: var(--ifm-font-color-base);
+}
+
+.eventBonusSelect {
+  padding: 5px 8px;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  border-radius: 4px;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  font-size: 13px;
+  cursor: pointer;
+}
+
+/* ── Step 4: Materials ──────────────────────────────────────────────────── */
+
+.fallbackWarning {
+  padding: 10px 14px;
+  background: rgba(244, 67, 54, 0.1);
+  border: 1px solid #f44336;
+  border-radius: 6px;
+  color: #c62828;
+  font-size: 13px;
+  font-weight: 600;
+  margin-bottom: 14px;
+  line-height: 1.5;
+}
+
+.discountNote {
+  font-size: 13px;
+  color: #4caf50;
+  font-weight: 600;
+  margin-bottom: 12px;
+}
+
+.fillAllRow {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  flex-wrap: wrap;
+  margin-bottom: 14px;
+  padding-bottom: 14px;
+  border-bottom: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.fillAllLabel {
+  font-size: 12px;
+  font-weight: 600;
+  color: var(--ifm-color-emphasis-700);
+  white-space: nowrap;
+}
+
+.fillAllBtn {
+  padding: 4px 12px;
+  font-size: 12px;
+  font-weight: 700;
+  border: 2px solid;
+  border-radius: 12px;
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  transition: all 0.12s;
+}
+
+.fillAllBtn:hover {
+  filter: brightness(1.1);
+  transform: translateY(-1px);
+}
+
+.fillAllHint {
+  font-size: 12px;
+  color: var(--ifm-color-emphasis-600);
+  font-style: italic;
+  flex-basis: 100%;
+  margin-top: 4px;
+}
+
+/* ── Material Rows ───────────────────────────────────────────────────────── */
+
+.materialsList {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+}
+
+.materialRow {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  padding: 6px 10px;
+  background: var(--ifm-color-emphasis-200);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 6px;
+  flex-wrap: wrap;
+}
+
+.materialQty {
+  font-size: 14px;
+  font-weight: 800;
+  min-width: 28px;
+  text-align: right;
+  color: var(--ifm-font-color-base);
+  flex-shrink: 0;
+}
+
+.materialIcon {
+  flex-shrink: 0;
+}
+
+.materialName {
+  flex: 1;
+  font-size: 13px;
+  color: var(--ifm-font-color-base);
+  min-width: 80px;
+}
+
+/* Per-material quality split inputs */
+
+.qualityInputs {
+  display: flex;
+  gap: 6px;
+  flex-shrink: 0;
+  flex-wrap: wrap;
+}
+
+.qualityInputGroup {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 2px;
+}
+
+.qualityInputLabel {
+  font-size: 10px;
+  font-weight: 800;
+  line-height: 1;
+  cursor: pointer;
+  background: none;
+  border: none;
+  padding: 0;
+  transition: transform 0.1s;
+}
+
+.qualityInputLabel:hover { transform: scale(1.2); }
+
+.qualityInput {
+  width: 48px;
+  padding: 6px 4px;
+  border: 2px solid var(--ifm-color-emphasis-400);
+  border-radius: 4px;
+  background: var(--ifm-background-color);
+  color: var(--ifm-font-color-base);
+  font-size: 13px;
+  font-weight: 700;
+  text-align: center;
+}
+
+.qualityInput:focus {
+  outline: none;
+  border-color: var(--ifm-color-primary);
+}
+
+
+.matTotal {
+  font-size: 12px;
+  font-weight: 700;
+  flex-shrink: 0;
+  min-width: 36px;
+  text-align: right;
+}
+
+/* ── Quality Distribution ───────────────────────────────────────────────── */
+
+.qualityDistSection {
+  margin-top: 20px;
+  padding-top: 16px;
+  border-top: 1px solid var(--ifm-color-emphasis-200);
+}
+
+.qualityDistTitle {
+  font-size: 12px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ifm-color-emphasis-700);
+  margin-bottom: 10px;
+}
+
+.qualityBarWrap {
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+.qualityBar {
+  display: flex;
+  height: 14px;
+  border-radius: 7px;
+  overflow: hidden;
+  border: 1px solid var(--ifm-color-emphasis-300);
+}
+
+.qualityBarSegment {
+  transition: width 0.25s ease;
+}
+
+.qualityLegend {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+
+.qualityLegendItem {
+  display: flex;
+  align-items: center;
+  gap: 5px;
+  font-size: 13px;
+}
+
+.qualityLegendDot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  flex-shrink: 0;
+}
+
+.noMaterials {
+  font-size: 13px;
+  color: var(--ifm-color-emphasis-600);
+  font-style: italic;
+}
+
+/* ── Step 5: Forge Panel ────────────────────────────────────────────────── */
+
+.forgePanel {
+  display: flex;
+  gap: 20px;
+  align-items: flex-start;
+  flex-wrap: wrap;
+  margin-bottom: 24px;
+}
+
+.successPanel {
+  flex: 1 1 160px;
+  padding: 16px;
+  background: var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.successLabel {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 6px;
+}
+
+.successValue {
+  font-size: 52px;
+  font-weight: 900;
+  line-height: 1;
+  margin-bottom: 8px;
+  transition: color 0.3s;
+}
+
+.successBreakdown {
+  font-size: 12px;
+  color: var(--ifm-color-emphasis-600);
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  gap: 2px;
+  margin-top: 8px;
+}
+
+.durationPanel {
+  flex: 1 1 140px;
+  padding: 16px;
+  background: var(--ifm-color-emphasis-200);
+  border-radius: 8px;
+  text-align: center;
+}
+
+.durationLabel {
+  font-size: 11px;
+  font-weight: 700;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+  color: var(--ifm-color-emphasis-600);
+  margin-bottom: 6px;
+}
+
+.durationValue {
+  font-size: 28px;
+  font-weight: 800;
+  font-variant-numeric: tabular-nums;
+  color: var(--ifm-color-primary-darker);
+  margin-bottom: 4px;
+}
+
+.durationNote {
+  font-size: 11px;
+  color: var(--ifm-color-emphasis-600);
+}
+
+/* ── Forge Button ────────────────────────────────────────────────────────── */
+
+.forgeActions {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 10px;
+  padding-top: 4px;
+}
+
+.forgeBtn {
+  padding: 14px 36px;
+  font-size: 20px;
+  font-weight: 900;
+  background: linear-gradient(135deg, #7a5500 0%, #9a6f00 50%, #7a5500 100%);
+  color: #fff;
+  border: 3px solid #8b6914;
+  border-radius: 8px;
+  cursor: pointer;
+  letter-spacing: 0.04em;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.5);
+  box-shadow: 0 4px 12px rgba(180, 120, 0, 0.35);
+  transition: all 0.15s;
+}
+
+.forgeBtn:hover:not(:disabled) {
+  transform: translateY(-2px);
+  box-shadow: 0 6px 18px rgba(180, 120, 0, 0.5);
+  background: linear-gradient(135deg, #9a6f00 0%, #b88200 50%, #9a6f00 100%);
+}
+
+.forgeBtn:active:not(:disabled) {
+  transform: translateY(1px);
+  box-shadow: 0 2px 6px rgba(180, 120, 0, 0.3);
+}
+
+.forgeBtn:disabled {
+  opacity: 0.5;
+  cursor: not-allowed;
+  filter: grayscale(40%);
+}
+
+.forgeBtnHint {
+  font-size: 12px;
+  color: var(--ifm-color-emphasis-600);
+  font-style: italic;
+}
+
+.resetBtn {
+  padding: 5px 14px;
+  font-size: 12px;
+  border: 1px solid var(--ifm-color-emphasis-400);
+  border-radius: 4px;
+  background: var(--ifm-background-color);
+  cursor: pointer;
+  color: var(--ifm-color-emphasis-700);
+  transition: all 0.12s;
+}
+
+.resetBtn:hover {
+  border-color: var(--ifm-color-emphasis-600);
+  color: var(--ifm-font-color-base);
+}
+
+/* ── Results ────────────────────────────────────────────────────────────── */
+
+.result {
+  padding: 18px 20px;
+  border-radius: 8px;
+  border: 2px solid;
+  animation: resultSlideIn 0.3s ease-out;
+}
+
+@keyframes resultSlideIn {
+  from { opacity: 0; transform: translateY(-8px); }
+  to   { opacity: 1; transform: translateY(0); }
+}
+
+.resultSuccess { border-color: #4caf50; background: rgba(76, 175, 80, 0.07); }
+.resultFailure { border-color: #f44336; background: rgba(244, 67, 54, 0.07); }
+
+.resultHeader {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-bottom: 12px;
+}
+
+.resultIcon { font-size: 24px; }
+
+.resultTitle { font-size: 20px; font-weight: 800; }
+.resultSuccess .resultTitle { color: #4caf50; }
+.resultFailure .resultTitle { color: #f44336; }
+
+.resultQuality { font-size: 15px; margin-bottom: 10px; }
+
+.resultItem { margin: 14px 0; }
+
+.resultRoll {
+  font-size: 12px;
+  color: var(--ifm-color-emphasis-600);
+  margin-top: 10px;
+}
+
+.refundSection { font-size: 14px; margin: 10px 0 10px; }
+.refundNote { font-size: 13px; color: var(--ifm-color-emphasis-700); margin-left: 6px; }
+
+.refundMaterials {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 8px;
+  margin-bottom: 14px;
+}
+
+.refundMaterial {
+  display: flex;
+  align-items: center;
+  gap: 6px;
+  padding: 4px 10px;
+  background: var(--ifm-color-emphasis-200);
+  border: 1px solid var(--ifm-color-emphasis-300);
+  border-radius: 4px;
+}
+
+.refundQty { font-size: 13px; font-weight: 700; }
+
+.resultOptions {
+  display: flex;
+  flex-direction: column;
+  gap: 6px;
+  padding-top: 12px;
+  border-top: 1px solid rgba(244, 67, 54, 0.25);
+}
+
+.resultOption { font-size: 13px; color: var(--ifm-color-emphasis-800); }
