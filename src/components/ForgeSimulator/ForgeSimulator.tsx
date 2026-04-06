@@ -586,7 +586,11 @@ function ResultDisplay({ result, baseItem, prefix, suffix, materials }: Readonly
     <div className={`${styles.result} ${styles.resultFailure}`}>
       <div className={styles.resultHeader}>
         <span className={styles.resultIcon}>💥</span>
-        <span className={styles.resultTitle}>Forge Failed!</span>
+        <span className={styles.resultTitle}>What a disaster!</span>
+        <p>Unfortunately a catastrophic error occurred during the forging and you are now stood before the pitiful remains of your forging work.
+Despite your failure, you receive some of your resources back and can now decide what your next move is:
+Have them wrapped into a package and delivered to you or, for a fee, store them directly into a new forging space for the same item to have the forging process attempted once again.
+</p>
       </div>
       {result.qualityPcts && <QualityBar pcts={result.qualityPcts} />}
       <div className={styles.resultRoll}>
@@ -610,10 +614,6 @@ function ResultDisplay({ result, baseItem, prefix, suffix, materials }: Readonly
             </div>
           );
         })}
-      </div>
-      <div className={styles.resultOptions}>
-        <div className={styles.resultOption}><strong>Send as Package</strong> — receive refunded materials above</div>
-        <div className={styles.resultOption}><strong>Try Again</strong> — costs 5–6+ Rubies, same refund</div>
       </div>
     </div>
   );
