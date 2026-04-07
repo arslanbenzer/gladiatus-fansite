@@ -42,7 +42,9 @@ const RARITIES: { value: ItemRarity; label: string }[] = [
 // Stat sort / filter options — value is "statKey:type" or "level"
 const STAT_OPTIONS: { value: string; label: string }[] = [
   { value: 'level',                label: 'Level' },
-  { value: 'damage:flat',          label: 'Damage' },
+  { value: 'damage:flat',          label: '+Damage' },
+  { value: 'minDamage',            label: 'Min Damage' },
+  { value: 'maxDamage',            label: 'Max Damage' },
   { value: 'armour:flat',          label: 'Armour' },
   { value: 'health:flat',          label: 'Health' },
   { value: 'strength:flat',        label: 'Strength' },
@@ -231,8 +233,57 @@ function getComboStat(combo: ItemCombo, statKey: string): number {
          (combo.suffix?.stats?.[stat]?.[type] ?? 0);
 }
 
+// Lightweight damage-only multiplier — mirrors the logic in calculateItemStats
+function getDamageMultiplier(rarity: ItemRarity, conditioned: boolean): number {
+  let effective = rarity;
+  if (conditioned) {
+    const next: Partial<Record<ItemRarity, ItemRarity>> = {
+      green: 'blue', blue: 'purple', purple: 'orange', orange: 'red',
+    };
+    effective = next[rarity] ?? rarity;
+  }
+  switch (effective) {
+    case 'blue':   return 1.15;
+    case 'purple': return 1.30;
+    case 'orange': return 1.50;
+    case 'red':    return conditioned && rarity === 'red' ? 2.0 : 1.75;
+    default:       return 1.0;
+  }
+}
+
+// Fast damage-only calculation — avoids the full calculateItemStats overhead
+function computeComboDamage(combo: ItemCombo, rarity: ItemRarity, conditioned: boolean): { min: number; max: number } | null {
+  const base = combo.base;
+  if (base.damageMin === undefined || base.damageMax === undefined) return null;
+  const m = getDamageMultiplier(rarity, conditioned);
+  const scroll = (combo.prefix?.stats?.damage?.flat ?? 0) + (combo.suffix?.stats?.damage?.flat ?? 0);
+  if (combo.prefix || combo.suffix) {
+    const lm = (combo.prefix?.level ?? 0) + (combo.suffix?.level ?? 0) + 1;
+    const ls = lm - 1 + Math.floor((lm - 1) / 5);
+    const rawMin = Math.ceil((base.damageMin + (ls - 1)) + 2 * scroll) + 1 + (base.damageMinOffset ?? 0);
+    const rawMax = Math.floor(lm / 2) + 2 * Math.floor((lm - 1) / 2) + base.damageMax + 2 * scroll;
+    return { min: Math.floor(rawMin * m), max: Math.floor(rawMax * m) };
+  }
+  return {
+    min: Math.max(1, Math.floor(base.damageMin * m) + (base.damageMinOffset ?? 0)),
+    max: Math.floor(base.damageMax * m),
+  };
+}
+
+type DamageMap = Map<string, { min: number; max: number } | null>;
+
+// Resolves any stat key; damage keys use the pre-built map for O(1) lookup
+function resolveComboStat(combo: ItemCombo, statKey: string, damageMap: DamageMap | null): number {
+  if (statKey === 'minDamage' || statKey === 'maxDamage') {
+    const dmg = damageMap?.get(combo.key) ?? null;
+    return dmg ? (statKey === 'minDamage' ? dmg.min : dmg.max) : 0;
+  }
+  return getComboStat(combo, statKey);
+}
+
 // Formats a stat value for display on the item card
 function formatStatValue(statKey: string, value: number): string {
+  if (statKey === 'minDamage' || statKey === 'maxDamage') return String(value);
   const isPercent = statKey.endsWith(':percent');
   const sign = value > 0 ? '+' : '';
   return isPercent ? `${sign}${value}%` : `${sign}${value}`;
@@ -328,6 +379,18 @@ export default function LootExplorer() {
     return buildCombos(bases, prefixList, suffixList, characterLevel, maxLevel);
   }, [bases, resolvedPrefix, resolvedSuffix, characterLevel, maxLevel]);
 
+  // Pre-build damage map only when a damage stat is actually selected — computed once, reused by both filter and sort
+  const comboDamageMap = useMemo<DamageMap | null>(() => {
+    const needed = filterStat === 'minDamage' || filterStat === 'maxDamage'
+                || sortBy === 'minDamage'    || sortBy === 'maxDamage';
+    if (!needed) return null;
+    const map: DamageMap = new Map();
+    for (const combo of allCombos) {
+      map.set(combo.key, computeComboDamage(combo, selectedRarity, conditioned));
+    }
+    return map;
+  }, [allCombos, selectedRarity, conditioned, filterStat, sortBy]);
+
   const processedCombos = useMemo(() => {
     // 1. Name filter
     const nameQ = nameFilter.trim().toLowerCase();
@@ -343,7 +406,7 @@ export default function LootExplorer() {
 
     // 2. Stat filter — only keep items that have a non-zero value for the chosen stat
     if (filterStat) {
-      result = result.filter((c) => getComboStat(c, filterStat) !== 0);
+      result = result.filter((c) => resolveComboStat(c, filterStat, comboDamageMap) !== 0);
     }
 
     // 3. Sort
@@ -354,13 +417,13 @@ export default function LootExplorer() {
       }
     } else {
       result = [...result].sort((a, b) => {
-        const diff = getComboStat(b, sortBy) - getComboStat(a, sortBy);
+        const diff = resolveComboStat(b, sortBy, comboDamageMap) - resolveComboStat(a, sortBy, comboDamageMap);
         return sortDir === 'asc' ? -diff : diff;
       });
     }
 
     return result;
-  }, [allCombos, nameFilter, filterStat, sortBy, sortDir]);
+  }, [allCombos, nameFilter, filterStat, comboDamageMap, sortBy, sortDir]);
 
   const totalPages    = Math.ceil(processedCombos.length / ITEMS_PER_PAGE);
   const visibleCombos = processedCombos.slice(page * ITEMS_PER_PAGE, (page + 1) * ITEMS_PER_PAGE);
@@ -611,7 +674,7 @@ export default function LootExplorer() {
               .filter(Boolean)
               .join(' ');
 
-            const statValue = sortBy === 'level' ? 0 : getComboStat(combo, sortBy);
+            const statValue = sortBy === 'level' ? 0 : resolveComboStat(combo, sortBy, comboDamageMap);
 
             const plannerParams = new URLSearchParams({ base: combo.base.name });
             if (combo.prefix) plannerParams.set('prefix', combo.prefix.name);
