@@ -5984,20 +5984,32 @@
     "level": 85,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": 3,
+        "percent": 0
+      },
       "health": {
         "flat": 79,
         "percent": 0
+      },
+      "agility": {
+        "flat": 0,
+        "percent": -20
+      },
+      "constitution": {
+        "flat": 19,
+        "percent": 19
       },
       "charisma": {
         "flat": 0,
         "percent": 13
       },
-      "critical_healing_value": {
-        "flat": 61,
-        "percent": 0
-      },
       "blocking_value": {
         "flat": 53,
+        "percent": 0
+      },
+      "hardening_value": {
+        "flat": 14,
         "percent": 0
       }
     },
@@ -6014,8 +6026,24 @@
     "level": 85,
     "new": true,
     "stats": {
+      "strength": {
+        "flat": -11,
+        "percent": 0
+      },
+      "agility": {
+        "flat": 14,
+        "percent": 0
+      },
+      "charisma": {
+        "flat": 0,
+        "percent": 18
+      },
+      "intelligence": {
+        "flat": 29,
+        "percent": 0
+      },
       "healing": {
-        "flat": 76,
+        "flat": 295,
         "percent": 0
       },
       "blocking_value": {
@@ -6035,12 +6063,24 @@
     "level": 85,
     "new": true,
     "stats": {
+      "armour": {
+        "flat": 235,
+        "percent": 0
+      },
+      "constitution": {
+        "flat": 19,
+        "percent": 0
+      },
       "charisma": {
         "flat": 24,
         "percent": 0
       },
+      "intelligence": {
+        "flat": 9,
+        "percent": 0
+      },
       "healing": {
-        "flat": 38,
+        "flat": 195,
         "percent": 0
       },
       "critical_healing_value": {
@@ -6049,6 +6089,10 @@
       },
       "threat": {
         "flat": 79,
+        "percent": 0
+      },
+      "hardening_value": {
+        "flat": 15,
         "percent": 0
       }
     },
@@ -6166,8 +6210,24 @@
     "level": 87,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": 5,
+        "percent": 0
+      },
+      "armour": {
+        "flat": 259,
+        "percent": 0
+      },
       "health": {
         "flat": 599,
+        "percent": 0
+      },
+      "strength": {
+        "flat": 11,
+        "percent": 0
+      },
+      "dexterity": {
+        "flat": 21,
         "percent": 0
       },
       "charisma": {
@@ -6190,20 +6250,20 @@
     "level": 88,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": 7,
+        "percent": 0
+      },
       "armour": {
         "flat": 558,
         "percent": 0
       },
+      "strength": {
+        "flat": 0,
+        "percent": 11
+      },
       "charisma": {
         "flat": 25,
-        "percent": 0
-      },
-      "healing": {
-        "flat": 79,
-        "percent": 0
-      },
-      "critical_healing_value": {
-        "flat": 85,
         "percent": 0
       },
       "critical_attack_value": {
@@ -6252,8 +6312,16 @@
     "level": 90,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": -4,
+        "percent": 0
+      },
+      "armour": {
+        "flat": 640,
+        "percent": 0
+      },
       "constitution": {
-        "flat": 0,
+        "flat": 17,
         "percent": 34
       },
       "blocking_value": {
@@ -6313,6 +6381,14 @@
     "stats": {
       "armour": {
         "flat": 80,
+        "percent": 0
+      },
+      "strength": {
+        "flat": 28,
+        "percent": 18
+      },
+      "constitution": {
+        "flat": 11,
         "percent": 0
       },
       "healing": {
@@ -6400,24 +6476,32 @@
     "level": 94,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": 8,
+        "percent": 0
+      },
+      "armour": {
+        "flat": 180,
+        "percent": 0
+      },
       "health": {
         "flat": 38,
         "percent": 0
       },
+      "dexterity": {
+        "flat": 0,
+        "percent": 8
+      },
       "agility": {
         "flat": 25,
-        "percent": 0
-      },
-      "healing": {
-        "flat": 120,
-        "percent": 0
-      },
-      "critical_healing_value": {
-        "flat": 74,
-        "percent": 0
+        "percent": 19
       },
       "blocking_value": {
         "flat": 59,
+        "percent": 0
+      },
+      "hardening_value": {
+        "flat": 13,
         "percent": 0
       }
     },
@@ -6433,20 +6517,40 @@
     "level": 95,
     "new": true,
     "stats": {
-      "armour": {
-        "flat": 80,
+      "damage": {
+        "flat": 7,
         "percent": 0
+      },
+      "armour": {
+        "flat": 219,
+        "percent": 0
+      },
+      "strength": {
+        "flat": 19,
+        "percent": 12
+      },
+      "dexterity": {
+        "flat": 0,
+        "percent": -25
+      },
+      "agility": {
+        "flat": 0,
+        "percent": 12
       },
       "constitution": {
         "flat": 0,
         "percent": 12
       },
-      "healing": {
-        "flat": 78,
-        "percent": 0
+      "charisma": {
+        "flat": 0,
+        "percent": 12
       },
-      "blocking_value": {
-        "flat": 57,
+      "intelligence": {
+        "flat": 14,
+        "percent": 12
+      },
+      "critical_attack_value": {
+        "flat": 15,
         "percent": 0
       }
     },
@@ -6461,20 +6565,32 @@
     "level": 95,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": 4,
+        "percent": 0
+      },
+      "armour": {
+        "flat": 640,
+        "percent": 0
+      },
+      "strength": {
+        "flat": 0,
+        "percent": 18
+      },
+      "dexterity": {
+        "flat": 24,
+        "percent": 0
+      },
       "constitution": {
         "flat": -12,
         "percent": 0
       },
-      "healing": {
-        "flat": 64,
-        "percent": 0
-      },
-      "critical_healing_value": {
-        "flat": 61,
-        "percent": 0
-      },
       "blocking_value": {
         "flat": 75,
+        "percent": 0
+      },
+      "hardening_value": {
+        "flat": 19,
         "percent": 0
       }
     },
@@ -6620,13 +6736,21 @@
     "level": 98,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": 10,
+        "percent": 0
+      },
       "armour": {
         "flat": 615,
         "percent": 0
       },
+      "dexterity": {
+        "flat": 12,
+        "percent": 14
+      },
       "charisma": {
         "flat": 28,
-        "percent": 0
+        "percent": 16
       },
       "critical_attack_value": {
         "flat": 18,
@@ -6771,9 +6895,17 @@
     "level": 105,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": 13,
+        "percent": 0
+      },
       "armour": {
         "flat": 708,
         "percent": 0
+      },
+      "agility": {
+        "flat": 0,
+        "percent": 29
       },
       "charisma": {
         "flat": 30,
@@ -6802,20 +6934,28 @@
     "new": true,
     "stats": {
       "armour": {
-        "flat": 120,
+        "flat": 580,
+        "percent": 0
+      },
+      "strength": {
+        "flat": 21,
         "percent": 0
       },
       "dexterity": {
         "flat": 0,
         "percent": 13
       },
+      "agility": {
+        "flat": 16,
+        "percent": 0
+      },
+      "constitution": {
+        "flat": 19,
+        "percent": 0
+      },
       "intelligence": {
         "flat": 0,
         "percent": 13
-      },
-      "healing": {
-        "flat": 59,
-        "percent": 0
       },
       "blocking_value": {
         "flat": 62,
@@ -6823,6 +6963,10 @@
       },
       "threat": {
         "flat": 64,
+        "percent": 0
+      },
+      "hardening_value": {
+        "flat": 22,
         "percent": 0
       }
     },
@@ -6867,19 +7011,35 @@
     "new": true,
     "stats": {
       "armour": {
-        "flat": 42,
+        "flat": 210,
         "percent": 0
       },
       "health": {
         "flat": 77,
         "percent": 0
       },
+      "strength": {
+        "flat": 0,
+        "percent": -10
+      },
+      "agility": {
+        "flat": 0,
+        "percent": -12
+      },
+      "charisma": {
+        "flat": 12,
+        "percent": 11
+      },
+      "intelligence": {
+        "flat": 49,
+        "percent": 29
+      },
       "healing": {
-        "flat": 287,
+        "flat": 485,
         "percent": 0
       },
       "critical_healing_value": {
-        "flat": 80,
+        "flat": 89,
         "percent": 0
       }
     },
@@ -6894,6 +7054,10 @@
     "level": 112,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": 14,
+        "percent": 0
+      },
       "armour": {
         "flat": 695,
         "percent": 0
@@ -6902,16 +7066,20 @@
         "flat": 82,
         "percent": 0
       },
-      "charisma": {
+      "strength": {
         "flat": 35,
+        "percent": 21
+      },
+      "constitution": {
+        "flat": 18,
         "percent": 0
+      },
+      "charisma": {
+        "flat": 0,
+        "percent": -18
       },
       "intelligence": {
         "flat": -8,
-        "percent": 0
-      },
-      "critical_healing_value": {
-        "flat": 75,
         "percent": 0
       },
       "critical_attack_value": {
@@ -6920,6 +7088,10 @@
       },
       "threat": {
         "flat": 110,
+        "percent": 0
+      },
+      "hardening_value": {
+        "flat": 18,
         "percent": 0
       }
     },
@@ -6943,8 +7115,24 @@
         "flat": 85,
         "percent": 0
       },
+      "dexterity": {
+        "flat": 12,
+        "percent": 0
+      },
+      "agility": {
+        "flat": 24,
+        "percent": 0
+      },
+      "constitution": {
+        "flat": -19,
+        "percent": 0
+      },
       "charisma": {
         "flat": 33,
+        "percent": 0
+      },
+      "intelligence": {
+        "flat": 16,
         "percent": 0
       },
       "healing": {
@@ -7004,16 +7192,24 @@
     "level": 120,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": 18,
+        "percent": 0
+      },
       "armour": {
         "flat": 61,
         "percent": 0
       },
-      "healing": {
-        "flat": 317,
+      "strength": {
+        "flat": 38,
         "percent": 0
       },
-      "critical_healing_value": {
-        "flat": 60,
+      "intelligence": {
+        "flat": 0,
+        "percent": -20
+      },
+      "critical_attack_value": {
+        "flat": -9,
         "percent": 0
       },
       "blocking_value": {
@@ -7030,7 +7226,7 @@
   },
   {
     "name": "of Hazard",
-    "level": 122,
+    "level": 132,
     "new": true,
     "stats": {
       "armour": {
@@ -7066,17 +7262,29 @@
     "level": 122,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": 9,
+        "percent": 0
+      },
       "armour": {
         "flat": 745,
         "percent": 0
       },
-      "charisma": {
-        "flat": 38,
-        "percent": 0
+      "dexterity": {
+        "flat": 21,
+        "percent": -6
       },
-      "critical_healing_value": {
-        "flat": 39,
-        "percent": 0
+      "agility": {
+        "flat": 0,
+        "percent": 22
+      },
+      "constitution": {
+        "flat": 0,
+        "percent": 20
+      },
+      "charisma": {
+        "flat": 0,
+        "percent": -10
       },
       "critical_attack_value": {
         "flat": 20,
@@ -7103,12 +7311,24 @@
         "flat": 90,
         "percent": 0
       },
+      "dexterity": {
+        "flat": 0,
+        "percent": -7
+      },
+      "agility": {
+        "flat": 33,
+        "percent": 0
+      },
+      "charisma": {
+        "flat": 0,
+        "percent": 21
+      },
       "intelligence": {
-        "flat": -8,
+        "flat": 47,
         "percent": 0
       },
       "healing": {
-        "flat": 354,
+        "flat": 554,
         "percent": 0
       },
       "critical_healing_value": {
@@ -7133,7 +7353,7 @@
     "new": true,
     "stats": {
       "damage": {
-        "flat": -6,
+        "flat": 8,
         "percent": 0
       },
       "armour": {
@@ -7148,8 +7368,16 @@
         "flat": 0,
         "percent": 29
       },
+      "constitution": {
+        "flat": 39,
+        "percent": 9
+      },
       "blocking_value": {
         "flat": 61,
+        "percent": 0
+      },
+      "hardening_value": {
+        "flat": 25,
         "percent": 0
       }
     },
@@ -7165,20 +7393,28 @@
     "new": true,
     "stats": {
       "armour": {
-        "flat": 85,
+        "flat": 375,
         "percent": 0
       },
       "health": {
         "flat": 1025,
         "percent": 0
       },
-      "charisma": {
+      "strength": {
         "flat": 0,
-        "percent": 39
+        "percent": -8
       },
-      "critical_healing_value": {
-        "flat": 61,
+      "dexterity": {
+        "flat": 23,
         "percent": 0
+      },
+      "agility": {
+        "flat": 38,
+        "percent": 0
+      },
+      "charisma": {
+        "flat": 19,
+        "percent": 39
       }
     },
     "materials": {
@@ -7193,16 +7429,32 @@
     "level": 132,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": 12,
+        "percent": 0
+      },
       "armour": {
         "flat": 812,
         "percent": 0
       },
+      "strength": {
+        "flat": 0,
+        "percent": 19
+      },
+      "dexterity": {
+        "flat": 0,
+        "percent": 19
+      },
+      "agility": {
+        "flat": 0,
+        "percent": 19
+      },
+      "constitution": {
+        "flat": 0,
+        "percent": -18
+      },
       "charisma": {
         "flat": 39,
-        "percent": 0
-      },
-      "critical_healing_value": {
-        "flat": 84,
         "percent": 0
       },
       "critical_attack_value": {
