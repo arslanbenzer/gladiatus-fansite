@@ -5083,8 +5083,12 @@
         "flat": 0,
         "percent": 41
       },
-      "healing": {
-        "flat": 258,
+      "block_value": {
+        "flat": 25,
+        "percent": 0
+      },
+      "hardening_value": {
+        "flat": 28,
         "percent": 0
       }
     },
@@ -5104,6 +5108,18 @@
       "agility": {
         "flat": 21,
         "percent": 0
+      },
+      "constitution": {
+        "flat": 0,
+        "percent": 10
+      },
+      "charisma": {
+        "flat": 13,
+        "percent": 0
+      },
+      "intelligence": {
+        "flat": 31,
+        "percent": 11
       },
       "healing": {
         "flat": 279,
@@ -5130,6 +5146,10 @@
     "stats": {
       "damage": {
         "flat": 23,
+        "percent": 0
+      },
+      "armour": {
+        "flat": 283,
         "percent": 0
       },
       "strength": {
@@ -5174,15 +5194,19 @@
       },
       "dexterity": {
         "flat": 0,
-        "percent": 9
+        "percent": 19
       },
       "agility": {
         "flat": 0,
-        "percent": -35
+        "percent": -25
       },
       "constitution": {
         "flat": 0,
         "percent": 8
+      },
+      "charisma": {
+        "flat": 35,
+        "percent": 0
       },
       "intelligence": {
         "flat": 55,
@@ -5222,8 +5246,16 @@
         "flat": 0,
         "percent": 21
       },
+      "critical_attack_value": {
+        "flat": 35,
+        "percent": 0
+      },
       "block_value": {
         "flat": 43,
+        "percent": 0
+      },
+      "hardening_value": {
+        "flat": 30,
         "percent": 0
       },
       "threat": {
@@ -5283,10 +5315,6 @@
       },
       "intelligence": {
         "flat": 21,
-        "percent": 0
-      },
-      "healing": {
-        "flat": 274,
         "percent": 0
       }
     },
@@ -5354,6 +5382,10 @@
         "flat": 0,
         "percent": 34
       },
+      "dexterity": {
+        "flat": 25,
+        "percent": 0
+      },
       "agility": {
         "flat": 19,
         "percent": 0
@@ -5362,8 +5394,8 @@
         "flat": 0,
         "percent": -13
       },
-      "healing": {
-        "flat": 372,
+      "critical_attack_value": {
+        "flat": 37,
         "percent": 0
       }
     },
@@ -5380,6 +5412,14 @@
     "level": 160,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": 21,
+        "percent": 0
+      },
+      "armour": {
+        "flat": 251,
+        "percent": 0
+      },
       "health": {
         "flat": 685,
         "percent": 0
@@ -5388,9 +5428,17 @@
         "flat": 0,
         "percent": 8
       },
+      "agility": {
+        "flat": 0,
+        "percent": 21
+      },
       "constitution": {
         "flat": 0,
         "percent": 11
+      },
+      "charisma": {
+        "flat": 0,
+        "percent": 17
       },
       "intelligence": {
         "flat": 58,
@@ -5412,7 +5460,7 @@
         "flat": 220,
         "percent": 0
       },
-      "constitution": {
+      "agility": {
         "flat": 0,
         "percent": -30
       },
@@ -5437,12 +5485,24 @@
     "level": 162,
     "new": true,
     "stats": {
+      "armour": {
+        "flat": 212,
+        "percent": 0
+      },
       "charisma": {
         "flat": 58,
         "percent": 0
       },
+      "intelligence": {
+        "flat": 45,
+        "percent": 22
+      },
       "healing": {
-        "flat": 364,
+        "flat": 441,
+        "percent": 0
+      },
+      "critical_healing_value": {
+        "flat": 64,
         "percent": 0
       }
     },
@@ -5456,6 +5516,10 @@
     "stats": {
       "damage": {
         "flat": 14,
+        "percent": 0
+      },
+      "armour": {
+        "flat": 311,
         "percent": 0
       },
       "health": {
@@ -5472,6 +5536,10 @@
       },
       "block_value": {
         "flat": 50,
+        "percent": 0
+      },
+      "hardening_value": {
+        "flat": 33,
         "percent": 0
       },
       "threat": {
@@ -5491,21 +5559,25 @@
     "level": 163,
     "new": true,
     "stats": {
+      "armour": {
+        "flat": 642,
+        "percent": 0
+      },
       "strength": {
         "flat": 34,
+        "percent": 14
+      },
+      "agility": {
+        "flat": 19,
         "percent": 0
       },
       "constitution": {
-        "flat": 19,
-        "percent": 0
+        "flat": 44,
+        "percent": 21
       },
       "charisma": {
         "flat": 14,
         "percent": 38
-      },
-      "critical_healing_value": {
-        "flat": 64,
-        "percent": 0
       },
       "threat": {
         "flat": 47,
@@ -5595,8 +5667,8 @@
         "flat": 0,
         "percent": -12
       },
-      "healing": {
-        "flat": 287,
+      "critical_attack_value": {
+        "flat": 44,
         "percent": 0
       }
     },
@@ -5729,16 +5801,32 @@
     "level": 168,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": 21,
+        "percent": 0
+      },
+      "armour": {
+        "flat": 340,
+        "percent": 0
+      },
+      "strength": {
+        "flat": 0,
+        "percent": -35
+      },
+      "dexterity": {
+        "flat": 39,
+        "percent": 42
+      },
+      "agility": {
+        "flat": 0,
+        "percent": 31
+      },
       "intelligence": {
         "flat": 60,
         "percent": 0
       },
-      "healing": {
-        "flat": 301,
-        "percent": 0
-      },
-      "threat": {
-        "flat": 220,
+      "critical_attack_value": {
+        "flat": 39,
         "percent": 0
       }
     },
@@ -5755,20 +5843,20 @@
     "level": 170,
     "new": true,
     "stats": {
+      "armour": {
+        "flat": 620,
+        "percent": 0
+      },
+      "strength": {
+        "flat": 0,
+        "percent": 41
+      },
       "agility": {
         "flat": 19,
-        "percent": 0
+        "percent": -21
       },
       "constitution": {
         "flat": -8,
-        "percent": 0
-      },
-      "healing": {
-        "flat": 312,
-        "percent": 0
-      },
-      "critical_healing_value": {
-        "flat": 71,
         "percent": 0
       }
     },
@@ -5878,7 +5966,7 @@
         "percent": 46
       },
       "dexterity": {
-        "flat": 0,
+        "flat": 22,
         "percent": -5
       },
       "agility": {
@@ -5889,8 +5977,8 @@
         "flat": -6,
         "percent": 0
       },
-      "healing": {
-        "flat": 287,
+      "critical_attack_value": {
+        "flat": 33,
         "percent": 0
       }
     },
@@ -5964,7 +6052,7 @@
       },
       "charisma": {
         "flat": 14,
-        "percent": 0
+        "percent": 50
       },
       "intelligence": {
         "flat": 0,
@@ -6003,6 +6091,10 @@
         "flat": 0,
         "percent": -5
       },
+      "agility": {
+        "flat": 0,
+        "percent": -5
+      },
       "intelligence": {
         "flat": 20,
         "percent": 50
@@ -6031,7 +6123,7 @@
         "percent": 0
       },
       "armour": {
-        "flat": 30,
+        "flat": 785,
         "percent": 0
       },
       "health": {
@@ -6043,11 +6135,15 @@
         "percent": 49
       },
       "constitution": {
-        "flat": 0,
+        "flat": 34,
         "percent": 11
       },
       "block_value": {
         "flat": 53,
+        "percent": 0
+      },
+      "hardening_value": {
+        "flat": 41,
         "percent": 0
       },
       "threat": {
@@ -6055,7 +6151,12 @@
         "percent": 0
       }
     },
-    "materials": {},
+    "materials": {
+      "Sphinx Feather": 3,
+      "Sugilite": 12,
+      "Boar Tusk": 71,
+      "Tin Ore": 18
+    },
     "id": 9970
   },
   {
@@ -6071,16 +6172,24 @@
         "flat": 1227,
         "percent": 0
       },
+      "strength": {
+        "flat": 41,
+        "percent": 0
+      },
       "dexterity": {
         "flat": 0,
         "percent": 47
       },
       "agility": {
         "flat": 21,
-        "percent": 0
+        "percent": 27
       },
-      "healing": {
-        "flat": 327,
+      "intelligence": {
+        "flat": 0,
+        "percent": -8
+      },
+      "critical_attack_value": {
+        "flat": 40,
         "percent": 0
       }
     },
@@ -6133,12 +6242,20 @@
     "level": 185,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": 19,
+        "percent": 0
+      },
       "armour": {
-        "flat": 140,
+        "flat": 625,
         "percent": 0
       },
       "strength": {
         "flat": 39,
+        "percent": 22
+      },
+      "dexterity": {
+        "flat": 33,
         "percent": 0
       },
       "agility": {
@@ -6152,14 +6269,6 @@
       "intelligence": {
         "flat": 0,
         "percent": -25
-      },
-      "critical_healing_value": {
-        "flat": 84,
-        "percent": 0
-      },
-      "threat": {
-        "flat": 42,
-        "percent": 0
       }
     },
     "materials": {"Soul Essence": 58, "Blood Garnet": 13, "Lead Ore": 36},
@@ -6327,20 +6436,20 @@
         "percent": 0
       },
       "armour": {
-        "flat": 340,
+        "flat": 565,
         "percent": 0
       },
       "agility": {
         "flat": 21,
         "percent": 0
       },
+      "constitution": {
+        "flat": 25,
+        "percent": 0
+      },
       "intelligence": {
         "flat": 0,
         "percent": 35
-      },
-      "healing": {
-        "flat": 328,
-        "percent": 0
       },
       "threat": {
         "flat": 30,
@@ -6429,14 +6538,19 @@
     "stats": {
       "strength": {
         "flat": 81,
-        "percent": 0
+        "percent": 31
       },
       "intelligence": {
         "flat": -6,
         "percent": -12
       }
     },
-    "materials": {},
+    "materials": {
+      "Resin": 11,
+      "Boar Tusk": 13,
+      "Blood Garnet": 81,
+      "Tin Ore": 11
+    },
     "id": 9959
   },
   {
@@ -6526,9 +6640,17 @@
         "flat": 50,
         "percent": 0
       },
+      "dexterity": {
+        "flat": 19,
+        "percent": 0
+      },
       "agility": {
         "flat": 20,
         "percent": 0
+      },
+      "constitution": {
+        "flat": 45,
+        "percent": 11
       },
       "charisma": {
         "flat": -24,
@@ -6539,7 +6661,13 @@
         "percent": 0
       }
     },
-    "materials": {},
+    "materials": {
+      "Resin": 26,
+      "Blood Garnet": 61,
+      "Mead": 13,
+      "Tin Ore": 11,
+      "Lead Ore": 8
+    },
     "id": 230
   },
   {
@@ -6596,12 +6724,20 @@
         "flat": 20,
         "percent": 0
       },
+      "constitution": {
+        "flat": 31,
+        "percent": 0
+      },
       "charisma": {
         "flat": 0,
         "percent": 48
       },
-      "healing": {
-        "flat": 399,
+      "block_value": {
+        "flat": 58,
+        "percent": 0
+      },
+      "hardening_value": {
+        "flat": 48,
         "percent": 0
       },
       "threat": {
@@ -6609,7 +6745,14 @@
         "percent": 0
       }
     },
-    "materials": {},
+    "materials": {
+      "Resin": 5,
+      "Boar Tusk": 19,
+      "Blood Garnet": 53,
+      "Soul Essence": 9,
+      "Mead": 7,
+      "Lead Ore": 28
+    },
     "id": 233
   },
   {
@@ -6622,23 +6765,27 @@
         "percent": 0
       },
       "armour": {
-        "flat": 61,
+        "flat": 413,
         "percent": 0
       },
       "health": {
-        "flat": 897,
+        "flat": 868,
         "percent": 0
       },
       "strength": {
         "flat": 0,
         "percent": 48
       },
-      "constitution": {
-        "flat": 0,
-        "percent": 13
+      "dexterity": {
+        "flat": 14,
+        "percent": 0
       },
-      "healing": {
-        "flat": 50,
+      "constitution": {
+        "flat": 12,
+        "percent": 12
+      },
+      "critical_attack_value": {
+        "flat": 41,
         "percent": 0
       },
       "block_value": {
@@ -6646,7 +6793,7 @@
         "percent": 0
       },
       "threat": {
-        "flat": 70,
+        "flat": 71,
         "percent": 0
       }
     },
@@ -6667,19 +6814,19 @@
         "percent": 0
       },
       "dexterity": {
-        "flat": 0,
+        "flat": 28,
         "percent": 47
       },
       "agility": {
         "flat": 19,
-        "percent": 0
+        "percent": 16
       },
       "charisma": {
         "flat": -6,
         "percent": 0
       },
-      "healing": {
-        "flat": 415,
+      "critical_attack_value": {
+        "flat": 36,
         "percent": 0
       }
     },
@@ -6693,6 +6840,10 @@
     "stats": {
       "damage": {
         "flat": 33,
+        "percent": 0
+      },
+      "armour": {
+        "flat": 140,
         "percent": 0
       },
       "strength": {
@@ -6720,7 +6871,13 @@
         "percent": 0
       }
     },
-    "materials": {},
+    "materials": {
+      "Sphinx Feather": 49,
+      "Hydra Scale": 19,
+      "Blood Garnet": 45,
+      "Soul Essence": 6,
+      "Mead": 5
+    },
     "id": 9952
   },
   {
@@ -6736,6 +6893,10 @@
         "flat": 1615,
         "percent": 0
       },
+      "strength": {
+        "flat": 31,
+        "percent": 0
+      },
       "dexterity": {
         "flat": 0,
         "percent": -35
@@ -6744,8 +6905,16 @@
         "flat": 18,
         "percent": 0
       },
-      "healing": {
-        "flat": 426,
+      "constitution": {
+        "flat": 0,
+        "percent": 24
+      },
+      "charisma": {
+        "flat": 0,
+        "percent": 49
+      },
+      "critical_attack_value": {
+        "flat": 33,
         "percent": 0
       },
       "threat": {
@@ -6761,17 +6930,33 @@
     "level": 217,
     "new": true,
     "stats": {
+      "armour": {
+        "flat": 840,
+        "percent": 0
+      },
       "health": {
         "flat": 891,
         "percent": 0
       },
+      "strength": {
+        "flat": 33,
+        "percent": 0
+      },
       "dexterity": {
-        "flat": 0,
+        "flat": 31,
         "percent": 5
+      },
+      "agility": {
+        "flat": 0,
+        "percent": 11
       },
       "constitution": {
         "flat": 0,
         "percent": 13
+      },
+      "charisma": {
+        "flat": 41,
+        "percent": 0
       },
       "intelligence": {
         "flat": 89,
@@ -6791,7 +6976,7 @@
         "percent": 0
       },
       "armour": {
-        "flat": 40,
+        "flat": 860,
         "percent": 0
       },
       "health": {
@@ -6803,15 +6988,15 @@
         "percent": 47
       },
       "constitution": {
-        "flat": 0,
+        "flat": 41,
         "percent": 14
       },
-      "healing": {
-        "flat": 50,
+      "block_value": {
+        "flat": 63,
         "percent": 0
       },
-      "blocking_value": {
-        "flat": 63,
+      "hardening_value": {
+        "flat": 55,
         "percent": 0
       },
       "threat": {
@@ -6819,7 +7004,13 @@
         "percent": 0
       }
     },
-    "materials": {},
+    "materials": {
+      "Almandin": 1,
+      "Hydra Scales": 4,
+      "Resin": 1,
+      "Boar Tusk": 3,
+      "Blood Garnet": 121
+    },
     "id": 238
   },
   {
@@ -6867,24 +7058,46 @@
     "level": 225,
     "new": true,
     "stats": {
+      "damage": {
+        "flat": 21,
+        "percent": 0
+      },
+      "armour": {
+        "flat": 354,
+        "percent": 0
+      },
+      "dexterity": {
+        "flat": 0,
+        "percent": 29
+      },
+      "agility": {
+        "flat": 31,
+        "percent": 0
+      },
       "constitution": {
         "flat": 25,
         "percent": 0
       },
       "charisma": {
-        "flat": 55,
+        "flat": 33,
         "percent": 0
       },
       "intelligence": {
-        "flat": 55,
+        "flat": 33,
         "percent": 0
       },
-      "healing": {
-        "flat": 426,
+      "critical_attack_value": {
+        "flat": 51,
         "percent": 0
       }
     },
-    "materials": {},
+    "materials": {
+      "Hydra Scale": 8,
+      "Sugilite": 2,
+      "Blood Garnet": 60,
+      "Almandin": 1,
+      "Lead Ore": 61
+    },
     "id": 9945
   },
   {
@@ -6893,7 +7106,11 @@
     "new": true,
     "stats": {
       "damage": {
-        "flat": 34,
+        "flat": 35,
+        "percent": 0
+      },
+      "armour": {
+        "flat": 1683,
         "percent": 0
       },
       "health": {
@@ -6911,13 +7128,15 @@
       "agility": {
         "flat": 18,
         "percent": 0
-      },
-      "healing": {
-        "flat": 538,
-        "percent": 0
       }
     },
-    "materials": {},
+    "materials": {
+      "Resin": 22,
+      "Sphinx Feather": 4,
+      "Blood Garnet": 74,
+      "Tin Ore": 6,
+      "Lead Ore": 27
+    },
     "id": 241
   },
   {
@@ -6951,7 +7170,7 @@
         "percent": 0
       },
       "armour": {
-        "flat": 200,
+        "flat": 989,
         "percent": 0
       },
       "health": {
@@ -6966,10 +7185,6 @@
         "flat": 0,
         "percent": 44
       },
-      "healing": {
-        "flat": 89,
-        "percent": 0
-      },
       "block_value": {
         "flat": 67,
         "percent": 0
@@ -6979,7 +7194,14 @@
         "percent": 0
       }
     },
-    "materials": {},
+    "materials": {
+      "Resin": 3,
+      "Sphinx Feather": 1,
+      "Typhon Leather": 4,
+      "Blood Garnet": 124,
+      "Almandin": 1,
+      "Lead Ore": 4
+    },
     "id": 9949
   },
   {
@@ -6992,7 +7214,7 @@
         "percent": 0
       },
       "armour": {
-        "flat": 200,
+        "flat": 1320,
         "percent": 0
       },
       "health": {
@@ -7007,12 +7229,12 @@
         "flat": 0,
         "percent": 18
       },
-      "healing": {
-        "flat": 40,
+      "block_value": {
+        "flat": 75,
         "percent": 0
       },
-      "blocking_value": {
-        "flat": 75,
+      "hardening_value": {
+        "flat": 61,
         "percent": 0
       },
       "threat": {
@@ -7119,8 +7341,12 @@
         "flat": 993,
         "percent": 0
       },
+      "strength": {
+        "flat": 29,
+        "percent": 0
+      },
       "dexterity": {
-        "flat": 0,
+        "flat": 21,
         "percent": 33
       },
       "agility": {
@@ -7131,16 +7357,12 @@
         "flat": 0,
         "percent": 16
       },
-      "healing": {
-        "flat": 80,
+      "critical_attack_value": {
+        "flat": 36,
         "percent": 0
       },
       "block_value": {
         "flat": 70,
-        "percent": 0
-      },
-      "threat": {
-        "flat": 110,
         "percent": 0
       }
     },
