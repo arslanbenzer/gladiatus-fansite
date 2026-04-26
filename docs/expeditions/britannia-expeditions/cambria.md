@@ -23,7 +23,7 @@ Despite all this luxury, I have decided to head back into battle as an Officer. 
 
 **Real level to engage:** 190
 
-**Dungeon:** No
+**Dungeon:** Yes, **[Forest Ambush](/dungeons/britannia-dungeons/forest-ambush "Forest Ambush")** - Entry level 230
 
 **Advanced Dungeon:** No
 

@@ -22,7 +22,7 @@ Galerius Senecianus` Diary: DCXCIX a.u.c. The camp fell, Cassivellaunus fled! He
 
 **Real level to engage:** 160
 
-**Dungeon:** No
+**Dungeon:** Yes, **[Before the Dawn](/dungeons/britannia-dungeons/before-the-dawn "Before the Dawn")** - Entry level 180
 
 **Advanced Dungeon:** No
 

@@ -22,7 +22,7 @@ Galerius Senecianus` Diary: DCXCIX a.u.c. After the initial skirmishes, these ba
 
 **Real level to engage:** 130
 
-**Dungeon:** No
+**Dungeon:** Yes, **[The Corrupted World Tree](/dungeons/britannia-dungeons/the-corrupted-world-tree "The Corrupted World Tree")** - Entry level 135
 
 **Advanced Dungeon:** No
 

@@ -22,7 +22,7 @@ Flavius Eunapius` Diary: DCCXCVI a.u.c: The battles were hard, the leader Carata
 
 **Real level to engage:** 180
 
-**Dungeon:** No
+**Dungeon:** Yes, **[Ashes of War](/dungeons/britannia-dungeons/ashes-of-war "Ashes of War")** - Entry level 210
 
 **Advanced Dungeon:** No
 

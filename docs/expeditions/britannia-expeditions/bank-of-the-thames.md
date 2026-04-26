@@ -22,7 +22,7 @@ Galerius Senecianus\` Diary: DCXCIX a.u.c. We`ve finally found a suitable landin
 
 **Real level to engage:** 120 (118 with Eagle Eyes costume)
 
-**Dungeon:** No
+**Dungeon:** Yes, **[Storming the Coast](/dungeons/britannia-dungeons/storming-the-coast "Storming the Coast")** - Entry level 120
 
 **Advanced Dungeon:** No
 

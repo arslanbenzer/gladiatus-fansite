@@ -22,7 +22,7 @@ Galerius Senecianus\` Diary: DCXCIX a.u.c. We managed to put the moor behind us.
 
 **Real level to engage:** 150
 
-**Dungeon:** No
+**Dungeon:** Yes, **[The Final Bastion](/dungeons/britannia-dungeons/the-final-bastion "The Final Bastion")** - Entry level 165
 
 **Advanced Dungeon:** No
 

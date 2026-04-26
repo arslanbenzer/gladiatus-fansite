@@ -22,7 +22,7 @@ Galerius Senecianus` Diary: DCXCIX a.u.c. We were able to subdue the domestic tr
 
 **Real level to engage:** 140
 
-**Dungeon:** No
+**Dungeon:** Yes, **[Marshes of Death](/dungeons/britannia-dungeons/marshes-of-death "Marshes of Death")** - Entry level 150
 
 **Advanced Dungeon:** No
 

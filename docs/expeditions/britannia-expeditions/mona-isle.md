@@ -22,7 +22,7 @@ Flavius Eunapius` Diary: DCCCX a.u.c: I feel my time drawing to a close. My chil
 
 **Real level to engage:** 200
 
-**Dungeon:** No
+**Dungeon:** Yes, **[The Great Ritual](/dungeons/britannia-dungeons/the-great-ritual "The Great Ritual")** - Entry level 250
 
 **Advanced Dungeon:** No
 

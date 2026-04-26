@@ -23,7 +23,7 @@ The local troops were being led by two brothers, who had barricaded themselves u
 
 **Real level to engage:** 170
 
-**Dungeon:** No
+**Dungeon:** Yes, **[Madness in the Fog](/dungeons/britannia-dungeons/madness-in-the-fog "Madness in the Fog")** - Entry level 195
 
 **Advanced Dungeon:** No
 
