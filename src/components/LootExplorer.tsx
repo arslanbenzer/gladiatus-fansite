@@ -271,12 +271,49 @@ function computeComboDamage(combo: ItemCombo, rarity: ItemRarity, conditioned: b
 }
 
 type DamageMap = Map<string, { min: number; max: number } | null>;
+type ArmourMap = Map<string, number | null>;
 
-// Resolves any stat key; damage keys use the pre-built map for O(1) lookup
-function resolveComboStat(combo: ItemCombo, statKey: string, damageMap: DamageMap): number {
+// Computes full armour for a combo: base + level-scaling formula + flat bonus from affixes, × rarity multiplier
+function computeComboArmour(combo: ItemCombo, rarity: ItemRarity, conditioned: boolean): number | null {
+  const base = combo.base;
+  if (base.armour === undefined || base.armour === null) return null;
+  const m = getDamageMultiplier(rarity, conditioned);
+  const prefixLevel = combo.prefix?.level ?? 0;
+  const suffixLevel = combo.suffix?.level ?? 0;
+  const totalLevel = prefixLevel + suffixLevel;
+  const flatBonus = (combo.prefix?.stats?.armour?.flat ?? 0) + (combo.suffix?.stats?.armour?.flat ?? 0);
+
+  let scaled: number;
+  if (combo.prefix || combo.suffix) {
+    switch (base.type) {
+      case 'gloves':
+        scaled = Math.floor(base.armour + (3 + totalLevel * 3 / 200) * totalLevel);
+        break;
+      case 'shoes':
+        scaled = Math.floor(base.armour + (6 + totalLevel * 3 / 100) * totalLevel);
+        break;
+      case 'helmets':
+        scaled = Math.floor(base.armour + (5 + totalLevel / 40) * totalLevel);
+        break;
+      default:
+        scaled = Math.floor(base.armour + (10 + prefixLevel / 20 + suffixLevel / 20) * totalLevel);
+        break;
+    }
+  } else {
+    scaled = base.armour;
+  }
+
+  return Math.floor((scaled + flatBonus) * m);
+}
+
+// Resolves any stat key; damage and armour keys use pre-built maps for O(1) lookup
+function resolveComboStat(combo: ItemCombo, statKey: string, damageMap: DamageMap, armourMap: ArmourMap): number {
   if (statKey === 'minDamage' || statKey === 'maxDamage') {
     const dmg = damageMap.get(combo.key) ?? null;
     return dmg ? (statKey === 'minDamage' ? dmg.min : dmg.max) : 0;
+  }
+  if (statKey === 'armour:flat') {
+    return armourMap.get(combo.key) ?? 0;
   }
   return getComboStat(combo, statKey);
 }
@@ -308,6 +345,13 @@ function buildPageItems(totalPages: number, currentPage: number): PageItem[] {
   return result;
 }
 
+// ─── Sort key type ─────────────────────────────────────────────────────────
+
+interface SortKey {
+  stat: string;
+  dir: 'asc' | 'desc';
+}
+
 // ─── Main component ────────────────────────────────────────────────────────
 
 export default function LootExplorer() {
@@ -319,9 +363,8 @@ export default function LootExplorer() {
   const [selectedPrefix, setSelectedPrefix] = useState<string>('');
   const [selectedSuffix, setSelectedSuffix] = useState<string>('');
   const [nameFilter, setNameFilter]         = useState<string>('');
-  const [sortBy, setSortBy]                 = useState<string>('level');
-  const [sortDir, setSortDir]               = useState<'asc' | 'desc'>('asc');
-  const [filterStat, setFilterStat]         = useState<string>('');
+  const [sortKeys, setSortKeys]             = useState<SortKey[]>([{ stat: 'level', dir: 'asc' }]);
+  const [filterStats, setFilterStats]       = useState<string[]>([]);
   const [page, setPage] = useState(0);
 
   const maxLevel = characterLevel >= 33
@@ -379,11 +422,19 @@ export default function LootExplorer() {
     return buildCombos(bases, prefixList, suffixList, characterLevel, maxLevel);
   }, [bases, resolvedPrefix, resolvedSuffix, characterLevel, maxLevel]);
 
-  // Pre-build damage map once per allCombos/rarity/conditioning change — O(1) lookup for filter and sort
+  // Pre-build damage and armour maps once per allCombos/rarity/conditioning change — O(1) lookup for filter and sort
   const comboDamageMap = useMemo<DamageMap>(() => {
     const map: DamageMap = new Map();
     for (const combo of allCombos) {
       map.set(combo.key, computeComboDamage(combo, selectedRarity, conditioned));
+    }
+    return map;
+  }, [allCombos, selectedRarity, conditioned]);
+
+  const comboArmourMap = useMemo<ArmourMap>(() => {
+    const map: ArmourMap = new Map();
+    for (const combo of allCombos) {
+      map.set(combo.key, computeComboArmour(combo, selectedRarity, conditioned));
     }
     return map;
   }, [allCombos, selectedRarity, conditioned]);
@@ -401,32 +452,77 @@ export default function LootExplorer() {
         )
       : allCombos;
 
-    // 2. Stat filter — only keep items that have a non-zero value for the chosen stat
-    if (filterStat) {
-      result = result.filter((c) => resolveComboStat(c, filterStat, comboDamageMap) !== 0);
+    // 2. Stat filter — AND logic: every required stat must be non-zero
+    for (const stat of filterStats) {
+      result = result.filter((c) => resolveComboStat(c, stat, comboDamageMap, comboArmourMap) !== 0);
     }
 
-    // 3. Sort
-    if (sortBy === 'level') {
-      // allCombos is already sorted ascending by level; reverse if needed
-      if (sortDir === 'desc') {
-        result = [...result].reverse();
+    // 3. Multi-key sort — apply keys in priority order, break ties with next key
+    result = [...result].sort((a, b) => {
+      for (const { stat, dir } of sortKeys) {
+        let diff: number;
+        if (stat === 'level') {
+          diff = a.finalLevel - b.finalLevel;
+        } else {
+          diff = resolveComboStat(a, stat, comboDamageMap, comboArmourMap) - resolveComboStat(b, stat, comboDamageMap, comboArmourMap);
+        }
+        if (diff !== 0) return dir === 'asc' ? diff : -diff;
       }
-    } else {
-      result = [...result].sort((a, b) => {
-        const diff = resolveComboStat(b, sortBy, comboDamageMap) - resolveComboStat(a, sortBy, comboDamageMap);
-        return sortDir === 'asc' ? -diff : diff;
-      });
-    }
+      return 0;
+    });
 
     return result;
-  }, [allCombos, nameFilter, filterStat, comboDamageMap, sortBy, sortDir]);
+  }, [allCombos, nameFilter, filterStats, comboDamageMap, comboArmourMap, sortKeys]);
 
   const totalPages    = Math.ceil(processedCombos.length / ITEMS_PER_PAGE);
   const visibleCombos = processedCombos.slice(page * ITEMS_PER_PAGE, (page + 1) * ITEMS_PER_PAGE);
   const pageItems     = buildPageItems(totalPages, page);
 
-  const activeSortLabel = STAT_OPTIONS.find((o) => o.value === sortBy)?.label ?? 'Level';
+  const primarySort = sortKeys[0] ?? { stat: 'level', dir: 'asc' as const };
+
+  const addFilterStat = (stat: string) => {
+    if (stat && !filterStats.includes(stat)) {
+      setFilterStats((prev) => [...prev, stat]);
+      resetPage();
+    }
+  };
+
+  const removeFilterStat = (stat: string) => {
+    setFilterStats((prev) => prev.filter((s) => s !== stat));
+    resetPage();
+  };
+
+  const addSortKey = (stat: string) => {
+    if (!stat || sortKeys.some((k) => k.stat === stat)) return;
+    setSortKeys((prev) => [...prev, { stat, dir: stat === 'level' ? 'asc' : 'desc' }]);
+    resetPage();
+  };
+
+  const removeSortKey = (idx: number) => {
+    setSortKeys((prev) => {
+      if (prev.length <= 1) return prev;
+      return prev.filter((_, i) => i !== idx);
+    });
+    resetPage();
+  };
+
+  const toggleSortDir = (idx: number) => {
+    setSortKeys((prev) =>
+      prev.map((k, i) => i === idx ? { ...k, dir: k.dir === 'asc' ? 'desc' : 'asc' } : k),
+    );
+    resetPage();
+  };
+
+  const moveSortKey = (idx: number, delta: -1 | 1) => {
+    setSortKeys((prev) => {
+      const next = [...prev];
+      const target = idx + delta;
+      if (target < 0 || target >= next.length) return prev;
+      [next[idx], next[target]] = [next[target]!, next[idx]!];
+      return next;
+    });
+    resetPage();
+  };
 
   return (
     <div>
@@ -575,70 +671,150 @@ export default function LootExplorer() {
         </div>
       </div>
 
-      {/* ── Row 3: stat filter + sort ── */}
+      {/* ── Row 3: stat filters + multi-sort ── */}
       <div
         style={{
           display: 'flex',
           flexWrap: 'wrap',
-          gap: '16px',
+          gap: '24px',
           marginBottom: '20px',
-          alignItems: 'flex-end',
+          alignItems: 'flex-start',
         }}
       >
+        {/* ── Must have stats ── */}
         <div>
-          <label
-            htmlFor="ilc-filter-stat"
-            style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold' }}
-          >
-            Must have stat
-          </label>
+          <div style={{ fontWeight: 'bold', marginBottom: '5px' }}>Must have stats</div>
+          <div style={{ display: 'flex', flexWrap: 'wrap', gap: '6px', marginBottom: '6px' }}>
+            {filterStats.map((stat) => {
+              const label = STAT_OPTIONS.find((o) => o.value === stat)?.label ?? stat;
+              return (
+                <span
+                  key={stat}
+                  style={{
+                    ...inputStyle,
+                    display: 'inline-flex',
+                    alignItems: 'center',
+                    gap: '4px',
+                    padding: '4px 8px',
+                    fontSize: '13px',
+                  }}
+                >
+                  {label}
+                  <button
+                    type="button"
+                    onClick={() => removeFilterStat(stat)}
+                    style={{
+                      background: 'none',
+                      border: 'none',
+                      cursor: 'pointer',
+                      color: 'var(--ifm-font-color-base)',
+                      padding: '0 2px',
+                      lineHeight: 1,
+                      fontSize: '14px',
+                    }}
+                    aria-label={`Remove ${label} filter`}
+                  >
+                    ✕
+                  </button>
+                </span>
+              );
+            })}
+          </div>
           <select
-            id="ilc-filter-stat"
-            value={filterStat}
-            onChange={(e) => { setFilterStat(e.target.value); resetPage(); }}
+            id="ilc-filter-stat-add"
+            value=""
+            onChange={(e) => { addFilterStat(e.target.value); }}
             style={inputStyle}
           >
-            <option value="">Any stat</option>
+            <option value="">Add stat filter…</option>
             {STAT_OPTIONS.filter((o) => o.value !== 'level').map((o) => (
-              <option key={o.value} value={o.value}>{o.label}</option>
+              <option key={o.value} value={o.value} disabled={filterStats.includes(o.value)}>
+                {o.label}
+              </option>
             ))}
           </select>
         </div>
 
+        {/* ── Sort by (multi-key) ── */}
         <div>
-          <label
-            htmlFor="ilc-sort"
-            style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold' }}
-          >
-            Sort by
-          </label>
+          <div style={{ fontWeight: 'bold', marginBottom: '5px' }}>Sort by</div>
+          <div style={{ display: 'flex', flexDirection: 'column', gap: '4px', marginBottom: '6px' }}>
+            {sortKeys.map((key, idx) => {
+              const label = STAT_OPTIONS.find((o) => o.value === key.stat)?.label ?? key.stat;
+              return (
+                <div key={key.stat} style={{ display: 'flex', alignItems: 'center', gap: '4px' }}>
+                  {sortKeys.length > 1 && (
+                    <span style={{ fontSize: '11px', color: 'var(--ifm-color-emphasis-500)', minWidth: '16px' }}>
+                      {idx + 1}.
+                    </span>
+                  )}
+                  <span style={{ ...inputStyle, padding: '4px 8px', fontSize: '13px', minWidth: '140px' }}>
+                    {label}
+                  </span>
+                  <button
+                    type="button"
+                    onClick={() => toggleSortDir(idx)}
+                    style={{ ...inputStyle, cursor: 'pointer', padding: '4px 8px', fontSize: '13px' }}
+                    title="Toggle direction"
+                  >
+                    {key.dir === 'asc' ? '↑' : '↓'}
+                  </button>
+                  {sortKeys.length > 1 && (
+                    <>
+                      <button
+                        type="button"
+                        onClick={() => moveSortKey(idx, -1)}
+                        disabled={idx === 0}
+                        style={{ ...inputStyle, cursor: idx === 0 ? 'default' : 'pointer', padding: '4px 6px', opacity: idx === 0 ? 0.3 : 1 }}
+                        title="Move up"
+                      >
+                        ▲
+                      </button>
+                      <button
+                        type="button"
+                        onClick={() => moveSortKey(idx, 1)}
+                        disabled={idx === sortKeys.length - 1}
+                        style={{ ...inputStyle, cursor: idx === sortKeys.length - 1 ? 'default' : 'pointer', padding: '4px 6px', opacity: idx === sortKeys.length - 1 ? 0.3 : 1 }}
+                        title="Move down"
+                      >
+                        ▼
+                      </button>
+                    </>
+                  )}
+                  <button
+                    type="button"
+                    onClick={() => removeSortKey(idx)}
+                    disabled={sortKeys.length <= 1}
+                    style={{
+                      background: 'none',
+                      border: 'none',
+                      cursor: sortKeys.length <= 1 ? 'default' : 'pointer',
+                      color: 'var(--ifm-font-color-base)',
+                      opacity: sortKeys.length <= 1 ? 0.3 : 1,
+                      padding: '0 4px',
+                      fontSize: '14px',
+                    }}
+                    aria-label={`Remove ${label} sort`}
+                  >
+                    ✕
+                  </button>
+                </div>
+              );
+            })}
+          </div>
           <select
-            id="ilc-sort"
-            value={sortBy}
-            onChange={(e) => { setSortBy(e.target.value); resetPage(); }}
+            id="ilc-sort-add"
+            value=""
+            onChange={(e) => { addSortKey(e.target.value); }}
             style={inputStyle}
           >
+            <option value="">Add sort key…</option>
             {STAT_OPTIONS.map((o) => (
-              <option key={o.value} value={o.value}>{o.label}</option>
+              <option key={o.value} value={o.value} disabled={sortKeys.some((k) => k.stat === o.value)}>
+                {o.label}
+              </option>
             ))}
           </select>
-        </div>
-
-        <div>
-          <label
-            htmlFor="ilc-sort-dir"
-            style={{ display: 'block', marginBottom: '5px', fontWeight: 'bold' }}
-          >
-            Order
-          </label>
-          <button
-            id="ilc-sort-dir"
-            type="button"
-            onClick={() => { setSortDir((d) => (d === 'asc' ? 'desc' : 'asc')); resetPage(); }}
-            style={{ ...inputStyle, cursor: 'pointer', minWidth: '90px' }}
-          >
-            {sortDir === 'asc' ? `${activeSortLabel} ↑` : `${activeSortLabel} ↓`}
-          </button>
         </div>
       </div>
 
@@ -653,7 +829,9 @@ export default function LootExplorer() {
         {selectedPrefix && <> · prefix <strong>{selectedPrefix}</strong></>}
         {selectedSuffix && <> · suffix <strong>{selectedSuffix}</strong></>}
         {nameFilter && <> · name contains <strong>&ldquo;{nameFilter}&rdquo;</strong></>}
-        {filterStat && <> · has <strong>{STAT_OPTIONS.find((o) => o.value === filterStat)?.label}</strong></>}
+        {filterStats.length > 0 && (
+          <> · has <strong>{filterStats.map((s) => STAT_OPTIONS.find((o) => o.value === s)?.label ?? s).join(' + ')}</strong></>
+        )}
         {totalPages > 1 && (
           <> · page <strong>{page + 1}</strong> of <strong>{totalPages}</strong></>
         )}
@@ -671,7 +849,7 @@ export default function LootExplorer() {
               .filter(Boolean)
               .join(' ');
 
-            const statValue = sortBy === 'level' ? 0 : resolveComboStat(combo, sortBy, comboDamageMap);
+            const statValue = primarySort.stat === 'level' ? 0 : resolveComboStat(combo, primarySort.stat, comboDamageMap, comboArmourMap);
 
             const plannerParams = new URLSearchParams({ base: combo.base.name });
             if (combo.prefix) plannerParams.set('prefix', combo.prefix.name);
@@ -703,9 +881,9 @@ export default function LootExplorer() {
                 <div style={{ fontSize: '10px', color: 'var(--ifm-font-color-base)' }}>
                   Lv.{combo.finalLevel}
                 </div>
-                {sortBy !== 'level' && statValue !== 0 && (
+                {primarySort.stat !== 'level' && statValue !== 0 && (
                   <div style={{ fontSize: '10px', color: '#1eff00', fontWeight: 'bold' }}>
-                    {formatStatValue(sortBy, statValue)}
+                    {formatStatValue(primarySort.stat, statValue)}
                   </div>
                 )}
               </div>
