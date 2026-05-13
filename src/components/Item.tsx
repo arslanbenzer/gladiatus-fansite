@@ -6,6 +6,7 @@ import suffixesData from '@site/static/data/items/suffixes.json';
 import eventItemsData from '@site/static/data/items/event-items.json';
 import type { Upgrade, AppliedUpgrade } from './CharacterPlanner/useCharacterState';
 import { calcAffixGoldBase, COMBINED_AFFIX_MULTIPLIER } from '@site/src/utils/affixGold';
+import { maxUsableItemLevel } from '@site/src/utils/itemLevelLimits';
 
 // Base item type from bases.json
 export interface BaseItem {
@@ -578,9 +579,11 @@ export default function Item({
     return Math.round(baseStat * (percentBonus / 100));
   };
 
-  // Check if item is not usable by character level
-  // Characters can use items up to their level + 16
-  const isItemUnusable = characterLevel !== undefined && calculatedStats.level > (characterLevel + 16);
+  // Mark the item as unwearable if its level exceeds the character's wearable cap.
+  // Cap formula lives in src/utils/itemLevelLimits.ts.
+  const isItemUnusable =
+    characterLevel !== undefined &&
+    calculatedStats.level > maxUsableItemLevel(characterLevel);
 
   // Format materials
   const materialsText = Object.entries(resolvedBaseItem.materials).map(

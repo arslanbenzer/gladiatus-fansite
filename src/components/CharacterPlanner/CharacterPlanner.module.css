@@ -100,6 +100,36 @@
   font-weight: bold;
 }
 
+.strictToggle {
+  margin-top: 4px;
+  padding-top: 4px;
+  border-top: 1px dashed rgba(139, 105, 20, 0.25);
+  color: #5a4a2f;
+  font-size: 12px;
+  line-height: 1.4;
+  opacity: 0.9;
+}
+
+.strictToggle label {
+  cursor: pointer;
+  display: inline-flex;
+  align-items: center;
+  gap: 4px;
+}
+
+.newBadge {
+  display: inline-block;
+  padding: 1px 6px;
+  border-radius: 10px;
+  background: #c0392b;
+  color: #fff;
+  font-size: 10px;
+  font-weight: bold;
+  letter-spacing: 0.5px;
+  text-transform: uppercase;
+  line-height: 1.4;
+}
+
 .equippedCount {
   color: #5a4a2f;
   font-weight: bold;
@@ -345,6 +375,11 @@
 
 [data-theme='dark'] .levelInfoItem strong {
   color: #d4af37;
+}
+
+[data-theme='dark'] .strictToggle {
+  color: #c9a876;
+  border-top-color: rgba(212, 175, 55, 0.25);
 }
 
 [data-theme='dark'] .equippedCount {

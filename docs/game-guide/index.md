@@ -410,31 +410,31 @@ You can see that with some luck and using costumes or Micro events that boost fo
 
 The "+16 above your level" rule for wearable items, the "+9 above" for Market, and the auction range only stabilise into their final linear form once your character is high enough. Below those thresholds the game uses scaled formulas.
 
-The following formulas have been verified against in-game data:
+The current formulas in use are:
 
 | Limit | Formula | Notes |
 |-------|---------|-------|
-| Max wearable item level | `floor(1.25 × L + 7.75)` for L &lt; 33, then `L + 16` | Reaches the +16 rule at character level 33 |
+| Max wearable item level | `ceil(1.25 × L + 7.75)` for L &lt; 33, then `L + 16` | Reaches the +16 rule at character level 33 |
 | Max item level on Market | `floor(1.25 × L)` for L &lt; 36, then `L + 9` | Reaches the +9 rule at character level 36 |
 | Min item level in Auction | `floor(0.75 × L)` | Same formula at all levels |
 | Max item level in Auction | `ceil(1.25 × L + 5.75)` for L &lt; 33, then `L + 14` | Reaches the +14 rule at character level 33 |
 
 Where `L` is the character level. Praetor's Seal extends Market and Auction visibility but does not change the wearable cap.
 
-Verified values for the first 10 character levels:
+Values these formulas produce for the first 10 character levels:
 
 | Character level | Can wear up to | Market up to | Auction min | Auction max |
 | --- | --- | --- | --- | --- |
 | 1 | 9 | 1 | 0 | 7 |
-| 2 | 10 | 2 | 1 | 9 |
-| 3 | 11 | 3 | 2 | 10 |
-| 4 | 12 | 5 | 3 | 11 |
+| 2 | 11 | 2 | 1 | 9 |
+| 3 | 12 | 3 | 2 | 10 |
+| 4 | 13 | 5 | 3 | 11 |
 | 5 | 14 | 6 | 3 | 12 |
-| 6 | 15 | 7 | 4 | 14 |
-| 7 | 16 | 8 | 5 | 15 |
-| 8 | 17 | 10 | 6 | 16 |
+| 6 | 16 | 7 | 4 | 14 |
+| 7 | 17 | 8 | 5 | 15 |
+| 8 | 18 | 10 | 6 | 16 |
 | 9 | 19 | 11 | 6 | 17 |
-| 10 | 20 | 12 | 7 | 19 |
+| 10 | 21 | 12 | 7 | 19 |
 
 ---
 

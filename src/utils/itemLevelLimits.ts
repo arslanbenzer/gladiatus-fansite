@@ -1,7 +1,6 @@
 /**
  * Item-level limit formulas for the Character Planner.
  *
- * Verified against in-game data for character levels 1-10 and L=41.
  * See docs/game-guide/index.md → "Item level formulas (low levels)".
  */
 
@@ -18,7 +17,7 @@ export function computeItemLevel(
 export function maxUsableItemLevel(characterLevel: number): number {
   return characterLevel >= 33
     ? characterLevel + 16
-    : Math.floor(1.25 * characterLevel + 7.75);
+    : Math.ceil(1.25 * characterLevel + 7.75);
 }
 
 /** Max item level visible in the Market. */

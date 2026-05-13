@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useEffect, useState } from 'react';
 import styles from './CharacterPlanner.module.css';
 import CharacterDoll from './CharacterDoll';
 import StatsDisplay from './StatsDisplay';
@@ -8,6 +8,12 @@ import ImportProfile from './ImportProfile';
 import PlayerName from './PlayerName';
 import { useCharacterState, ItemSlotType } from './useCharacterState';
 import PactSelector, { ActivePactsBar } from './PactSelector';
+import {
+  maxUsableItemLevel,
+  maxMarketItemLevel,
+  minAuctionItemLevel,
+  maxAuctionItemLevel,
+} from '@site/src/utils/itemLevelLimits';
 
 /**
  * Main Character Planner Component
@@ -35,6 +41,19 @@ export default function CharacterPlanner() {
   const [selectedSlot, setSelectedSlot] = useState<ItemSlotType | null>(null);
   const [showShareDialog, setShowShareDialog] = useState(false);
   const [shareMessage, setShareMessage] = useState('');
+
+  const [strictItemLevel, setStrictItemLevel] = useState<boolean>(() => {
+    if (globalThis.window === undefined) return false;
+    return globalThis.localStorage.getItem('gladiatus.planner.strictItemLevel') === 'true';
+  });
+
+  useEffect(() => {
+    if (globalThis.window === undefined) return;
+    globalThis.localStorage.setItem(
+      'gladiatus.planner.strictItemLevel',
+      String(strictItemLevel),
+    );
+  }, [strictItemLevel]);
 
   const handleSlotClick = (slot: ItemSlotType) => {
     setSelectedSlot(slot);
@@ -80,24 +99,11 @@ export default function CharacterPlanner() {
 
   const equippedCount = equippedItems.size;
 
-  // Calculate item level ranges based on character level
-  // Maximum level of item we can equip
-  const maxUsableItemLevel = characterLevel >= 33
-    ? characterLevel + 16
-    : Math.floor(1.25 * characterLevel + 7.75);
-  
-  // Maximum level seen on the market
-  const maxMarketItemLevel = characterLevel >= 36 
-    ? characterLevel + 9 
-    : Math.floor(1.25 * characterLevel);
-  
-  // Minimum level seen in auctions
-  const minAuctionItemLevel = Math.floor(0.75 * characterLevel);
-  
-  // Maximum level seen in auctions
-  const maxAuctionItemLevel = characterLevel >= 33 
-    ? characterLevel + 14 
-    : Math.ceil(1.25 * characterLevel + 5.75);
+  // Item-level limits derived from character level (see src/utils/itemLevelLimits.ts)
+  const maxUsableItemLevelValue = maxUsableItemLevel(characterLevel);
+  const maxMarketItemLevelValue = maxMarketItemLevel(characterLevel);
+  const minAuctionItemLevelValue = minAuctionItemLevel(characterLevel);
+  const maxAuctionItemLevelValue = maxAuctionItemLevel(characterLevel);
 
   return (
     <div className={styles.characterPlanner}>
@@ -134,13 +140,23 @@ export default function CharacterPlanner() {
           </div>
           <div className={styles.levelInfo}>
             <div className={styles.levelInfoItem}>
-              Can use items up to <strong>{maxUsableItemLevel}</strong> level.
+              Can use items up to <strong>{maxUsableItemLevelValue}</strong> level.
             </div>
             <div className={styles.levelInfoItem}>
-              Can see items on the market up to <strong>{maxMarketItemLevel}</strong> level (can be increased with Praetor's seal).
+              Can see items on the market up to <strong>{maxMarketItemLevelValue}</strong> level (can be increased with Praetor's seal).
             </div>
             <div className={styles.levelInfoItem}>
-              Can see items on the auction from <strong>{minAuctionItemLevel}</strong> to <strong>{maxAuctionItemLevel}</strong> level (can be increased with Praetor's seal).
+              Can see items on the auction from <strong>{minAuctionItemLevelValue}</strong> to <strong>{maxAuctionItemLevelValue}</strong> level (can be increased with Praetor's seal).
+            </div>
+            <div className={styles.strictToggle}>
+              <label>
+                <input
+                  type="checkbox"
+                  checked={strictItemLevel}
+                  onChange={(e) => setStrictItemLevel(e.target.checked)}
+                />
+                {' '}<span className={styles.newBadge}>New</span> Strict item level — only show wearable combinations
+              </label>
             </div>
           </div>
           <span className={styles.equippedCount}>
@@ -251,6 +267,7 @@ export default function CharacterPlanner() {
           currentItem={equippedItems.get(selectedSlot) || null}
           onSelect={handleItemSelect}
           onClose={() => setSelectedSlot(null)}
+          strictItemLevel={strictItemLevel}
         />
       )}
 
