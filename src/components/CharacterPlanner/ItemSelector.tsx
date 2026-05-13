@@ -6,6 +6,7 @@ import basesData from '@site/static/data/items/bases.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
 import upgradesData from '@site/static/data/items/upgrades.json';
+import { maxUsableItemLevel } from '@site/src/utils/itemLevelLimits';
 
 interface ItemSelectorProps {
   readonly slotType: ItemSlotType;
@@ -13,6 +14,7 @@ interface ItemSelectorProps {
   readonly currentItem: EquippedItem | null;
   readonly onSelect: (item: EquippedItem) => void;
   readonly onClose: () => void;
+  readonly strictItemLevel: boolean;
 }
 
 // Map slot types to item types
@@ -32,7 +34,14 @@ const SLOT_TYPE_MAP: Record<ItemSlotType, string[]> = {
  * Modal for selecting items to equip
  * Shows filterable list of base items with options for prefix/suffix/rarity
  */
-export default function ItemSelector({ slotType, characterLevel, currentItem, onSelect, onClose }: ItemSelectorProps) {
+export default function ItemSelector({
+  slotType,
+  characterLevel,
+  currentItem,
+  onSelect,
+  onClose,
+  strictItemLevel,
+}: ItemSelectorProps) {
   const [selectedBase, setSelectedBase] = useState<BaseItem | null>(currentItem?.baseItem || null);
   const [selectedPrefix, setSelectedPrefix] = useState<PrefixSuffix | null>(currentItem?.prefix || null);
   const [selectedSuffix, setSelectedSuffix] = useState<PrefixSuffix | null>(currentItem?.suffix || null);
@@ -45,13 +54,17 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
   const [prefixSearch, setPrefixSearch] = useState('');
   const [suffixSearch, setSuffixSearch] = useState('');
 
+  const wearableCap = maxUsableItemLevel(characterLevel);
+
   // Get available base items for this slot type
   const availableBaseItems = useMemo(() => {
     const allowedTypes = SLOT_TYPE_MAP[slotType];
-    return (basesData as BaseItem[]).filter(item => 
-      allowedTypes.includes(item.type) && (item.level || 0) <= characterLevel
-    );
-  }, [slotType, characterLevel]);
+    return (basesData as BaseItem[]).filter((item) => {
+      if (!allowedTypes.includes(item.type)) return false;
+      if (strictItemLevel && (item.level ?? 0) > wearableCap) return false;
+      return true;
+    });
+  }, [slotType, strictItemLevel, wearableCap]);
 
   // Filter items based on search and level
   const filteredItems = useMemo(() => {
@@ -71,20 +84,54 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
     return (suffixesData as PrefixSuffix[]);
   }, []);
 
-  // Filter prefixes/suffixes by search term
+  // Filter prefixes/suffixes by search term and strict item level
   const filteredPrefixes = useMemo(() => {
-    if (!prefixSearch) return availablePrefixes;
-    return availablePrefixes.filter(prefix => 
-      prefix.name.toLowerCase().includes(prefixSearch.toLowerCase())
-    );
-  }, [availablePrefixes, prefixSearch]);
+    const searchTerm = prefixSearch.toLowerCase();
+    return availablePrefixes.filter((prefix) => {
+      if (searchTerm && !prefix.name.toLowerCase().includes(searchTerm)) {
+        return false;
+      }
+      if (strictItemLevel && selectedBase) {
+        const combined =
+          (selectedBase.level ?? 0) +
+          prefix.level +
+          (selectedSuffix?.level ?? 0);
+        if (combined > wearableCap) return false;
+      }
+      return true;
+    });
+  }, [
+    availablePrefixes,
+    prefixSearch,
+    strictItemLevel,
+    selectedBase,
+    selectedSuffix,
+    wearableCap,
+  ]);
 
   const filteredSuffixes = useMemo(() => {
-    if (!suffixSearch) return availableSuffixes;
-    return availableSuffixes.filter(suffix => 
-      suffix.name.toLowerCase().includes(suffixSearch.toLowerCase())
-    );
-  }, [availableSuffixes, suffixSearch]);
+    const searchTerm = suffixSearch.toLowerCase();
+    return availableSuffixes.filter((suffix) => {
+      if (searchTerm && !suffix.name.toLowerCase().includes(searchTerm)) {
+        return false;
+      }
+      if (strictItemLevel && selectedBase) {
+        const combined =
+          (selectedBase.level ?? 0) +
+          (selectedPrefix?.level ?? 0) +
+          suffix.level;
+        if (combined > wearableCap) return false;
+      }
+      return true;
+    });
+  }, [
+    availableSuffixes,
+    suffixSearch,
+    strictItemLevel,
+    selectedBase,
+    selectedPrefix,
+    wearableCap,
+  ]);
 
   // Get available upgrades for the selected item type
   // Only show powders in upgrades list (enchants like Grindstone/Protective gear have their own field)
@@ -101,6 +148,33 @@ export default function ItemSelector({ slotType, characterLevel, currentItem, on
       setEnchantValue(0);
     }
   }, [selectedBase]);
+
+  useEffect(() => {
+    if (!strictItemLevel) return;
+    if (!selectedBase || !selectedPrefix) return;
+    const combined =
+      (selectedBase.level ?? 0) +
+      selectedPrefix.level +
+      (selectedSuffix?.level ?? 0);
+    if (combined > wearableCap) {
+      setSelectedPrefix(null);
+    }
+  }, [strictItemLevel, selectedBase, selectedPrefix, selectedSuffix, wearableCap]);
+
+  // Two separate effects (not one) so each one only fires when its own
+  // dependency actually changes. Both depend on the same set of values but
+  // only one branch calls a setter, so they cannot loop on each other.
+  useEffect(() => {
+    if (!strictItemLevel) return;
+    if (!selectedBase || !selectedSuffix) return;
+    const combined =
+      (selectedBase.level ?? 0) +
+      (selectedPrefix?.level ?? 0) +
+      selectedSuffix.level;
+    if (combined > wearableCap) {
+      setSelectedSuffix(null);
+    }
+  }, [strictItemLevel, selectedBase, selectedPrefix, selectedSuffix, wearableCap]);
 
   const handleEquip = () => {
     if (!selectedBase) return;
