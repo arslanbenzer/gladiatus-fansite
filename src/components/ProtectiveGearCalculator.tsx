@@ -1,9 +1,9 @@
 import React, { useState } from 'react';
-import Grindstone from './Grindstone';
+import ProtectiveGear from './ProtectiveGear';
 import type { ItemRarity } from './Item';
 import styles from '@site/src/css/ConsumableCalculator.module.css';
 
-type GrindstoneCalculatorProps = {
+type ProtectiveGearCalculatorProps = {
   defaultLevel?: number;
   defaultRarity?: ItemRarity;
 };
@@ -16,10 +16,10 @@ const RARITY_OPTIONS: { value: ItemRarity; label: string }[] = [
   { value: 'red', label: 'Red' },
 ];
 
-export default function GrindstoneCalculator({
-  defaultLevel = 97,
+export default function ProtectiveGearCalculator({
+  defaultLevel = 112,
   defaultRarity = 'green',
-}: GrindstoneCalculatorProps) {
+}: ProtectiveGearCalculatorProps) {
   const [level, setLevel] = useState<number>(defaultLevel);
   const [rarity, setRarity] = useState<ItemRarity>(defaultRarity);
 
@@ -36,9 +36,9 @@ export default function GrindstoneCalculator({
     <div className={styles.wrapper}>
       <div className={styles.controls}>
         <div className={styles.control}>
-          <label htmlFor="grindstone-calc-level">Level:</label>
+          <label htmlFor="protective-gear-calc-level">Level:</label>
           <input
-            id="grindstone-calc-level"
+            id="protective-gear-calc-level"
             type="number"
             min={1}
             max={200}
@@ -47,9 +47,9 @@ export default function GrindstoneCalculator({
           />
         </div>
         <div className={styles.control}>
-          <label htmlFor="grindstone-calc-rarity">Rarity:</label>
+          <label htmlFor="protective-gear-calc-rarity">Rarity:</label>
           <select
-            id="grindstone-calc-rarity"
+            id="protective-gear-calc-rarity"
             value={rarity}
             onChange={handleRarityChange}
           >
@@ -62,7 +62,7 @@ export default function GrindstoneCalculator({
         </div>
       </div>
       <div className={styles.preview}>
-        <Grindstone level={level} rarity={rarity} />
+        <ProtectiveGear level={level} rarity={rarity} />
       </div>
     </div>
   );

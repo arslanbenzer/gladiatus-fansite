@@ -6,6 +6,8 @@ slug: /items/upgrades
 import CustomItemTooltip from '@site/src/components/CustomItemTooltip';
 import Grindstone from '@site/src/components/Grindstone';
 import GrindstoneCalculator from '@site/src/components/GrindstoneCalculator';
+import ProtectiveGear from '@site/src/components/ProtectiveGear';
+import ProtectiveGearCalculator from '@site/src/components/ProtectiveGearCalculator';
 
 Upgrades are items that permanently increase a certain stats when applied to an item. The higher the item level of the upgrade item the higher the stats it will increase. Most upgrade items have a minimum item level that they can be applied to so be aware of it. Also, if you are buying an Upgrade item from the Market, make sure it's not Soul bound to the seller because if it is, you will not be able to use it.
 
@@ -105,17 +107,23 @@ Note that it can only be applied to amulets and rings
 
 ![Red powder stats](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Upgrades/Red_powder_stats.png "Red powder stats")
 
-## Protective Gear
+## Protective Gears
 
-Grindstones are weapon damage enchants and protective gear is an upgrade for Armour which increases the armor points
+Protective gears are permanent armour boost that can be applied to all slots except weapons and jewellery (amulet and rings). Please note that all of the protective gears have a minimum level of the item.
 
 ### Protective gear
 
-![Protective gear](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Upgrades/Protective_gear.png "Protective gear")
-
-![Protective gear stats](https://gladiatusfansite.blob.core.windows.net/images/Items/img/Upgrades/Protective_gear_stats.png "Protective gear stats")
+<ProtectiveGear level={112} />
 
 Permanently increases armor on Armour slots. Not usable on amulets, rings and weapons. Beware of the minimum level requirement
+
+Formulas:
+
+- Armour = Item level of the Protective gear * 2 (round up). Example above, Item level 112 * 2 = 224 Armour
+- minimum item level to use on = Item level of the Protective gear - 5. Example above, Item level 112 - 5 = 107
+- Rarity multipliers for items (green, blue, purple, orange, red) apply to the +Armour but not for gold value
+
+<ProtectiveGearCalculator />
 
 ### Shred of leather
 
@@ -126,6 +134,8 @@ Permanently increases armor on Armour slots. Not usable on amulets, rings and we
 Temporary increases armor on Armour slots for 1 hour
 
 ## Grindstones
+
+Grindstones are weapon damage enchants and protective gear is an upgrade for Armour which increases the armor points
 
 ### Grindstone
 
