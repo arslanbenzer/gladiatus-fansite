@@ -1,4 +1,5 @@
 import Link from "@docusaurus/Link";
+import { maxUsableItemLevel } from "@site/src/utils/itemLevelLimits";
 import { useCallback, useEffect, useMemo, useState } from "react";
 import BaseStatsEditor from "../CharacterPlanner/BaseStatsEditor";
 import CharacterDoll from "../CharacterPlanner/CharacterDoll";
@@ -14,7 +15,6 @@ import styles from "./ItemSimulator.module.css";
 import {
   getDefaultArmourEnchantValue,
   getDefaultWeaponEnchantValue,
-  getMaxUsableItemLevel,
   runSimulation,
   SimulationWeights,
   StatToggles,
@@ -80,28 +80,43 @@ export default function ItemSimulator() {
 
   const [weights, setWeights] = useState<SimulationWeights>(DEFAULT_WEIGHTS);
   const [statToggles, setStatToggles] = useState<StatToggles>({
-    dexterity: false,
-    agility: false,
-    strength: false,
-    intelligence: false,
+    dexterity: true,
+    agility: true,
+    strength: true,
+    intelligence: true,
   });
   const [evaluationRarity, setEvaluationRarity] = useState<ItemRarity>("red");
   const [isSimulating, setIsSimulating] = useState(false);
   const [notification, setNotification] = useState("");
 
-  const maxUsableItemLevel = getMaxUsableItemLevel(characterLevel);
+  const usableItemLevel = maxUsableItemLevel(characterLevel);
 
   const [weaponEnchant, setWeaponEnchant] = useState(() =>
-    getDefaultWeaponEnchantValue(maxUsableItemLevel),
+    getDefaultWeaponEnchantValue(characterLevel, evaluationRarity),
   );
   const [armourEnchant, setArmourEnchant] = useState(() =>
-    getDefaultArmourEnchantValue(maxUsableItemLevel),
+    getDefaultArmourEnchantValue(characterLevel, evaluationRarity),
   );
 
   useEffect(() => {
-    setWeaponEnchant(getDefaultWeaponEnchantValue(maxUsableItemLevel));
-    setArmourEnchant(getDefaultArmourEnchantValue(maxUsableItemLevel));
-  }, [maxUsableItemLevel]);
+    setWeaponEnchant(
+      getDefaultWeaponEnchantValue(characterLevel, evaluationRarity),
+    );
+    setArmourEnchant(
+      getDefaultArmourEnchantValue(characterLevel, evaluationRarity),
+    );
+  }, [characterLevel, evaluationRarity]);
+
+  useEffect(() => {
+    setBaseStats({
+      strength: characterLevel * 5,
+      dexterity: characterLevel * 5,
+      agility: characterLevel * 5,
+      constitution: characterLevel * 5,
+      charisma: characterLevel * 5,
+      intelligence: characterLevel * 5,
+    });
+  }, [characterLevel]);
 
   const showNotification = (msg: string) => {
     setNotification(msg);
@@ -235,7 +250,7 @@ export default function ItemSimulator() {
             />
             <span className={styles.levelHint}>
               Searching items level <strong>{minConsideredItemLevel}</strong>–
-              <strong>{maxUsableItemLevel}</strong>
+              <strong>{usableItemLevel}</strong>
             </span>
           </div>
 
@@ -373,7 +388,9 @@ export default function ItemSimulator() {
               }}
               className={styles.enchantInput}
             />
-            <span className={styles.rarityHint}>flat damage added to weapon</span>
+            <span className={styles.rarityHint}>
+              flat damage added to weapon
+            </span>
           </label>
           <label className={styles.enchantLabel}>
             Armour enchant (per piece):
@@ -388,7 +405,9 @@ export default function ItemSimulator() {
               }}
               className={styles.enchantInput}
             />
-            <span className={styles.rarityHint}>flat armour added to each armour piece</span>
+            <span className={styles.rarityHint}>
+              flat armour added to each armour piece
+            </span>
           </label>
         </div>
       </div>
@@ -408,10 +427,7 @@ export default function ItemSimulator() {
             <button className={styles.shareButton} onClick={handleShare}>
               📋 Share Build
             </button>
-            <Link
-              className={styles.continueButton}
-              to={characterPlannerUrl}
-            >
+            <Link className={styles.continueButton} to={characterPlannerUrl}>
               🛡 Continue in Character Planner
             </Link>
             <button className={styles.clearButton} onClick={clearAll}>
@@ -499,7 +515,8 @@ export default function ItemSimulator() {
                       )}
                     {item.upgrades && item.upgrades.length > 0 && (
                       <span className={styles.itemEnchant}>
-                        +{item.upgrades[0].level} {item.upgrades[0].upgrade.stat}
+                        +{item.upgrades[0].level}
+                        {item.upgrades[0].upgrade.stat}
                       </span>
                     )}
                   </div>

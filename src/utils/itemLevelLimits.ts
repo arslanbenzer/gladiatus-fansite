@@ -20,6 +20,11 @@ export function maxUsableItemLevel(characterLevel: number): number {
     : Math.ceil(1.25 * characterLevel + 7.75);
 }
 
+/** Max scroll level the character can use. */
+export function maxUsableScrollLevel(characterLevel: number): number {
+  return characterLevel + 1;
+}
+
 /** Max item level visible in the Market. */
 export function maxMarketItemLevel(characterLevel: number): number {
   return characterLevel >= 36

@@ -1,9 +1,13 @@
-import type { BaseItem, PrefixSuffix, ItemRarity } from '../Item';
+import { maxUsableItemLevel, maxUsableScrollLevel } from '@site/src/utils/itemLevelLimits';
+import { getRarityMultiplier } from '@site/src/utils/rarity';
 import basesData from '@site/static/data/items/bases.json';
 import prefixesData from '@site/static/data/items/prefixes.json';
 import suffixesData from '@site/static/data/items/suffixes.json';
-import { ItemSlotType, EquippedItem, BaseStats, CharacterStats, Upgrade, AppliedUpgrade, calculateCharacterStats } from '../CharacterPlanner/useCharacterState';
 import { PactId } from '../CharacterPlanner/PactDefinitions';
+import { AppliedUpgrade, BaseStats, calculateCharacterStats, CharacterStats, EquippedItem, ItemSlotType, Upgrade } from '../CharacterPlanner/useCharacterState';
+import { calculateDamageBonus } from '../Grindstone';
+import type { BaseItem, ItemRarity, PrefixSuffix } from '../Item';
+import { calculateArmourBonus } from '../ProtectiveGear';
 
 const SLOT_TYPE_MAP: Record<ItemSlotType, string[]> = {
   helmet: ['helmets'],
@@ -59,27 +63,14 @@ export interface SimulationResult {
   score: number;
 }
 
-export function getMaxUsableItemLevel(characterLevel: number): number {
-  return characterLevel >= 33
-    ? characterLevel + 16
-    : Math.ceil(1.25 * characterLevel + 7.75);
+/** Default flat damage bonus from a Grindstone at the given scroll level and rarity. */
+export function getDefaultWeaponEnchantValue(scrollLevel: number, rarity: ItemRarity): number {
+  return calculateDamageBonus(scrollLevel, getRarityMultiplier(rarity));
 }
 
-/**
- * Default flat damage bonus for a grindstone enchant on a weapon.
- * In-game formula: ceil(upgradeLevel / 5). Assumes the grindstone matches the
- * highest usable item level for the character.
- */
-export function getDefaultWeaponEnchantValue(itemLevel: number): number {
-  return Math.ceil(itemLevel / 5);
-}
-
-/**
- * Default flat armour bonus for protective-gear enchants. Armour values scale
- * roughly 10× the per-grindstone damage value at equivalent gear levels.
- */
-export function getDefaultArmourEnchantValue(itemLevel: number): number {
-  return getDefaultWeaponEnchantValue(itemLevel) * 10;
+/** Default flat armour bonus from a Protective Gear at the given scroll level and rarity. */
+export function getDefaultArmourEnchantValue(scrollLevel: number, rarity: ItemRarity): number {
+  return calculateArmourBonus(scrollLevel, getRarityMultiplier(rarity));
 }
 
 /**
@@ -88,7 +79,7 @@ export function getDefaultArmourEnchantValue(itemLevel: number): number {
  * Points per metric (before weight):
  *   Critical hit chance  → chance × 2          (50% cap → max 100 pts)
  *   Block chance         → chance × 2          (50% cap → max 100 pts)
- *   Armour               → armour / (level × 2.5)
+ *   Armour               → armour / (level × 2.3)
  *   Damage (avg)         → (min + max) / 2 / 10
  *
  * Each metric's points are multiplied by its priority weight / 100 and summed.
@@ -110,9 +101,9 @@ function scoreStats(
 ): number {
   const critPoints   = stats.criticalHitChance * 2;
   const blockPoints  = stats.blockChance * 2;
-  const armorPoints  = stats.totalArmor / Math.max(1, characterLevel * 2.5);
+  const armorPoints  = stats.totalArmor / Math.max(1, characterLevel * 2.3);
   const avgDamage    = (stats.totalDamageMin + stats.totalDamageMax) / 2;
-  const damagePoints = (avgDamage - characterLevel * 3.6) / 5;
+  const damagePoints = (avgDamage - characterLevel * 3.6) / 4.2;
 
   // Stat-efficiency score: rewards items that push a stat closer to its natural cap.
   // finalStat includes item flat/percent bonuses; maxStat is the training cap formula.
@@ -244,15 +235,17 @@ export function runSimulation(
   weaponEnchantValue?: number,
   armourEnchantValue?: number,
 ): SimulationResult {
-  const maxUsableItemLevel = getMaxUsableItemLevel(characterLevel);
+  const usableItemLevel = maxUsableItemLevel(characterLevel);
   const minBaseLevel = Math.max(1, characterLevel - 30);
-
+  const usableScrolllevel = maxUsableScrollLevel(characterLevel);
   // Pre-score and sort affixes once — the ranking is weight-dependent but base-independent
   const scoredPrefixes = (prefixesData as PrefixSuffix[])
+  .filter(prefix => prefix.level <= usableScrolllevel)
     .map(p => ({ prefix: p, score: estimateAffixScore(p, weights, characterLevel, baseStats, statToggles) }))
     .sort((a, b) => b.score - a.score);
 
   const scoredSuffixes = (suffixesData as PrefixSuffix[])
+    .filter(prefix => prefix.level <= usableScrolllevel)
     .map(s => ({ suffix: s, score: estimateAffixScore(s, weights, characterLevel, baseStats, statToggles) }))
     .sort((a, b) => b.score - a.score);
 
@@ -282,7 +275,7 @@ export function runSimulation(
       let bestItem: EquippedItem | null = null;
 
       for (const base of basesToTry) {
-        const remainingBudget = maxUsableItemLevel - base.level;
+        const remainingBudget = usableItemLevel - base.level;
 
         // Top-K prefixes within level budget, plus the "no prefix" option
         const topPrefixes: (PrefixSuffix | undefined)[] = [
@@ -307,9 +300,9 @@ export function runSimulation(
           for (const suffix of topSuffixes) {
             const itemLevel = (base.level ?? 0) + (prefix?.level ?? 0) + (suffix?.level ?? 0);
             const enchantValue = WEAPON_ENCHANT_SLOTS.has(slot)
-              ? (weaponEnchantValue ?? getDefaultWeaponEnchantValue(itemLevel))
+              ? (weaponEnchantValue ?? getDefaultWeaponEnchantValue(characterLevel, evaluationRarity))
               : ARMOUR_ENCHANT_SLOTS.has(slot)
-                ? (armourEnchantValue ?? getDefaultArmourEnchantValue(itemLevel))
+                ? (armourEnchantValue ?? getDefaultArmourEnchantValue(characterLevel, evaluationRarity))
                 : undefined;
 
             // For ring/amulet slots, try each enabled stat powder as a variant

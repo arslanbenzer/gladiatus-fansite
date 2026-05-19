@@ -12,7 +12,7 @@ const SPRITE_CLASS = 'item-i-12-2';
 const HINT = 'Pull that item onto another one, to boost it.';
 const GOLD_BASE_COEFFICIENT = 16.5;
 
-function calculateDamageBonus(level: number, multiplier: number): number {
+export function calculateDamageBonus(level: number, multiplier: number): number {
   return Math.floor(Math.ceil(level / 5) * multiplier);
 }
 
